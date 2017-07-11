@@ -20,5 +20,5 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 ## Table of Contents 
 * [Manipulating data with NDArray](1-ndarray.ipynb) 
 * [Automatic differentiation via ``autograd``](2-autograd.ipynb)
-* [Linear Regression *from scratch*](3-linear-regression-scratch.ipynb)
-* [Linear Regression *with gluon*](4-linear-regression-gluon.ipynb)
+* [Linear Regression *(from scratch!)*](3-linear-regression-scratch.ipynb)
+* [Linear Regression *(with gluon!)*](4-linear-regression-gluon.ipynb)
