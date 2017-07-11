@@ -6,7 +6,8 @@ MXNet is widely used in production environments owing to its strong reputation f
 
 Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
 
-This repo contains a series of tutorials to make learning ``gluon`` easy (meta-easy?).
+This repo contains an incremental sequence of tutorials to make learning ``gluon`` easy (meta-easy?). These tutorials are designed with public presentations in mind and are composed as Jupyter notebooks where each notebook corresponds to roughly 20 minutes of rambling and each codeblock could correspond to roughly one slide.
+
 
 ## Inspiration 
 
@@ -16,7 +17,6 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 * [Alex Radford's bare-bones intro to Theano](https://github.com/Newmu/Theano-Tutorials)
 
 ## Table of Contents 
-These tutorials are designed with presentations in mind and are composed as Jupyter notebooks where each notebook corresponds to roughly 20 minutes of rambling and each codeblock could correspond to roughly one slide.
 * NDArray 
 * autograd
 * Linear Regression
