@@ -4,9 +4,9 @@ Much easy, so MXNet. Wow.
 ## Summary
 MXNet is widely used in production environments owing to its strong reputation for speed.
 
-Now with *gluon*, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
+Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
 
-This repo contains a series of tutorials.
+This repo contains a series of tutorials to make learning ``gluon`` easy (meta-easy?).
 
 ## Inspiration 
 
