@@ -17,6 +17,7 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 * [Alex Radford's bare-bones intro to Theano](https://github.com/Newmu/Theano-Tutorials)
 
 ## Table of Contents 
-* [NDArray](ndarray.ipynb) 
-* autograd
-* Linear Regression
+* [Manipulating data with NDArray](1-ndarray.ipynb) 
+* [Automatic differentiation via ``autograd``](2-autograd.ipynb)
+* [Linear Regression *from scratch*](3-linear-regression-scratch.ipynb)
+* [Linear Regression *with gluon*](4-linear-regression-gluon.ipynb)
