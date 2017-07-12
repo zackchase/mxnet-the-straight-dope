@@ -24,3 +24,4 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [Automatic differentiation via ``autograd``](2-autograd.ipynb)
 * [Linear Regression *(from scratch!)*](3-linear-regression-scratch.ipynb)
 * [Linear Regression *(with gluon!)*](4-linear-regression-gluon.ipynb)
+* [Multiclass Logistic Regression *(from scratch!)*](5-logistic-regression-scratch.ipynb)
