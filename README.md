@@ -24,4 +24,4 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
 * [Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3-linear-regression-scratch.ipynb)
 * [Linear Regression *(with gluon!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4-linear-regression-gluon.ipynb)
-* [Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5-logistic-regression-scratch.ipynb)
+* [Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5-softmax-regression-scratch.ipynb)
