@@ -26,6 +26,8 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [3b - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
 * [4a - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
 * [4b - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
+* [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
+* [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
 
 ## Choose your own adventure
 
