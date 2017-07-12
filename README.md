@@ -20,8 +20,8 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 To run these notebooks, you'll want to build mxnet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
 
 ## Table of Contents 
-* [Manipulating data with NDArray](1-ndarray.ipynb) 
-* [Automatic differentiation via ``autograd``](2-autograd.ipynb)
-* [Linear Regression *(from scratch!)*](3-linear-regression-scratch.ipynb)
-* [Linear Regression *(with gluon!)*](4-linear-regression-gluon.ipynb)
-* [Multiclass Logistic Regression *(from scratch!)*](5-logistic-regression-scratch.ipynb)
+* [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
+* [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
+* [Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3-linear-regression-scratch.ipynb)
+* [Linear Regression *(with gluon!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4-linear-regression-gluon.ipynb)
+* [Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5-softmax-regression-scratch.ipynb)
