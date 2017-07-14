@@ -39,7 +39,7 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Capitalist - If you would like to specialize to either the raw interface or the high-level ``gluon`` front end choose either (1, 2, 3a, 4a, ...) or (1, 2, 3b, 4b, ...) respectively.
 
 ## Roadmap
-* GANs (DCGAN, EBGAN, Wasserstein GAN, SD-GAN)
+* GANs (DCGAN, InfoGAN, EBGAN, Wasserstein GAN, SD-GAN)
 * Simple RNN (from scratch and w ``gluon``)
 * LSTM (from scratch and w ``gluon``)
 * GRU
