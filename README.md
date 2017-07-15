@@ -37,3 +37,16 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
 * Imperialist - Proceed throught the tutorials in order (1, 2, 3a, 3b, 4a, 4b, ...). In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you would like to specialize to either the raw interface or the high-level ``gluon`` front end choose either (1, 2, 3a, 4a, ...) or (1, 2, 3b, 4b, ...) respectively.
+
+## Roadmap
+* GANs (DCGAN, InfoGAN, EBGAN, Wasserstein GAN, SD-GAN)
+* Simple RNN (from scratch and w ``gluon``)
+* LSTM (from scratch and w ``gluon``)
+* GRU
+* DQN 
+* Sequence to Sequence 
+* Sequence to Sequence with Attention
+* Weight uncertainty Bayes-by-Backprop neural networks 
+* Residual networks
+* Latent factor models
+* Word2Vec 
