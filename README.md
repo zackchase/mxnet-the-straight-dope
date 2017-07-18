@@ -50,3 +50,10 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Residual networks
 * Latent factor models
 * Word2Vec 
+
+## Collaborators
+This evolving creature is a collaborative effort. Some amount of credit (and blame) can be shared by:
+Zachary C. Lipton (@zackchase)
+Mu Li (@mli)
+Alex Smola (@smolix)
+Eric Junyuan Xie (@piiswrong)
