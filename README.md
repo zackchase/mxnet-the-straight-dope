@@ -53,7 +53,7 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 
 ## Collaborators
 This evolving creature is a collaborative effort. Some amount of credit (and blame) can be shared by:
-Zachary C. Lipton (@zackchase)
-Mu Li (@mli)
-Alex Smola (@smolix)
-Eric Junyuan Xie (@piiswrong)
+* Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
+* Mu Li ([@mli](https://github.com/mli))
+* Alex Smola ([@smolix](https://github.com/smolix))
+* Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
