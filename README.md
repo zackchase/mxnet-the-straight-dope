@@ -35,7 +35,7 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
 
 ### Recurrent Neural Networks
-* [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8-simple-rnn-language-model.ipynb)
+* [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
 * **Roadmap** LSTMS
 * **Roadmap** GRUs
 * **Roadmap** Sequence-to-sequence learning
