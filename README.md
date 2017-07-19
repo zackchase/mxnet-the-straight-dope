@@ -37,6 +37,8 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [8a - Simple RNNs and their application to language modeling]()
 * **Roadmap** LSTMS
 * **Roadmap** GRUs
+* **Roadmap** Sequence-to-sequence learning
+* **Roadmap** Sequnce transduction with attention
 
 ### Computer Vision
 * **Roadmap** Residual networks
