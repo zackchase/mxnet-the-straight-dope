@@ -41,7 +41,7 @@ To contribute codes, please follow the following guidelines:
      notebook is fast to run (e.g. less than 5 minutes) and does not require
      GPU.
 
-7. If you want to reference a function or class, use
+7. (Update, this feature is not availabe for Jupyter now.) If you want to reference a function or class, use
    `sphinx domains <http://www.sphinx-doc.org/en/stable/domains.html>`_. For example
 
    - function: ``:func:`mxnet.ndarray.zeros``` to :func:`mxnet.ndarray.zeros`

@@ -31,6 +31,8 @@ A `PDF <TheStraightDope.pdf>`_ version is also available
    :maxdepth: 1
    :caption: Tutorials
 
+   0a-data-loading
+   0b-image-loading-and-preprocessing
    1-ndarray
    2-autograd
    3a-linear-regression-scratch
