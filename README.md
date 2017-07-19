@@ -20,16 +20,55 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 To run these notebooks, you'll want to build mxnet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
 
 ## Table of contents 
+
+### Basics
 * [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
 * [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
 * [3a - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
 * [3b - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
 * [4a - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
 * [4b - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
-* [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-mlp-scratch.ipynb)
-* [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-mlp-gluon.ipynb)
+### Intermediate 
+* [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
+* [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5b-mlp-gluon.ipynb)
 * [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
 * [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
+
+### Recurrent Neural Networks
+* [8a - Simple RNNs and their application to language modeling]()
+* **Roadmap** LSTMS
+* **Roadmap** GRUs
+* **Roadmap** Sequence-to-sequence learning
+* **Roadmap** Sequnce transduction with attention
+
+### Computer Vision
+* **Roadmap** Residual networks
+* **Roadmap** Object detection 
+* **Roadmap** Fully-convolutional networks
+
+### Adversarial Learning
+* **Roadmap** Finding adversarial examples
+* **Roadmap** Adversarial training
+
+
+### Generative Adversarial Networks
+* **Roadmap** Introduction to GANs
+* **Roadmap** DCGAN
+* **Roadmap** Wasserstein-GANs
+* **Roadmap** Energy-based GANS
+* **Roadmap** Pix2Pix
+
+
+### Deep Reinforcement Learning
+* **Roadmap** Deep Q-networks
+* **Roadmap** Policy gradient
+* **Roadmap** Actor-critic gradient
+
+### Distributed learning with *MXNet*
+* Multiple GPUs 
+* Multiple Machines
+
+### Optimizing MXNet code for production
 
 ## Choose your own adventure
 
