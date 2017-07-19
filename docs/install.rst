@@ -8,8 +8,8 @@ commands install them through ``pip``:
 
 .. code-block:: bash
 
-   # optional: install pip
-   wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
+   # optional: update pip to the newest version
+   sudo pip install --upgrade pip
    # install jupyter
    pip install jupyter --user
    # install the nightly built mxnet

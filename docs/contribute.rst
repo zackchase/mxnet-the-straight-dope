@@ -2,8 +2,9 @@ How to contribute
 ===================
 
 For whinges and inquiries, please open `an issue at github
-<https://github.com/zackchase/mxnet-the-straight-dope/issues>`_. To contribute
-codes, please follow the following guidelines:
+<https://github.com/zackchase/mxnet-the-straight-dope/issues>`_.
+
+To contribute codes, please follow the following guidelines:
 
 1. Check the `roadmap
    <https://github.com/zackchase/mxnet-the-straight-dope/#roadmap>`_ before
@@ -18,8 +19,13 @@ codes, please follow the following guidelines:
 4. Do not submit large files, such as dataset or images, to the repo. You can
    upload them to a different repo and cross reference it. For example
 
-   - Insert an image ``![](https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mnist.png)``
-   - Download a dataset if not exists in local ``mx.test_utils.download('https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/ptb/ptb.train.txt')``
+   - Insert an image::
+
+       ![](https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mnist.png)
+
+   - Download a dataset if not exists in local::
+
+       mx.test_utils.download('https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/ptb/ptb.train.txt')
 
 5. Resize the images to proper sizes. Large size images look fine in notebook,
    but they may be ugly in the HTML or PDF format.
@@ -39,5 +45,22 @@ codes, please follow the following guidelines:
    `sphinx domains <http://www.sphinx-doc.org/en/stable/domains.html>`_. For example
 
    - function: ``:func:`mxnet.ndarray.zeros``` to :func:`mxnet.ndarray.zeros`
-   - class ``:class:`mxnet.gluon.Parameter``` -> :class:`mxnet.gluon.Parameter`
+   - class ``:class:`mxnet.gluon.Parameter``` to :class:`mxnet.gluon.Parameter`
    - also works for numpy: ``:func:`numpy.zeros``` to :func:`numpy.zeros`
+
+8. You can build the documents locally to preview the changes. Assume ``conda``
+   is available, then following commands create an environment with all
+   requirements installed::
+
+     # assume at the root directory of this project
+     conda env create -f environment.yml
+     source activate gluon_docs
+
+   Now you are able to build the HTMLs::
+
+     make html
+
+   If latex is installed, you can also build the PDF version::
+
+     make latex
+     make -C _build/latex
