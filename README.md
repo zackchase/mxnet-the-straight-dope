@@ -45,6 +45,9 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * **Roadmap** Residual networks
 * **Roadmap** Object detection 
 * **Roadmap** Fully-convolutional networks
+* **Roadmap** Siamese (conjoined?) networks
+* **Roadmap** Image captioning
+* **Roadmap** Inceptionism / visualizing feature detectors
 
 ### Adversarial Learning
 * **Roadmap** Finding adversarial examples
