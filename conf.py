@@ -304,6 +304,6 @@ texinfo_documents = [
 intersphinx_mapping = {
     # 'python': 'https://docs.python.org/3.5',
     # 'matplotlib': 'https://matplotlib.org',
-    # 'numpy': ('http://docs.scipy.org/doc/numpy/', None),
+    'numpy': ('http://docs.scipy.org/doc/numpy/', None),
     'mxnet': ('http://mxnet.io', None)
 }
