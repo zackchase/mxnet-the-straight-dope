@@ -1,0 +1,13 @@
+name: gluon_doc
+channels:
+  - conda-forge
+dependencies:
+- python==3.5
+- pandoc
+- nbformat
+- jupyter_client
+- ipython
+- sphinx>=1.5.1
+- sphinx_rtd_theme
+- pip:
+  - nbsphinx
