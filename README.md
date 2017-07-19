@@ -33,6 +33,7 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-mlp-gluon.ipynb)
 * [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
 * [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
+
 ### Recurrent Neural Networks
 * [8a - Simple RNNs and their application to language modeling]()
 * **Roadmap** LSTMS
@@ -63,7 +64,11 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * **Roadmap** Policy gradient
 * **Roadmap** Actor-critic gradient
 
+### Distributed learning with *MXNet*
+* Multiple GPUs 
+* Multiple Machines
 
+### Optimizing MXNet code for production
 
 ## Choose your own adventure
 
