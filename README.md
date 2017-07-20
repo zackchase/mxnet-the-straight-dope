@@ -45,21 +45,30 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
-### Section 5: Recurrent Neural Networks
+### Section 5: Recurrent Neural Networks 
 * [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S05-C01-simple-rnn-language-model.ipynb)
-* **Roadmap** LSTMS
-* **Roadmap** GRUs
-* **Roadmap** Sequence-to-sequence learning
-* **Roadmap** Sequence transduction with attention
+* ***Roadmap*** Simple RNNs (with ``gluon``)
+* ***Roadmap*** LSTMS (from scratch)
+* ***Roadmap*** LSTMS (with ``gluon``)
+* ***Roadmap*** GRUs (from scratch) 
+* ***Roadmap*** GRUs (with ``gluon``) 
+* ***Roadmap*** Recurrent Dropout
 
 ### Section 6: Computer Vision
 * ***Roadmap*** Residual networks
 * ***Roadmap*** Object detection 
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
-* ***Roadmap*** Image captioning
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 
+### NLP
+* ***Roadmap*** Word embeddings (Word2Vec)
+* ***Roadmap*** Sentiment analysis
+* ***Roadmap*** Named entity recognition 
+* ***Roadmap*** Sequence-to-sequence learning (machine translation)
+* ***Roadmap*** Sequence transduction with attention (machine translation)
+* ***Roadmap*** Image captioning
+ 
 ### Section 7: Autoencoders
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
@@ -100,21 +109,9 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ## Choose your own adventure
 I've designed these tutorials so that you can traverse the curriculum in one of three ways.
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
-* Imperialist - Proceed throught the tutorials in order (1, 2, 3a, 3b, 4a, 4b, ...). In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
-* Capitalist - If you would like to specialize to either the raw interface or the high-level ``gluon`` front end choose either (1, 2, 3a, 4a, ...) or (1, 2, 3b, 4b, ...) respectively.
+* Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
+* Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
-## Roadmap
-* GANs (DCGAN, InfoGAN, EBGAN, Wasserstein GAN, SD-GAN)
-* Simple RNN (from scratch and w ``gluon``)
-* LSTM (from scratch and w ``gluon``)
-* GRU
-* DQN 
-* Sequence to Sequence 
-* Sequence to Sequence with Attention
-* Weight uncertainty Bayes-by-Backprop neural networks 
-* Residual networks
-* Latent factor models
-* Word2Vec 
 
 ## Collaborators
 This evolving creature is a collaborative effort. Some amount of credit (and blame) can be shared by:
