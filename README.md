@@ -21,9 +21,9 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ## Table of contents 
 
 ### Section 1: Crashcourse 
-* ***Roadmap*** [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S01-C01-introduction.md)
-* ***Roadmap*** Linear Algebra
-* ***Roadmap*** Probability and Statistics
+* [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S01-C01-introduction.md)
+* ***Roadmap*** [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S01-C02-linear-algebra.md)
+* ***Roadmap*** [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S01-C03-probability-statistics.md)
 
 ### Section 2: Introduction to Supervised Learning
 * [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C01-ndarray.ipynb) 
@@ -93,16 +93,16 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Section 10: Variational methods and uncertainty
+### Section 11: Variational methods and uncertainty
 * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
 
-### Section 11: Distributed learning with *MXNet*
+### Section 12: Distributed learning with *MXNet*
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 
-### Section 12: Optimizing MXNet code for production
+### Section 13: Optimizing MXNet code for production
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 
