@@ -28,10 +28,10 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Section 2: Introduction to Supervised Learning
 * [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
 * [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
-* [3a - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
-* [3b - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
-* [4a - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
-* [4b - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
+* [3 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
+* [4 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
+* [5 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
+* [6 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
 
 ### Section 3: Deep Neural Networks 
 * [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
@@ -45,14 +45,14 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
-### Section 4: Recurrent Neural Networks
+### Section 5: Recurrent Neural Networks
 * [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
 * **Roadmap** LSTMS
 * **Roadmap** GRUs
 * **Roadmap** Sequence-to-sequence learning
 * **Roadmap** Sequence transduction with attention
 
-### Section 5: Computer Vision
+### Section 6: Computer Vision
 * ***Roadmap*** Residual networks
 * ***Roadmap*** Object detection 
 * ***Roadmap*** Fully-convolutional networks
@@ -60,32 +60,40 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Image captioning
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 
-### Section 6: Autoencoders
+### Section 7: Autoencoders
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
-* ***Roadmap*** Variational Autoencoders
+* ***Roadmap*** Denoising autoencoders
+* ***Roadmap*** Variational autoencoders
 
-### Section 7: Adversarial Learning
+### Section 8: Adversarial Learning
 * ***Roadmap*** Finding adversarial examples
 * **Roadmap** Adversarial training
 
-### Section 8: Generative Adversarial Networks
+### Section 9: Generative Adversarial Networks
 * ***Roadmap*** Introduction to GANs
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
 * ***Roadmap*** Pix2Pix
 
-### Section 9: Deep Reinforcement Learning
+### Section 10: Deep Reinforcement Learning
+* ***Roadmap*** Introduction to reinforcement learning
+* ***Roadmap*** Deep contextual bandits
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Section 10: Distributed learning with *MXNet*
+### Section 10: Variational methods and uncertainty
+* ***Roadmap*** Dropout-based uncertainty estimation (BALD)
+* ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+* ***Roadmap*** Variational autoencoders
+
+### Section 11: Distributed learning with *MXNet*
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 
-### Section 11: Optimizing MXNet code for production
+### Section 12: Optimizing MXNet code for production
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 
