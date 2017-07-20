@@ -46,7 +46,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
 ### Part 5: Recurrent Neural Networks 
-* [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S05-C01-simple-rnn-language-model.ipynb)
+* [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S05-C01-simple-rnn.ipynb)
 * ***Roadmap*** Simple RNNs (with ``gluon``)
 * ***Roadmap*** LSTMS (from scratch)
 * ***Roadmap*** LSTMS (with ``gluon``)
