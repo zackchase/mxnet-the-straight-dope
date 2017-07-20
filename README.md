@@ -26,27 +26,27 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Probability and Statistics
 
 ### Section 2: Introduction to Supervised Learning
-* [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
-* [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
-* [3 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
-* [4 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
-* [5 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
-* [6 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
+* [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C01-ndarray.ipynb) 
+* [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C02-autograd.ipynb)
+* [3 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C03-linear-regression-scratch.ipynb)
+* [4 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C04-linear-regression-gluon.ipynb)
+* [5 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C05-softmax-regression-scratch.ipynb)
+* [6 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C06-softmax-regression-gluon.ipynb)
 
 ### Section 3: Deep Neural Networks 
-* [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
-* [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5b-mlp-gluon.ipynb)
+* [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S03-C01-mlp-scratch.ipynb)
+* [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S03-C02-mlp-gluon.ipynb)
 * ***Roadmap*** Weight Decay and Dropout Regularization (from scratch)
 * ***Roadmap*** Weight Decay and Dropout Regularization (from with ``gluon``)
 
 ### Section 4: Convolutional Neural Networks 
-* [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
-* [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
+* [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S04-C01-cnn-scratch.ipynb)
+* [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S04-C02-cnn-gluon.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
 ### Section 5: Recurrent Neural Networks
-* [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
+* [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S05-C01-simple-rnn-language-model.ipynb)
 * **Roadmap** LSTMS
 * **Roadmap** GRUs
 * **Roadmap** Sequence-to-sequence learning
