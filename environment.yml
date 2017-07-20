@@ -8,4 +8,5 @@ dependencies:
 - sphinx_rtd_theme
 - pip:
   - nbsphinx
+  - recommonmark
   - mxnet>=0.10.1b20170719
