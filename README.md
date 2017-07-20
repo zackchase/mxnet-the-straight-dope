@@ -84,7 +84,9 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
-* ***Roadmap*** Pix2Pix
+* ***Roadmap*** Conditional GANs
+* ***Roadmap*** Image transduction GANs (Pix2Pix)
+* ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
 ### Part 11: Deep Reinforcement Learning
 * ***Roadmap*** Introduction to reinforcement learning
