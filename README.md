@@ -6,7 +6,6 @@ MXNet is widely used in production environments owing to its strong reputation f
 
 This repo contains an incremental sequence of tutorials to make learning ``gluon`` easy (meta-easy?). These tutorials are designed with public presentations in mind and are composed as Jupyter notebooks where each notebook corresponds to roughly 20 minutes of rambling and each codeblock could correspond to roughly one slide.
 
-
 ## Inspiration 
 
 In creating these tutorials, I've borrowed heavily from some of the resources that were most useful when I learned how to program with Theano and PyTorch, specifically:
@@ -37,8 +36,14 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Section 3: Deep Neural Networks 
 * [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
 * [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5b-mlp-gluon.ipynb)
+* ***Roadmap*** Weight Decay and Dropout Regularization (from scratch)
+* ***Roadmap*** Weight Decay and Dropout Regularization (from with ``gluon``)
+
+### Section 4: Convolutional Neural Networks 
 * [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
 * [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
+* ***Roadmap*** Batch Normalization (from scratch)
+* ***Roadmap*** Batch Normalization (from with ``gluon``)
 
 ### Section 4: Recurrent Neural Networks
 * [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
