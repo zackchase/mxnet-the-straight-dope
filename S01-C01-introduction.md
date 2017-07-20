@@ -20,3 +20,4 @@ We'll be teaching deep learning concepts from scratch. Sometimes, we'll want to 
 
 If you're ready to get started, visit either our [README/TOC](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/README.md) or go straight to [our basic primer on NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb), MXNet's workhorse data structure.
 
+
