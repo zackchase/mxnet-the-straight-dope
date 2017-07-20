@@ -26,87 +26,92 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Probability and Statistics
 
 ### Section 2: Introduction to Supervised Learning
-* [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
-* [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
-* [3a - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
-* [3b - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
-* [4a - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
-* [4b - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
+* [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C01-ndarray.ipynb) 
+* [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C02-autograd.ipynb)
+* [3 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C03-linear-regression-scratch.ipynb)
+* [4 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C04-linear-regression-gluon.ipynb)
+* [5 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C05-softmax-regression-scratch.ipynb)
+* [6 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S02-C06-softmax-regression-gluon.ipynb)
 
 ### Section 3: Deep Neural Networks 
-* [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
-* [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5b-mlp-gluon.ipynb)
+* [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S03-C01-mlp-scratch.ipynb)
+* [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S03-C02-mlp-gluon.ipynb)
 * ***Roadmap*** Weight Decay and Dropout Regularization (from scratch)
 * ***Roadmap*** Weight Decay and Dropout Regularization (from with ``gluon``)
 
 ### Section 4: Convolutional Neural Networks 
-* [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
-* [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
+* [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S04-C01-cnn-scratch.ipynb)
+* [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S04-C02-cnn-gluon.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
-### Section 4: Recurrent Neural Networks
-* [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
-* **Roadmap** LSTMS
-* **Roadmap** GRUs
-* **Roadmap** Sequence-to-sequence learning
-* **Roadmap** Sequence transduction with attention
+### Section 5: Recurrent Neural Networks 
+* [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S05-C01-simple-rnn-language-model.ipynb)
+* ***Roadmap*** Simple RNNs (with ``gluon``)
+* ***Roadmap*** LSTMS (from scratch)
+* ***Roadmap*** LSTMS (with ``gluon``)
+* ***Roadmap*** GRUs (from scratch) 
+* ***Roadmap*** GRUs (with ``gluon``) 
+* ***Roadmap*** Recurrent Dropout
 
-### Section 5: Computer Vision
+### Section 6: Computer Vision
 * ***Roadmap*** Residual networks
 * ***Roadmap*** Object detection 
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
-* ***Roadmap*** Image captioning
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 
-### Section 6: Autoencoders
+### NLP
+* ***Roadmap*** Word embeddings (Word2Vec)
+* ***Roadmap*** Sentiment analysis
+* ***Roadmap*** Named entity recognition 
+* ***Roadmap*** Sequence-to-sequence learning (machine translation)
+* ***Roadmap*** Sequence transduction with attention (machine translation)
+* ***Roadmap*** Image captioning
+ 
+### Section 7: Autoencoders
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
-* ***Roadmap*** Variational Autoencoders
+* ***Roadmap*** Denoising autoencoders
+* ***Roadmap*** Variational autoencoders
 
-### Section 7: Adversarial Learning
+### Section 8: Adversarial Learning
 * ***Roadmap*** Finding adversarial examples
 * **Roadmap** Adversarial training
 
-### Section 8: Generative Adversarial Networks
+### Section 9: Generative Adversarial Networks
 * ***Roadmap*** Introduction to GANs
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
 * ***Roadmap*** Pix2Pix
 
-### Section 9: Deep Reinforcement Learning
+### Section 10: Deep Reinforcement Learning
+* ***Roadmap*** Introduction to reinforcement learning
+* ***Roadmap*** Deep contextual bandits
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Section 10: Distributed learning with *MXNet*
+### Section 10: Variational methods and uncertainty
+* ***Roadmap*** Dropout-based uncertainty estimation (BALD)
+* ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+* ***Roadmap*** Variational autoencoders
+
+### Section 11: Distributed learning with *MXNet*
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 
-### Section 11: Optimizing MXNet code for production
+### Section 12: Optimizing MXNet code for production
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 
 ## Choose your own adventure
 I've designed these tutorials so that you can traverse the curriculum in one of three ways.
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
-* Imperialist - Proceed throught the tutorials in order (1, 2, 3a, 3b, 4a, 4b, ...). In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
-* Capitalist - If you would like to specialize to either the raw interface or the high-level ``gluon`` front end choose either (1, 2, 3a, 4a, ...) or (1, 2, 3b, 4b, ...) respectively.
+* Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
+* Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
-## Roadmap
-* GANs (DCGAN, InfoGAN, EBGAN, Wasserstein GAN, SD-GAN)
-* Simple RNN (from scratch and w ``gluon``)
-* LSTM (from scratch and w ``gluon``)
-* GRU
-* DQN 
-* Sequence to Sequence 
-* Sequence to Sequence with Attention
-* Weight uncertainty Bayes-by-Backprop neural networks 
-* Residual networks
-* Latent factor models
-* Word2Vec 
 
 ## Collaborators
 This evolving creature is a collaborative effort. Some amount of credit (and blame) can be shared by:
