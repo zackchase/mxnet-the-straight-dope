@@ -9,9 +9,10 @@ This new world offers enormous opportunity, but has also given rise to all manne
 
 ## Organization
 
-At present, we're aiming for the following format: But for a few (optional) notebooks providing a crashcourse in the basic mathematical background, each notebook should both
+At present, we're aiming for the following format: But for a few (optional) notebooks providing a crashcourse in the basic mathematical background, each subsequent notebook will both
+
 1. Introduce a reasonable number (perhaps one) of new concepts
-2. Provide a self-contained working example of code
+2. Provide a single self-contained working example, using a real dataset
 
 Throughout we'll be working with the MXNet library, which has the rare property of being flexible enough for research while being fast enough for production. We'll generally be using mxnet's new high-level imperative interface ``gluon``. Note that this is not the same as ``mxnet.module``, an older, symbolic interface supported by MXNet. 
 
