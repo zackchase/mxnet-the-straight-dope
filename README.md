@@ -15,11 +15,17 @@ In creating these tutorials, I've borrowed heavily from some of the resources th
 * [Alec Radford's bare-bones intro to Theano](https://github.com/Newmu/Theano-Tutorials) 
 * [Video of Alec's awesome intro to deep learning with Theano](https://www.youtube.com/watch?v=S75EdAcXHKk)
 
-## Preliminaries
+## Dependencies
 
-To run these notebooks, you'll want to build mxnet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
+To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
 
 ## Table of contents 
+
+### Crashcourse 
+* ***Roadmap*** [Introduction](https://github.com/zackchase/introduction.md)
+* ***Roadmap*** Linear Algebra
+* ***Roadmap*** Probability and Statistics
+
 
 ### Basics
 * [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
@@ -42,30 +48,30 @@ To run these notebooks, you'll want to build mxnet from source. Fortunately, thi
 * **Roadmap** Sequnce transduction with attention
 
 ### Computer Vision
-* **Roadmap** Residual networks
-* **Roadmap** Object detection 
-* **Roadmap** Fully-convolutional networks
-* **Roadmap** Siamese (conjoined?) networks
-* **Roadmap** Image captioning
-* **Roadmap** Inceptionism / visualizing feature detectors
+* ***Roadmap*** Residual networks
+* ***Roadmap*** Object detection 
+* ***Roadmap*** Fully-convolutional networks
+* ***Roadmap*** Siamese (conjoined?) networks
+* ***Roadmap*** Image captioning
+* ***Roadmap*** Inceptionism / visualizing feature detectors
 
 ### Adversarial Learning
-* **Roadmap** Finding adversarial examples
+* ***Roadmap*** Finding adversarial examples
 * **Roadmap** Adversarial training
 
 
 ### Generative Adversarial Networks
-* **Roadmap** Introduction to GANs
-* **Roadmap** DCGAN
-* **Roadmap** Wasserstein-GANs
-* **Roadmap** Energy-based GANS
-* **Roadmap** Pix2Pix
+* ***Roadmap*** Introduction to GANs
+* ***Roadmap*** DCGAN
+* ***Roadmap*** Wasserstein-GANs
+* ***Roadmap*** Energy-based GANS
+* ***Roadmap*** Pix2Pix
 
 
 ### Deep Reinforcement Learning
-* **Roadmap** Deep Q-networks
-* **Roadmap** Policy gradient
-* **Roadmap** Actor-critic gradient
+* ***Roadmap*** Deep Q-networks
+* ***Roadmap*** Policy gradient
+* ***Roadmap*** Actor-critic gradient
 
 ### Distributed learning with *MXNet*
 * Multiple GPUs 
