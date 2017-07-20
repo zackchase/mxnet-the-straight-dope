@@ -18,5 +18,5 @@ Throughout we'll be working with the MXNet library, which has the rare property 
 
 We'll be teaching deep learning concepts from scratch. Sometimes, we'll want to delve into fine details about the models that are hidden from the user by ``gluon``'s advanced features. This comes up especialy in the basic tutorials, where we'll want you to understand everything that happens in a given layer. In these cases, we'll generally present two versions of the tutorial: one where we implement everything from scratch, relying only on NDArray and automatic differentiation, and another where we show how to do things succinctly with ``gluon``. Once we've taught you how a layer works, we can just use the ``gluon`` version in subsequent tutorials.
 
-If you're ready to get started, visit either our [README/TOC](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/README.md) or go straight to [our basic primer on NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb), MXNet's workhorse data structure
+If you're ready to get started, visit either our [README/TOC](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/README.md) or go straight to [our basic primer on NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb), MXNet's workhorse data structure.
 
