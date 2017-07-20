@@ -112,7 +112,7 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
 
-## Collaborators
+## Authors
 This evolving creature is a collaborative effort. Some amount of credit (and blame) can be shared by:
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
