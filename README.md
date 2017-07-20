@@ -21,33 +21,33 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 
 ## Table of contents 
 
-### Crashcourse 
+### Section 1: Crashcourse 
 * ***Roadmap*** [Introduction](https://github.com/zackchase/introduction.md)
 * ***Roadmap*** Linear Algebra
 * ***Roadmap*** Probability and Statistics
 
-
-### Basics
+### Section 2: Introduction to Supervised Learning
 * [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/1-ndarray.ipynb) 
 * [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/2-autograd.ipynb)
 * [3a - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3a-linear-regression-scratch.ipynb)
 * [3b - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/3b-linear-regression-gluon.ipynb)
 * [4a - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4a-softmax-regression-scratch.ipynb)
 * [4b - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/4b-softmax-regression-gluon.ipynb)
-### Intermediate 
+
+### Section 3: Deep Neural Networks 
 * [5a - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5a-mlp-scratch.ipynb)
 * [5b - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/5b-mlp-gluon.ipynb)
 * [6a - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-scratch.ipynb)
 * [6b - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/6a-cnn-gluon.ipynb)
 
-### Recurrent Neural Networks
+### Section 4: Recurrent Neural Networks
 * [8a - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/8a-simple-rnn-language-model.ipynb)
 * **Roadmap** LSTMS
 * **Roadmap** GRUs
 * **Roadmap** Sequence-to-sequence learning
-* **Roadmap** Sequnce transduction with attention
+* **Roadmap** Sequence transduction with attention
 
-### Computer Vision
+### Section 5: Computer Vision
 * ***Roadmap*** Residual networks
 * ***Roadmap*** Object detection 
 * ***Roadmap*** Fully-convolutional networks
@@ -55,32 +55,36 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Image captioning
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 
-### Adversarial Learning
+### Section 6: Autoencoders
+* ***Roadmap*** Introduction to autoencoders
+* ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
+* ***Roadmap*** Variational Autoencoders
+
+### Section 7: Adversarial Learning
 * ***Roadmap*** Finding adversarial examples
 * **Roadmap** Adversarial training
 
-
-### Generative Adversarial Networks
+### Section 8: Generative Adversarial Networks
 * ***Roadmap*** Introduction to GANs
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
 * ***Roadmap*** Pix2Pix
 
-
-### Deep Reinforcement Learning
+### Section 9: Deep Reinforcement Learning
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Distributed learning with *MXNet*
-* Multiple GPUs 
-* Multiple Machines
+### Section 10: Distributed learning with *MXNet*
+* ***Roadmap*** Training with Multiple GPUs 
+* ***Roadmap*** Training with Multiple Machines
 
-### Optimizing MXNet code for production
+### Section 11: Optimizing MXNet code for production
+* ***Roadmap*** Combining imperative deep learning with symbolic graphs
+
 
 ## Choose your own adventure
-
 I've designed these tutorials so that you can traverse the curriculum in one of three ways.
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
 * Imperialist - Proceed throught the tutorials in order (1, 2, 3a, 3b, 4a, 4b, ...). In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
