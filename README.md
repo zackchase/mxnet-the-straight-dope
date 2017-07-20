@@ -54,14 +54,14 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** GRUs (with ``gluon``) 
 * ***Roadmap*** Recurrent Dropout
 
-### Section 6: Computer Vision
+### Section 6: Computer Vision (CV)
 * ***Roadmap*** Residual networks
 * ***Roadmap*** Object detection 
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 
-### NLP
+### Section 7: Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
 * ***Roadmap*** Sentiment analysis
 * ***Roadmap*** Named entity recognition 
@@ -69,40 +69,38 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Sequence transduction with attention (machine translation)
 * ***Roadmap*** Image captioning
  
-### Section 7: Autoencoders
+### Section 8: Autoencoders
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
 * ***Roadmap*** Denoising autoencoders
 * ***Roadmap*** Variational autoencoders
 
-### Section 8: Adversarial Learning
+### Section 9: Adversarial Learning
 * ***Roadmap*** Finding adversarial examples
 * **Roadmap** Adversarial training
 
-### Section 9: Generative Adversarial Networks
+### Section 10: Generative Adversarial Networks
 * ***Roadmap*** Introduction to GANs
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
 * ***Roadmap*** Pix2Pix
 
-### Section 10: Deep Reinforcement Learning
+### Section 11: Deep Reinforcement Learning
 * ***Roadmap*** Introduction to reinforcement learning
 * ***Roadmap*** Deep contextual bandits
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Section 11: Variational methods and uncertainty
+### Section 12: Variational methods and uncertainty
 * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
 
-### Section 12: Distributed learning with *MXNet*
+### Section 13: Distributed and high-performance learning with *MXNet*
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
-
-### Section 13: Optimizing MXNet code for production
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 
