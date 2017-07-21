@@ -109,7 +109,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 14: Recommender Systems
 * ***Roadmap*** Latent factor models
 * ***Roadmap*** Bilinear models
-...
+* ...
 
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
