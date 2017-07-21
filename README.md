@@ -60,6 +60,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
 * ***Roadmap*** Inceptionism / visualizing feature detectors
+* ***Roadmap*** Style Transfer
 
 ### Part 7: Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
@@ -104,6 +105,18 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
+
+### Part 14: Recommender Systems
+* ***Roadmap*** Latent factor models
+* ***Roadmap*** Bilinear models
+...
+
+### Appendix 1: Cheatsheets
+* ***Roadmap*** ``gluon`` 
+* ***Roadmap*** PyTorch to MXNet
+* ***Roadmap*** Tensorflow to MXNet
+* ***Roadmap*** Math to MXNet
+
 
 ## Choose your own adventure
 I've designed these tutorials so that you can traverse the curriculum in one of three ways.
