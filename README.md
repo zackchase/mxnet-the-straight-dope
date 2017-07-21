@@ -52,7 +52,8 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** LSTMS (with ``gluon``)
 * ***Roadmap*** GRUs (from scratch) 
 * ***Roadmap*** GRUs (with ``gluon``) 
-* ***Roadmap*** Recurrent Dropout
+* ***Roadmap*** Dropout for recurrent nets
+* ***Roadmap*** Zoneout regularization
 
 ### Part 6: Computer vision (CV)
 * ***Roadmap*** Residual networks
