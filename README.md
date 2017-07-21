@@ -56,19 +56,22 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Zoneout regularization
 
 ### Part 6: Computer vision (CV)
+* ***Roadmap*** Network of networks (inception & co)
 * ***Roadmap*** Residual networks
-* ***Roadmap*** Object detection 
+* ***Roadmap*** Object detection (SSD & Yolo)
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
+* ***Roadmap*** Embeddings (pairwise and triplet losses)
 * ***Roadmap*** Inceptionism / visualizing feature detectors
-* ***Roadmap*** Style Transfer
+* ***Roadmap*** Style transfer
 
 ### Part 7: Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
+* ***Roadmap*** Sentence embeddings (SkipThought)
 * ***Roadmap*** Sentiment analysis
-* ***Roadmap*** Named entity recognition 
 * ***Roadmap*** Sequence-to-sequence learning (machine translation)
 * ***Roadmap*** Sequence transduction with attention (machine translation)
+* ***Roadmap*** Named entity recognition 
 * ***Roadmap*** Image captioning
  
 ### Part 8: Autoencoders
@@ -102,7 +105,17 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
 
-### Part 13: Distributed and high-performance learning with *MXNet*
+### Part n: Optimization
+* SGD
+* Momentum
+* AdaGrad
+* RMSProp
+* Adam 
+* AdaDelta
+* SGLD / SGHNT
+
+### Part 13: Optimization, Distributed and high-performance learning
+* ***Roadmap*** Optimization Algorithms (Adam, AdaGrad, 
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
@@ -112,6 +125,11 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Deep latent factor models
 * ***Roadmap*** Bilinear models
 * ***Roadmap*** Learning from implicit feedback
+
+### Part m: Time series
+* Forecasting
+* Modeling missing data
+* Combining static and sequential data
 
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
