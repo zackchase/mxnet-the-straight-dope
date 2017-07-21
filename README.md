@@ -21,23 +21,25 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ## Table of contents 
 
 ### Part 1: Crashcourse 
-* [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.md)
-* [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-linear-algebra.ipynb)
-* [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-probability-statistics.ipynb)
+* [1- Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.md)
+* [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-ndarray.ipynb) 
+* [3 - Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-linear-algebra.ipynb)
+* [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-probability-statistics.ipynb)
+* [5 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-autograd.ipynb)
 
 ### Part 2: Introduction to Supervised Learning
-* [1 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-ndarray.ipynb) 
-* [2 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-autograd.ipynb)
-* [3 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C03-linear-regression-scratch.ipynb)
-* [4 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C04-linear-regression-gluon.ipynb)
-* [5 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-softmax-regression-scratch.ipynb)
-* [6 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C06-softmax-regression-gluon.ipynb)
+* [1 - Linear Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C03-linear-regression-scratch.ipynb)
+* [2 - Linear Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C04-linear-regression-gluon.ipynb)
+* [3 - Multiclass Logistic Regression *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-softmax-regression-scratch.ipynb)
+* [4 - Multiclass Logistic Regression *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C06-softmax-regression-gluon.ipynb)
+* ***Roadmap*** L1 and L2 Regularization (from scratch)
+* ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
 ### Part 3: Deep neural networks (DNNs)
 * [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
 * [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-* ***Roadmap*** Weight Decay and Dropout Regularization (from scratch)
-* ***Roadmap*** Weight Decay and Dropout Regularization (from with ``gluon``)
+* ***Roadmap*** Dropout Regularization (from scratch)
+* ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
 ### Part 4: Convolutional neural networks (CNNs)
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
@@ -105,31 +107,40 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
 
-### Part n: Optimization
-* SGD
-* Momentum
-* AdaGrad
-* RMSProp
-* Adam 
-* AdaDelta
-* SGLD / SGHNT
+### Part 13: Optimization
+* ***Roadmap*** SGD
+* ***Roadmap*** Momentum
+* ***Roadmap*** AdaGrad
+* ***Roadmap*** RMSProp
+* ***Roadmap*** Adam 
+* ***Roadmap*** AdaDelta
+* ***Roadmap*** SGLD / SGHNT
 
-### Part 13: Optimization, Distributed and high-performance learning
+### Part 14: Optimization, Distributed and high-performance learning
 * ***Roadmap*** Optimization Algorithms (Adam, AdaGrad, 
 * ***Roadmap*** Training with Multiple GPUs 
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
-### Part 14: Recommender systems
+### Part 15: Hacking MXNet
+* ***Custom Operators***
+* ...
+
+### Part 16: Audio Processing
+* ***Roadmap*** Intro to automatic speech recognition
+* ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
+* ***Roadmap*** Combining static and sequential data
+
+### Part 17: Recommender systems
 * ***Roadmap*** Latent factor models
 * ***Roadmap*** Deep latent factor models
 * ***Roadmap*** Bilinear models
 * ***Roadmap*** Learning from implicit feedback
 
-### Part m: Time series
-* Forecasting
-* Modeling missing data
-* Combining static and sequential data
+### Part 18: Time series
+* ***Roadmap*** Forecasting
+* ***Roadmap*** Modeling missing data
+* ***Roadmap*** Combining static and sequential data
 
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
@@ -143,7 +154,6 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
 * Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
-
 
 ## Authors
 This evolving creature is a collaborative effort. So far, some amount of credit (and blame) can be shared by:
