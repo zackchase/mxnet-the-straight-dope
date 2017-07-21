@@ -19,7 +19,7 @@ We'll be teaching deep learning concepts from scratch. Sometimes, we'll want to 
 
 ### Learning by doing
 
-Many textbooks teach a series of topics, each in exhaustive detail. For example, Chris Bishop's famous textbook, [Pattern Recognition and Machine Learning](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738) teaches each topic so thoroughly, that getting to the chapter on linear regression requires a non-trivial amount of work. When I was first learning machine learning, this actually limited the book's usefulness as an introductory text. When I rediscovered it a couple years later, I was grateful for its thoroughness, but it's not how I could imagine learning in the first place. 
+Many textbooks teach a series of topics, each in exhaustive detail. For example, Chris Bishop's excellent textbook, [Pattern Recognition and Machine Learning](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738) teaches each topic so thoroughly, that getting to the chapter on linear regression requires a non-trivial amount of work. When I was first learning machine learning, this actually limited the book's usefulness as an introductory text. When I rediscovered it a couple years later, I loved it precisely for its thoroughness but it's still not how I could imagine learning in the first place. 
 
 Instead, in this book, we'll teach most concepts just in time. For the fundamental preliminaries like linear algebra and probability we'll provide a brief crash course from the outset, but we want you to taste the satisfaction of training your first model before worrying about exotic probability distributions. 
 
