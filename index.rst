@@ -28,25 +28,43 @@ A `PDF <TheStraightDope.pdf>`_ version is also available
 
 
 .. toctree::
+   :glob:
    :maxdepth: 1
-   :caption: Tutorials
+   :caption: Crashcourse
 
-   0a-data-loading
-   0b-image-loading-and-preprocessing
-   1-ndarray
-   2-autograd
-   3a-linear-regression-scratch
-   3b-linear-regression-gluon
-   4a-softmax-regression-scratch
-   4b-softmax-regression-gluon
-   5a-mlp-scratch
-   5b-mlp-gluon
-   6a-cnn-scratch
-   6b-cnn-gluon
+   P01-*
 
 .. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Introduction to Supervised Learning
+
+   P02-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Deep Neural Networks
+
+   P03-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Convolutional Neural Networks
+
+   P04-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Recurrent Neural Networks
+
+   P05-*
+
+.. toctree::
+   :glob:
    :maxdepth: 1
    :caption: Developer Documents
 
-   docs/install
-   docs/contribute
+   docs/*
