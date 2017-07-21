@@ -21,7 +21,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ## Table of contents 
 
 ### Part 1: Crashcourse 
-* [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/S01-C01-introduction.md)
+* [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.md)
 * ***Roadmap*** [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-linear-algebra.ipynb)
 * ***Roadmap*** [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-probability-statistics.ipynb)
 
