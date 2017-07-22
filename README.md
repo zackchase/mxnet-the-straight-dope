@@ -8,7 +8,7 @@ This repo contains an incremental sequence of notebooks designed to make learnin
 
 ## Inspiration 
 
-In creating these tutorials, I've borrowed heavily from some of the resources that were most useful when I learned how to program with Theano and PyTorch, specifically:
+In creating these tutorials, I have borrowed pedagogical ideas heavily from some of the resources that were most useful when I learned how to program with Theano and PyTorch, specifically:
 
 * [Soumith Chintala's helladope "Deep Learning with PyTorch: A 60 Minute Blitz"](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [Alec Radford's bare-bones intro to Theano](https://github.com/Newmu/Theano-Tutorials) 
@@ -21,7 +21,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ## Table of contents 
 
 ### Part 1: Crashcourse 
-* [1- Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.md)
+* [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.md)
 * [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
 * [3 - Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
 * [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
