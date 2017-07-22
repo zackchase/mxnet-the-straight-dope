@@ -41,6 +41,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
 * ***Roadmap*** Dropout Regularization (from scratch)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
+* A deeper dive into ``nn.Block``
 
 ### Part 4: Convolutional neural networks (CNNs)
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
