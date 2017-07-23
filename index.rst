@@ -65,6 +65,13 @@ A `PDF <TheStraightDope.pdf>`_ version is also available
 .. toctree::
    :glob:
    :maxdepth: 1
+   :caption: High-performance and distributed training
+
+   P14-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
    :caption: Developer Documents
 
    docs/*
