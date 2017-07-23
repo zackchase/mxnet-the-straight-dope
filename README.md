@@ -6,15 +6,6 @@ This repo contains an incremental sequence of notebooks designed to teach deep l
 ## Implementation in MXNet
 Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
 
-
-## Inspiration 
-
-In creating these tutorials, I have borrowed pedagogical ideas heavily from some of the resources that were most useful when I learned how to program with Theano and PyTorch, specifically:
-
-* [Soumith Chintala's helladope "Deep Learning with PyTorch: A 60 Minute Blitz"](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
-* [Alec Radford's bare-bones intro to Theano](https://github.com/Newmu/Theano-Tutorials) 
-* [Video of Alec's awesome intro to deep learning with Theano](https://www.youtube.com/watch?v=S75EdAcXHKk)
-
 ## Dependencies
 
 To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
@@ -163,3 +154,13 @@ This evolving creature is a collaborative effort. So far, some amount of credit 
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
+
+
+## Inspiration 
+
+In creating these tutorials, I have drawn inspitation from some the resources that me to learn machine learning and how to program with Theano and PyTorch:
+
+* [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+* [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
+* [Video of Alec's intro to deep learning with Theano](https://www.youtube.com/watch?v=S75EdAcXHKk)
+* [Chris Bishop's *Pattern Recognition and Machine Learning*](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738)
