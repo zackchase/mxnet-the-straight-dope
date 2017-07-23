@@ -52,7 +52,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
 * ***Roadmap*** Simple RNNs (with ``gluon``)
-* ***Roadmap*** LSTMS (from scratch)
+* [LSTMS (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
 * ***Roadmap*** LSTMS (with ``gluon``)
 * ***Roadmap*** GRUs (from scratch) 
 * ***Roadmap*** GRUs (with ``gluon``) 
