@@ -24,8 +24,6 @@ three ways.
   the high-level ``gluon`` front end choose either (1, 2, 3a, 4a, ...) or (1, 2,
   3b, 4b, ...) respectively.
 
-A `PDF <TheStraightDope.pdf>`_ version is also available
-
 
 .. toctree::
    :glob:
