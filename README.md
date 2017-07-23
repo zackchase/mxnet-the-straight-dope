@@ -36,23 +36,23 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [5 - Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization.ipynb)
 * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
-### Part 3: Deep neural networks (DNNs)
+### Part 3: Deep neural networks (DNNs) 
 * [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
 * [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
 * ***Roadmap*** Dropout Regularization (from scratch)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 * A deeper dive into ``nn.Block``
 
-### Part 4: Convolutional neural networks (CNNs)
+### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
 ### Part 5: Recurrent neural networks (RNNs)
-* [1 - Simple RNNs and their application to language modeling](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
+* [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
 * ***Roadmap*** Simple RNNs (with ``gluon``)
-* [LSTMS (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
+* [3 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
 * ***Roadmap*** LSTMS (with ``gluon``)
 * ***Roadmap*** GRUs (from scratch) 
 * ***Roadmap*** GRUs (with ``gluon``) 
