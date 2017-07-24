@@ -1,16 +1,22 @@
-Much easy, so MXNet. Wow.
-=========================
+Deep Learning - The Straight Dope
+==================================
 
-MXNet is widely used in production environments owing to its strong reputation
-for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing
-research in MXNet is easy.
+This project contains an incremental sequence of notebooks designed to make
+learning machine learning, MXNet, and the ``gluon`` interface easy
+(meta-easy?). Our goal is to leverage the strengths of Jupyter notebooks to
+present prose, graphics, equations, and code together in one place. If we're
+successful, the result will be a resource that could be simultaneously a book,
+course material, a prop for live tutorials, and a resource for plagiarising
+(with our blessing) useful code. To our knowledge there's no source out there
+that teaches either (1) the full breadth of concepts in modern deep learning
+or (2) interleaves an engaging textbook with runnable code. We'll find out by
+the end of this venture whether or not that void exists for a good reason.
 
-This project contains an incremental sequence of tutorials to make learning
-gluon easy (meta-easy?). These tutorials are designed with public presentations
-in mind and are composed as Jupyter notebooks where each notebook corresponds to
-roughly 20 minutes of rambling and each codeblock could correspond to roughly
-one slide.
-
+Throughout this book, we rely upon MXNet to teach core concepts, advanced
+topics, and a full complement of applications. MXNet is widely used in
+production environments owing to its strong reputation for speed. Now with
+``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is
+easy.
 
 I've designed these tutorials so that you can traverse the curriculum in one of
 three ways.
@@ -66,6 +72,7 @@ three ways.
    :caption: High-performance and distributed training
 
    P14-*
+
 
 .. toctree::
    :glob:
