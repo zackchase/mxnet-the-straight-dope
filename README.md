@@ -17,6 +17,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
 * [3 - Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
 * [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
+* [4b - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04b-machine-learning.ipynb)
 * [5 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
 
 ### Part 2: Introduction to Supervised Learning
@@ -69,15 +70,17 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Named entity recognition 
 * ***Roadmap*** Image captioning
  
-### Part 8: Autoencoders
+### Part 8: Unsupervised Learning
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
 * ***Roadmap*** Denoising autoencoders
 * ***Roadmap*** Variational autoencoders
+* ***Roadmap*** Clustering
 
 ### Part 9: Adversarial learning
+* ***Roadmap*** Two Sample Tests
 * ***Roadmap*** Finding adversarial examples
-* **Roadmap** Adversarial training
+* ***Roadmap*** Adversarial training
 
 ### Part 10: Generative adversarial networks (GANs)
 * ***Roadmap*** Introduction to GANs
