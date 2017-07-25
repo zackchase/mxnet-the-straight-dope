@@ -18,7 +18,6 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
 * [3 - Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
 * [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
-* [4b - A Taste of Machine Learning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04b-machine-learning.ipynb)
 * [5 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
 
 ### Part 2: Introduction to Supervised Learning
