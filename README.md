@@ -115,6 +115,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 14: Optimization, Distributed and high-performance learning
 * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
 * [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
+* ***Roadmap*** [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
