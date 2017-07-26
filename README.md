@@ -58,7 +58,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 6: Computer vision (CV)
 * ***Roadmap*** Network of networks (inception & co)
 * ***Roadmap*** Residual networks
-* ***Roadmap*** Object detection (SSD & Yolo)
+* ***Roadmap*** [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
 * ***Roadmap*** Embeddings (pairwise and triplet losses)
