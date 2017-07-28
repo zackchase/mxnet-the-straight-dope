@@ -310,3 +310,5 @@ intersphinx_mapping = {
     'numpy': ('http://docs.scipy.org/doc/numpy/', None),
     'mxnet': ('http://mxnet.io', None)
 }
+
+nbsphinx_allow_errors = True
