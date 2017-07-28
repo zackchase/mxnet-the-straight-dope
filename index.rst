@@ -69,6 +69,13 @@ three ways.
 .. toctree::
    :glob:
    :maxdepth: 1
+   :caption: Computer Vision
+
+   P06-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
    :caption: High-performance and distributed training
 
    P14-*
