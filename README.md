@@ -1,7 +1,5 @@
 # Deep Learning - The Straight Dope
 
-<a href='http://gluon-ci.mxnet.io/job/the-straight-dope/'><img src='http://gluon-ci.mxnet.io/job/the-straight-dope/badge/icon'></a>
-
 ## Abstract
 This repo contains an incremental sequence of notebooks designed to teach deep learning, MXNet, and the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter notebooks to present prose, graphics, equations, and code together in one place. If we're successful, the result will be a resource that could be simultaneously a book, course material, a prop for live tutorials, and a resource for plagiarising (with our blessing) useful code. To our knowledge there's no source out there that teaches either (1) the full breadth of concepts in modern deep learning or (2) interleaves an engaging textbook with runnable code. We'll find out by the end of this venture whether or not that void exists for a good reason.
 
