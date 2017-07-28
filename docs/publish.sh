@@ -4,17 +4,16 @@
 set -x
 
 NOTEBOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
-
 cd ${NOTEBOOK_DIR}
+
+# need to run `conda env create -f environment.yml' first
+
+source activate gluon_docs
+
+pip install --upgrade --pre mxnet
+pip show mxnet
 
 make html
 
-# make html latex && make -C _build/latex
-
-# cp _build/latex/*pdf _build/html/
-
-cd _build && zip -r html.zip html
-
-scp html.zip ubuntu@mxnet.io:/gluon-docs/
-
-ssh ubuntu@mxnet.io "cd /gluon-docs && unzip html.zip && rm -rf latest && mv html latest"
+rm -rf /gluon-docs/latest
+mv _build/html /gluon-docs/latest
