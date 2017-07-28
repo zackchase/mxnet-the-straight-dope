@@ -2,18 +2,21 @@
 #
 # Build and publish all docs into Pulish all notebooks to mxnet.
 set -x
+set -e
 
 NOTEBOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 cd ${NOTEBOOK_DIR}
 
-# need to run `conda env create -f environment.yml' first
-
+# prepare the env
+conda env update -f environment.yml 
 source activate gluon_docs
 
-pip install --upgrade --pre mxnet
+# install a gpu version
+pip uninstall mxnet
+pip install --pre mxnet-cu80
 pip show mxnet
 
 make html
 
-rm -rf /gluon-docs/latest
-mv _build/html /gluon-docs/latest
+rm -rf ~/www/latest
+mv _build/html ~/www/latest
