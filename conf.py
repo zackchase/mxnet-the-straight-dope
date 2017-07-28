@@ -310,3 +310,6 @@ intersphinx_mapping = {
     'numpy': ('http://docs.scipy.org/doc/numpy/', None),
     'mxnet': ('http://mxnet.io', None)
 }
+
+# timeout to execute one notebook
+nbsphinx_timeout = 120
