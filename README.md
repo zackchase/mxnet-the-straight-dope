@@ -149,6 +149,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** ``gluon`` 
 * ***Roadmap*** PyTorch to MXNet
 * ***Roadmap*** Tensorflow to MXNet
+* ***Roadmap*** Keras to MXNet
 * ***Roadmap*** Math to MXNet
 
 
