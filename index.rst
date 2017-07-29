@@ -7,7 +7,12 @@ Another unique aspect of this book is its authorship process. We are developing 
 
 Dependencies 
 ============
-To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow these instructions. You'll also want to install Jupyter and use Python 3 (because it's 2017).
+
+To run these notebooks, a recent version of MXNet is required. The easiest way is to install the nightly build MXNet through ``pip``. E.g.::
+
+    $ pip install mxnet --pre --user
+    
+More detailed instructions are available `here <docs/C01-install.rst>`_
 
 .. toctree::
    :glob:
