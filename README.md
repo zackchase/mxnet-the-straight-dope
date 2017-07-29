@@ -38,7 +38,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 
 ### Part 3.5: Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
-* Writing custom layer
+* [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * Advanced Data IO
 
 ### Part 4: Convolutional neural networks (CNNs) 
