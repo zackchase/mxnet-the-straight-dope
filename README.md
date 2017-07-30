@@ -1,11 +1,11 @@
 # Deep Learning - The Straight Dope
 
 ## Abstract
-This repo contains an incremental sequence of notebooks designed to teach deep learning, MXNet, and the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter notebooks to present prose, graphics, equations, and code together in one place. If we're successful, the result will be a resource that could be simultaneously a book, course material, a prop for live tutorials, and a resource for plagiarising (with our blessing) useful code. To our knowledge there's no source out there that teaches either (1) the full breadth of concepts in modern deep learning or (2) interleaves an engaging textbook with runnable code. We'll find out by the end of this venture whether or not that void exists for a good reason.
+This repo contains an incremental sequence of notebooks designed to teach deep learning, Apache MXNet (incubating), and the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter notebooks to present prose, graphics, equations, and code together in one place. If we're successful, the result will be a resource that could be simultaneously a book, course material, a prop for live tutorials, and a resource for plagiarising (with our blessing) useful code. To our knowledge there's no source out there that teaches either (1) the full breadth of concepts in modern deep learning or (2) interleaves an engaging textbook with runnable code. We'll find out by the end of this venture whether or not that void exists for a good reason.
 
 Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples.  
 
-## Implementation in MXNet
+## Implementation in Apache MXNet
 Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
 
 ## Dependencies
@@ -179,3 +179,6 @@ In creating these tutorials, I have drawn inspitation from some the resources th
 
 ## Contribute
 * Already, in the short time this project has been off the ground, we've gotten some helpful PRs from the community with pedagogical suggestions, typo corrections, and other useful fixes. If you're inclined, please contribute! 
+
+## Apache MXNet is an effort undergoing incubation at the Apache Software Foundation (ASF). For more information, visit
+   http://incubator.apache.org/projects/mxnet.html
