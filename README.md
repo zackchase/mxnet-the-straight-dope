@@ -67,6 +67,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Embeddings (pairwise and triplet losses)
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 * ***Roadmap*** Style transfer
+* [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
 
 ### Part 7: Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
