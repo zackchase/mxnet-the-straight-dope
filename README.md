@@ -77,6 +77,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Sequence transduction with attention (machine translation)
 * ***Roadmap*** Named entity recognition 
 * ***Roadmap*** Image captioning
+* [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
  
 ### Part 8: Unsupervised Learning
 * ***Roadmap*** Introduction to autoencoders
