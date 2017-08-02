@@ -45,7 +45,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
-* [Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
+* [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
 * ***Roadmap*** Very deep networks and repeating blocks (VGG network)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
@@ -55,7 +55,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Simple RNNs (with ``gluon``)
 * [3 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
 * ***Roadmap*** LSTMS (with ``gluon``)
-* ***Roadmap*** GRUs (from scratch) 
+* [5 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C05-gru-scratch.ipynb)
 * ***Roadmap*** GRUs (with ``gluon``) 
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
