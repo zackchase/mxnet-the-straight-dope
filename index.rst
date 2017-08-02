@@ -5,7 +5,7 @@ This repo contains an incremental sequence of notebooks designed to teach deep l
 
 Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples. 
 
-To clone or contribute, `visit `Deep Learning - The Straight Dope`__ on Github_.
+To clone or contribute, visit `Deep Learning - The Straight Dope`__ on Github.
 
 .. _ApacheMXNet: http://incubator.apache.org/projects/mxnet.html
 .. _StraightDope: http://github.com/zackchase/mxnet-the-straight-dope
