@@ -55,7 +55,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Simple RNNs (with ``gluon``)
 * [3 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
 * ***Roadmap*** LSTMS (with ``gluon``)
-* ***Roadmap*** GRUs (from scratch) 
+* [5 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C05-gru-scratch.ipynb)
 * ***Roadmap*** GRUs (with ``gluon``) 
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
