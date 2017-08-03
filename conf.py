@@ -312,4 +312,4 @@ intersphinx_mapping = {
 }
 
 # timeout to execute one notebook
-nbsphinx_timeout = 120
+nbsphinx_timeout = 240
