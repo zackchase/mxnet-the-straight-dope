@@ -52,8 +52,8 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
-* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
-* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C05-gru-scratch.ipynb)
+* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
+* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
 * [4 - RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
