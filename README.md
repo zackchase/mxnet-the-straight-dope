@@ -36,11 +36,12 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Dropout Regularization (from scratch)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
-### Part 3.5: Plumbing
+### Part 3.5: ``gluon`` Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
 * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * [Serialization: Loading and saving models and parameters]
 * Advanced Data IO
+* Debugging your neural networks
 
 ### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
