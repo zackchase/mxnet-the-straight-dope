@@ -149,6 +149,11 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Modeling missing data
 * ***Roadmap*** Combining static and sequential data
 
+### Part 19 Tensor Methods
+* ***Roadmap*** Introduction to tensor algebra
+* ***Roadmap*** Tensor decomposition
+* ***Roadmap*** Tensorized neural networks
+
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
 * ***Roadmap*** PyTorch to MXNet
