@@ -36,11 +36,12 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Dropout Regularization (from scratch)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
-### Part 3.5: Plumbing
+### Part 3.5: ``gluon`` Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
 * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * [Serialization: Loading and saving models and parameters]
 * Advanced Data IO
+* Debugging your neural networks
 
 ### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
@@ -52,8 +53,8 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
-* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
-* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C05-gru-scratch.ipynb)
+* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
+* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
 * [4 - RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
@@ -148,6 +149,11 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Modeling missing data
 * ***Roadmap*** Combining static and sequential data
 
+### Part 19 Tensor Methods
+* ***Roadmap*** Introduction to tensor algebra
+* ***Roadmap*** Tensor decomposition
+* ***Roadmap*** Tensorized neural networks
+
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
 * ***Roadmap*** PyTorch to MXNet
@@ -162,8 +168,8 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
-## Authors
-This evolving creature is a collaborative effort. So far, some amount of credit (and blame) can be shared by:
+## Principal Editors
+This evolving creature is a collaborative effort (see contributors tab). The lead writers, assimilators, and coders include:
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
