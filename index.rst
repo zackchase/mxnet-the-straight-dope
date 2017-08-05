@@ -5,6 +5,10 @@ This repo contains an incremental sequence of notebooks designed to teach deep l
 
 Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples. 
 
+
+How to contribute
+=================
+
 To clone or contribute, visit `Deep Learning - The Straight Dope <http://github.com/zackchase/mxnet-the-straight-dope>`_ on Github.
 
 Dependencies 
@@ -26,37 +30,44 @@ More detailed instructions are available `here <docs/C01-install.html>`_
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Introduction to Supervised Learning
+   :caption: Introduction to supervised learning
 
    P02-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Deep Neural Networks
+   :caption: Deep neural networks
 
    P03-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Convolutional Neural Networks
+   :caption: Convolutional neural networks
 
    P04-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Recurrent Neural Networks
+   :caption: Recurrent neural networks
 
    P05-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Computer Vision
+   :caption: Computer vision
 
    P06-*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Generative adversarial networks
+
+   P10-*
 
 .. toctree::
    :glob:
@@ -69,6 +80,6 @@ More detailed instructions are available `here <docs/C01-install.html>`_
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Developer Documents
+   :caption: Developer documents
 
    docs/*
