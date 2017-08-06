@@ -168,11 +168,14 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
-## Principal Editors
+## Authors
 This evolving creature is a collaborative effort (see contributors tab). The lead writers, assimilators, and coders include:
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
+* Sheng Zha (@szha)
+* Aston Zhang (@astonzhang)
+* Joshua Z. Zhang (@zhreshold)
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
