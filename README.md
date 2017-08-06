@@ -93,7 +93,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Adversarial training
 
 ### Part 10: Generative adversarial networks (GANs)
-* ***Roadmap*** Introduction to GANs
+* 1 - [Introduction to GANs](./P10-C01-gan-intro.ipynb)
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
