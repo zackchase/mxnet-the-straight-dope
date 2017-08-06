@@ -47,7 +47,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
-* ***Roadmap*** Very deep networks and repeating blocks (VGG network)
+* [4 - Very deep networks and repeating blocks (VGG network)](./P04-C04-very-deep-nets-vgg.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
@@ -168,11 +168,14 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
-## Principal Editors
+## Authors
 This evolving creature is a collaborative effort (see contributors tab). The lead writers, assimilators, and coders include:
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
+* Sheng Zha (@szha)
+* Aston Zhang (@astonzhang)
+* Joshua Z. Zhang (@zhreshold)
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
