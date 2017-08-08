@@ -173,9 +173,9 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
-* Sheng Zha (@szha)
-* Aston Zhang (@astonzhang)
-* Joshua Z. Zhang (@zhreshold)
+* Sheng Zha ([@szha](https://github.com/szha))
+* Aston Zhang ([@astonzhang](https://github.com/astonzhang))
+* Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
