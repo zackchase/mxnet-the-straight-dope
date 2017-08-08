@@ -16,6 +16,7 @@
 import sys
 import os
 from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -50,7 +51,7 @@ source_parsers = {'.md': CommonMarkParser}
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
-source_suffix = ['.rst', '.ipynb', 'md']
+source_suffix = ['.rst', '.ipynb', '.md']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -307,9 +308,20 @@ texinfo_documents = [
 intersphinx_mapping = {
     # 'python': 'https://docs.python.org/3.5',
     # 'matplotlib': 'https://matplotlib.org',
-    'numpy': ('http://docs.scipy.org/doc/numpy/', None),
-    'mxnet': ('http://mxnet.io', None)
+    # 'numpy': ('http://docs.scipy.org/doc/numpy/', None),
+    # 'mxnet': ('http://mxnet.io', None)
 }
 
 # timeout to execute one notebook
-nbsphinx_timeout = 120
+nbsphinx_timeout = 240
+
+
+github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        'url_resolver': lambda url: github_doc_root + url,
+        'auto_toc_tree_section': 'Contents',
+        'enable_eval_rst': True,
+        'enable_auto_toc_tree': True,
+    }, True)
+    app.add_transform(AutoStructify)

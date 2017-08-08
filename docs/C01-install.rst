@@ -32,5 +32,5 @@ Now we are ready to obtain the source codes and run them
    cd mxnet-the-straight-dope
    jupyter notebook
 
-The last command start the jupyter notebook, and now you can edit and run these
+The last command starts the jupyter notebook, and now you can edit and run these
 tutorials now.

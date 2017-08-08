@@ -9,4 +9,4 @@ dependencies:
 - pip:
   - nbsphinx
   - recommonmark
-  - mxnet>=0.10.1b20170719
+  - mxnet-cu80>=0.10.1b20170719

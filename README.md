@@ -5,7 +5,7 @@ This repo contains an incremental sequence of notebooks designed to teach deep l
 
 Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples.  
 
-## Implementation in MXNet
+## Implementation with Apache MXNet
 Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
 
 ## Dependencies
@@ -36,25 +36,26 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Dropout Regularization (from scratch)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
-### Part 3.5: Plumbing
+### Part 3.5: ``gluon`` Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
 * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * [Serialization: Loading and saving models and parameters]
 * Advanced Data IO
+* Debugging your neural networks
 
 ### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
+* [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
+* [4 - Very deep networks and repeating blocks (VGG network)](./P04-C04-very-deep-nets-vgg.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
 * ***Roadmap*** Batch Normalization (from with ``gluon``)
 
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
-* ***Roadmap*** Simple RNNs (with ``gluon``)
-* [3 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-lstm-scratch.ipynb)
-* ***Roadmap*** LSTMS (with ``gluon``)
-* ***Roadmap*** GRUs (from scratch) 
-* ***Roadmap*** GRUs (with ``gluon``) 
+* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
+* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
+* [4 - RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
 
@@ -67,6 +68,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Embeddings (pairwise and triplet losses)
 * ***Roadmap*** Inceptionism / visualizing feature detectors
 * ***Roadmap*** Style transfer
+* [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
 
 ### Part 7: Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
@@ -76,6 +78,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Sequence transduction with attention (machine translation)
 * ***Roadmap*** Named entity recognition 
 * ***Roadmap*** Image captioning
+* [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
  
 ### Part 8: Unsupervised Learning
 * ***Roadmap*** Introduction to autoencoders
@@ -90,7 +93,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Adversarial training
 
 ### Part 10: Generative adversarial networks (GANs)
-* ***Roadmap*** Introduction to GANs
+* 1 - [Introduction to GANs](./P10-C01-gan-intro.ipynb)
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
 * ***Roadmap*** Energy-based GANS
@@ -146,6 +149,11 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Modeling missing data
 * ***Roadmap*** Combining static and sequential data
 
+### Part 19 Tensor Methods
+* ***Roadmap*** Introduction to tensor algebra
+* ***Roadmap*** Tensor decomposition
+* ***Roadmap*** Tensorized neural networks
+
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
 * ***Roadmap*** PyTorch to MXNet
@@ -161,10 +169,13 @@ I've designed these tutorials so that you can traverse the curriculum in one of 
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
 
 ## Authors
-This evolving creature is a collaborative effort. So far, some amount of credit (and blame) can be shared by:
+This evolving creature is a collaborative effort (see contributors tab). The lead writers, assimilators, and coders include:
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
+* Sheng Zha (@szha)
+* Aston Zhang (@astonzhang)
+* Joshua Z. Zhang (@zhreshold)
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
