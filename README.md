@@ -31,9 +31,9 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
 ### Part 3: Deep neural networks (DNNs) 
-* [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
-* [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-* ***Roadmap*** Dropout Regularization (from scratch)
+* [1 - Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
+* [2 - Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
+* [3 - Dropout Regularization (from scratch)](P03-C03-mlp-dropout-scratch.ipynb)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
 ### Part 3.5: ``gluon`` Plumbing
