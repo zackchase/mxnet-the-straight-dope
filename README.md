@@ -181,7 +181,7 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 
 ## Inspiration 
 
-In creating these tutorials, I have drawn inspitation from some the resources that me to learn machine learning and how to program with Theano and PyTorch:
+In creating these tutorials, I have drawn inspiration from some the resources that allow me to learn machine learning and how to program with Theano and PyTorch:
 
 * [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
