@@ -25,15 +25,16 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 2: Introduction to Supervised Learning
 * [1 - Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-linear-regression-scratch.ipynb)
 * [2 - Linear Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-linear-regression-gluon.ipynb)
+* [2.5 - Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02.5-perceptron.ipynb)
 * [3 - Multiclass Logistic Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C03-softmax-regression-scratch.ipynb)
 * [4 - Multiclass Logistic Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C04-softmax-regression-gluon.ipynb)
 * [5 - Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization-scratch.ipynb)
 * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
 ### Part 3: Deep neural networks (DNNs) 
-* [1 - Multilayer Perceptrons *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
-* [2 - Multilayer Perceptrons *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-* ***Roadmap*** Dropout Regularization (from scratch)
+* [1 - Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
+* [2 - Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
+* [3 - Dropout Regularization (from scratch)](P03-C03-mlp-dropout-scratch.ipynb)
 * ***Roadmap*** Dropout Regularization (from with ``gluon``)
 
 ### Part 3.5: ``gluon`` Plumbing
@@ -173,15 +174,15 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Zachary C. Lipton ([@zackchase](https://github.com/zackchase))
 * Mu Li ([@mli](https://github.com/mli))
 * Alex Smola ([@smolix](https://github.com/smolix))
-* Sheng Zha (@szha)
-* Aston Zhang (@astonzhang)
-* Joshua Z. Zhang (@zhreshold)
+* Sheng Zha ([@szha](https://github.com/szha))
+* Aston Zhang ([@astonzhang](https://github.com/astonzhang))
+* Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
 ## Inspiration 
 
-In creating these tutorials, I have drawn inspitation from some the resources that me to learn machine learning and how to program with Theano and PyTorch:
+In creating these tutorials, I have drawn inspiration from some the resources that allow me to learn machine learning and how to program with Theano and PyTorch:
 
 * [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
