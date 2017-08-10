@@ -25,6 +25,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 2: Introduction to Supervised Learning
 * [1 - Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-linear-regression-scratch.ipynb)
 * [2 - Linear Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-linear-regression-gluon.ipynb)
+* [2.5 - Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02.5-perceptron.ipynb)
 * [3 - Multiclass Logistic Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C03-softmax-regression-scratch.ipynb)
 * [4 - Multiclass Logistic Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C04-softmax-regression-gluon.ipynb)
 * [5 - Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization-scratch.ipynb)
