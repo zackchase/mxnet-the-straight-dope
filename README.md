@@ -40,7 +40,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 3.5: ``gluon`` Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
 * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
-* [Serialization: loading and saving models and parameters](P03.5-C03-serialization.ipynb)
+* [Serialization: loading and saving models and parameters](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
 * Advanced Data IO
 * Debugging your neural networks
 
