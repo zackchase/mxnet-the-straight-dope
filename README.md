@@ -34,8 +34,8 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 ### Part 3: Deep neural networks (DNNs) 
 * [1 - Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
 * [2 - Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-* [3 - Dropout Regularization (from scratch)](P03-C03-mlp-dropout-scratch.ipynb)
-* ***Roadmap*** Dropout Regularization (from with ``gluon``)
+* [3 - Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C03-mlp-dropout-scratch.ipynb)
+* [4 - Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
 
 ### Part 3.5: ``gluon`` Plumbing
 * [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
@@ -164,7 +164,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 
 
 ## Choose your own adventure
-I've designed these tutorials so that you can traverse the curriculum in one of three ways.
+We've designed these tutorials so that you can traverse the curriculum in more than one way.
 * Anarchist - Choose whatever you want to read, whenever you want to read it.
 * Imperialist - Proceed through all tutorials in order. In this fashion you will be exposed to each model first from scratch, writing all the code ourselves but for the basic linear algebra primitives and automatic differentiation.
 * Capitalist - If you don't care how things work (or already know) and just want to see working code in ``gluon``, you can skip (*from scratch!*) tutorials and go straight to the production-like code using the high-level ``gluon`` front end.
