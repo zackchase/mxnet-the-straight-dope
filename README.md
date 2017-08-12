@@ -38,9 +38,9 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [4 - Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
 
 ### Part 3.5: ``gluon`` Plumbing
-* [A look under the hood of ``mxnet.gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
-* [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
-* [Serialization: loading and saving models and parameters](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
+* [1 - Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
+* [2 - Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
+* [3 - Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
 * Advanced Data IO
 * Debugging your neural networks
 
