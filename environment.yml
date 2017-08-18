@@ -6,6 +6,7 @@ dependencies:
 - jupyter
 - sphinx
 - sphinx_rtd_theme
+- matplotlib
 - pip:
   - nbsphinx
   - recommonmark
