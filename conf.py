@@ -18,6 +18,7 @@ import os
 from recommonmark.parser import CommonMarkParser
 from recommonmark.transform import AutoStructify
 
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -313,8 +314,22 @@ intersphinx_mapping = {
 }
 
 # timeout to execute one notebook
-nbsphinx_timeout = 240
+# nbsphinx_timeout = 240
 
+
+curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
+sys.path.insert(0, curr_path)
+from md2ipynb import Markdown2Notebook
+md2nb = Markdown2Notebook()
+md2nb.convert()
+ignores = [f for _, f in md2nb.converted_files]
+print('Ignore the converted files: ', ignores)
+exclude_patterns += ignores
+
+def update_links(app, docname, source):
+    """Update C01-P01-haha.md into haha.ipynb"""
+    for i,j in enumerate(source):
+        source[i] = md2nb.update_links(j)
 
 github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
@@ -325,3 +340,4 @@ def setup(app):
         'enable_auto_toc_tree': True,
     }, True)
     app.add_transform(AutoStructify)
+    app.connect('source-read', update_links)
