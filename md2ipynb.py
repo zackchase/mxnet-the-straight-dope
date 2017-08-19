@@ -101,8 +101,7 @@ class Markdown2Notebook:
         reader = notedown.MarkdownReader()
         template_file = pkg_resources.resource_filename(
             'notedown', 'templates/markdown.tpl')
-        writer = {'ipynb':nbformat,
-                  'md':notedown.MarkdownWriter(template_file, output_dir='./')}
+        writer = nbformat
 
         for fname in glob.glob('*.md'):
             new_fname = self._get_new_fname(fname)
@@ -138,8 +137,7 @@ class Markdown2Notebook:
                 # TODO(mli) pylint check
 
             # write
-            ext = new_fname.split('.')[-1]
-            output = writer[ext].writes(notebook)
+            output = writer.writes(notebook)
             with open(new_fname, 'w') as f:
                 f.write(output)
 

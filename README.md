@@ -3,21 +3,21 @@
 ## Abstract
 This repo contains an incremental sequence of notebooks designed to teach deep learning, MXNet, and the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter notebooks to present prose, graphics, equations, and code together in one place. If we're successful, the result will be a resource that could be simultaneously a book, course material, a prop for live tutorials, and a resource for plagiarising (with our blessing) useful code. To our knowledge there's no source out there that teaches either (1) the full breadth of concepts in modern deep learning or (2) interleaves an engaging textbook with runnable code. We'll find out by the end of this venture whether or not that void exists for a good reason.
 
-Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples.  
+Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples.
 
 ## Implementation with Apache MXNet
-Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
+Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy.
 
 ## Dependencies
 
-To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
+To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017).
 
-## Table of contents 
+## Table of contents
 
-### Part 1: Crashcourse 
+### Part 1: Crashcourse
 * [0 - Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C00-preface.ipynb)
 * [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.ipynb)
-* [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
+* [2 - Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb)
 * [3 - Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
 * [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
 * [5 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
@@ -31,7 +31,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [5 - Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization-scratch.ipynb)
 * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
-### Part 3: Deep neural networks (DNNs) 
+### Part 3: Deep neural networks (DNNs)
 * [1 - Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
 * [2 - Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
 * [3 - Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C03-mlp-dropout-scratch.ipynb)
@@ -44,7 +44,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * Advanced Data IO
 * Debugging your neural networks
 
-### Part 4: Convolutional neural networks (CNNs) 
+### Part 4: Convolutional neural networks (CNNs)
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
@@ -77,10 +77,10 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Sentiment analysis
 * ***Roadmap*** Sequence-to-sequence learning (machine translation)
 * ***Roadmap*** Sequence transduction with attention (machine translation)
-* ***Roadmap*** Named entity recognition 
+* ***Roadmap*** Named entity recognition
 * ***Roadmap*** Image captioning
 * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
- 
+
 ### Part 8: Unsupervised Learning
 * ***Roadmap*** Introduction to autoencoders
 * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
@@ -100,7 +100,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Energy-based GANS
 * ***Roadmap*** Conditional GANs
 * ***Roadmap*** Image transduction GANs (Pix2Pix)
-* ***Roadmap*** Learning from Synthetic and Unsupervised Images 
+* ***Roadmap*** Learning from Synthetic and Unsupervised Images
 
 ### Part 11: Deep reinforcement learning (DRL)
 * ***Roadmap*** Introduction to reinforcement learning
@@ -119,13 +119,13 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Momentum
 * ***Roadmap*** AdaGrad
 * ***Roadmap*** RMSProp
-* ***Roadmap*** Adam 
+* ***Roadmap*** Adam
 * ***Roadmap*** AdaDelta
 * ***Roadmap*** SGLD / SGHNT
 
 ### Part 14: Optimization, Distributed and high-performance learning
 * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
-* [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
+* [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb)
 * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
@@ -156,11 +156,15 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Tensorized neural networks
 
 ### Appendix 1: Cheatsheets
-* ***Roadmap*** ``gluon`` 
+* ***Roadmap*** ``gluon``
 * ***Roadmap*** PyTorch to MXNet
 * ***Roadmap*** Tensorflow to MXNet
 * ***Roadmap*** Keras to MXNet
 * ***Roadmap*** Math to MXNet
+
+### Appendix 2: Developement
+* [1 - Run these tutorials](./A02-C01-install.md)
+* [2 - How to contribute](./A02-C02-contribute.md)
 
 
 ## Choose your own adventure
@@ -180,14 +184,14 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
 
 
-## Inspiration 
+## Inspiration
 
 In creating these tutorials, I have drawn inspiration from some the resources that allow me to learn machine learning and how to program with Theano and PyTorch:
 
 * [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
-* [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
+* [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials)
 * [Video of Alec's intro to deep learning with Theano](https://www.youtube.com/watch?v=S75EdAcXHKk)
 * [Chris Bishop's *Pattern Recognition and Machine Learning*](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738)
 
 ## Contribute
-* Already, in the short time this project has been off the ground, we've gotten some helpful PRs from the community with pedagogical suggestions, typo corrections, and other useful fixes. If you're inclined, please contribute! 
+* Already, in the short time this project has been off the ground, we've gotten some helpful PRs from the community with pedagogical suggestions, typo corrections, and other useful fixes. If you're inclined, please contribute!
