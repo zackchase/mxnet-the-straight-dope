@@ -12,6 +12,10 @@ Throughout this book, we rely upon MXNet to teach core concepts, advanced topics
 
 To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
 
+## More Examples
+
+For more code examples of using Gluon, please see [Gluon examples](https://github.com/apache/incubator-mxnet/tree/master/example/gluon)
+
 ## Table of contents 
 
 ### Part 1: Crashcourse 
