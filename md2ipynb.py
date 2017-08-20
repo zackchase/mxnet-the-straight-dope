@@ -5,6 +5,7 @@ import glob
 import pkg_resources
 import nbformat
 import re
+import shutil
 
 class Markdown2Notebook:
     def __init__(self):
@@ -12,9 +13,14 @@ class Markdown2Notebook:
         self.max_output_length = 1000
         self.converted_files = []
 
-    def _startswith_chapter(self, fname):
-        """return if fname starts with P01-C02"""
-        return self._remove_chaper(fname) != fname
+        # parse if each markdown file is actually a jupyter notebook
+        valid_notebooks = []
+        for fname in glob.glob('*.md'):
+            with open(fname, 'r') as fp:
+                valid_notebooks.append(
+                    (fname, '```{.python .input' in fp.read()))
+        self.valid_notebooks = dict(valid_notebooks)
+        print(self.valid_notebooks)
 
     def _remove_chaper(self, fname):
         """remove the heading P01-C02"""
@@ -32,42 +38,29 @@ class Markdown2Notebook:
         if new_fname == fname:
             return fname
         parts = new_fname.split('.')
-        if parts[-1] == 'md':
+        if self.valid_notebooks[fname]:
             parts[-1] = 'ipynb'
+        else:
+            assert parts[-1] == 'md'
         return '.'.join(parts)
 
     def update_links(self, content):
         """Update all C01-P01-haha.md into haha.ipynb"""
-        link_re = re.compile('.*\]\(([\w/.-]*)\)')
+        link_md = re.compile('.*\]\(([\w/.-]*)\)')
+        link_rst = re.compile('.*\<([\w/.-]*)\>`\_')
         lines = content.split('\n')
         for i,l in enumerate(lines):
-            m = link_re.match(l)
+            m = link_md.match(l) or link_rst.match(l)
             if not m:
                 continue
             for link in m.groups():
-                new_link = self._get_new_fname(link)
-                if new_link != link:
-                    lines[i].replace(link, new_link)
-        return '\n'.join(lines)
-
-    def _update_links(self, notebook):
-        """update the links in notebook"""
-        num = 0
-        link_re = re.compile('.*\]\(([\w/.-]*)\)')
-        for cell in notebook['cells']:
-            if cell['cell_type'] != 'markdown':
-                continue
-            src = cell['source'].split('\n')
-            for i,l in enumerate(src):
-                m = link_re.match(l)
-                if not m:
+                if not link.endswith('.md'):
                     continue
-                for link in m.groups():
-                    new_link = self._get_new_fname(link)
-                    if new_link != link:
-                        src[i].replace(link, new_link)
-                        num += 1
-        return num
+                new_link = self._remove_chaper(link)
+                if new_link != link:
+                    lines[i] = l.replace(link, new_link.replace('.md', '.html'))
+                    print(lines[i])
+        return '\n'.join(lines)
 
     def _has_output(self, notebook):
         """return if a notebook contains at least one output cell"""
@@ -91,35 +84,27 @@ class Markdown2Notebook:
         for l in lines:
             assert not ('Error' in l and 'Traceback' in l), 'Cell output contains errors'
 
-    def _valid_notebook(self, notebook):
-        """return if this is a jupyter notebook, not a pure markdown file"""
-        return len(notebook.cells) > 1
-
     def convert(self):
         """Find all markdown files, convert into jupyter notebooks
         """
         reader = notedown.MarkdownReader()
-        template_file = pkg_resources.resource_filename(
-            'notedown', 'templates/markdown.tpl')
         writer = nbformat
 
         for fname in glob.glob('*.md'):
             new_fname = self._get_new_fname(fname)
-            print(new_fname)
             if new_fname == fname:
+                print('=== skipping %s' % (fname))
                 continue
-            print('=== converting %s to %s' % (fname, new_fname))
 
-            # read
-            with open(fname, 'r') as fp:
-                notebook = reader.read(fp)
+            if not self.valid_notebooks[fname]:
+                print('=== renaming %s to %s' % (fname, new_fname))
+                shutil.copyfile(fname, new_fname)
+            else:
+                print('=== converting %s to %s' % (fname, new_fname))
+                # read
+                with open(fname, 'r') as fp:
+                    notebook = reader.read(fp)
 
-            # update link
-            for cell in notebook['cells']:
-                if cell['cell_type'] == 'markdown':
-                    cell['source'] = self.update_links(cell['source'])
-
-            if self._valid_notebook(notebook):
                 # evaluate notebook
                 if not self._has_output(notebook):
                     print('Evaluating %s with timeout %d sec' % (fname, self.timeout))
@@ -136,9 +121,8 @@ class Markdown2Notebook:
 
                 # TODO(mli) pylint check
 
-            # write
-            output = writer.writes(notebook)
-            with open(new_fname, 'w') as f:
-                f.write(output)
+                # write
+                with open(new_fname, 'w') as f:
+                    f.write(writer.writes(notebook))
 
             self.converted_files.append((fname, new_fname))

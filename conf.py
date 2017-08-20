@@ -91,7 +91,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
+exclude_patterns = ['README.md', '_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -322,7 +322,7 @@ sys.path.insert(0, curr_path)
 from md2ipynb import Markdown2Notebook
 md2nb = Markdown2Notebook()
 md2nb.convert()
-ignores = [f for _, f in md2nb.converted_files]
+ignores = [f for f, _ in md2nb.converted_files]
 print('Ignore the converted files: ', ignores)
 exclude_patterns += ignores
 
@@ -330,6 +330,11 @@ def update_links(app, docname, source):
     """Update C01-P01-haha.md into haha.ipynb"""
     for i,j in enumerate(source):
         source[i] = md2nb.update_links(j)
+
+def remove_converted_files(app, exception):
+    for _, f in md2nb.converted_files:
+        print('=== remove %s' % (f))
+        os.remove(f)
 
 github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
@@ -341,3 +346,4 @@ def setup(app):
     }, True)
     app.add_transform(AutoStructify)
     app.connect('source-read', update_links)
+    app.connect('build-finished', remove_converted_files)
