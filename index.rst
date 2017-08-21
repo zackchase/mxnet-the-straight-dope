@@ -21,3 +21,15 @@ To run these notebooks, a recent version of MXNet is required. The easiest way i
     $ pip install mxnet --pre --user
 
 More detailed instructions are available `here <A02-C01-install.md>`_
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Crashcourse
+   :numbered:
+
+   preface
+   introduction
+   ndarray
+   linear-algebra
+   probability
+   autograd

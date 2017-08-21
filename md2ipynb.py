@@ -9,9 +9,15 @@ import shutil
 
 class Markdown2Notebook:
     def __init__(self):
-        self.timeout = 10
+        # timeout in sec to evaluate each notebook
+        self.timeout = 200
+        # limit the number of lines in a cell output
         self.max_output_length = 1000
+        # a list of converted files, format is (old_file_name, new_file_name)
         self.converted_files = []
+        # the list of notebooks to skip evaluation
+        self.skip_evaluation = []
+
 
         # parse if each markdown file is actually a jupyter notebook
         valid_notebooks = []
@@ -106,7 +112,8 @@ class Markdown2Notebook:
                     notebook = reader.read(fp)
 
                 # evaluate notebook
-                if not self._has_output(notebook):
+                if not (self._has_output(notebook) or any(
+                        [f in fname for f in self.skip_evaluation])):
                     print('Evaluating %s with timeout %d sec' % (fname, self.timeout))
                     notedown.run(notebook, self.timeout)
 
