@@ -1,3 +1,7 @@
+# some data files
+data/cifar-10-batches-bin
+data/cifar-10-binary.tar.gz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
