@@ -314,27 +314,16 @@ intersphinx_mapping = {
 }
 
 # timeout to execute one notebook
-# nbsphinx_timeout = 240
-
+nbsphinx_timeout = 240
 
 curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
 sys.path.insert(0, curr_path)
-from md2ipynb import Markdown2Notebook
-md2nb = Markdown2Notebook()
-md2nb.convert()
-ignores = [f for f, _ in md2nb.converted_files]
-print('Ignore the converted files: ', ignores)
+import sphinx_plugin as sp
+ignores = [f for f, _ in sp.convert.converted_files] + [
+    f for f, _ in sp.rename.renamed_files
+]
+print('Ignore the generated files: ', ignores)
 exclude_patterns += ignores
-
-def update_links(app, docname, source):
-    """Update C01-P01-haha.md into haha.ipynb"""
-    for i,j in enumerate(source):
-        source[i] = md2nb.update_links(j)
-
-def remove_converted_files(app, exception):
-    for _, f in md2nb.converted_files:
-        print('=== remove %s' % (f))
-        os.remove(f)
 
 # github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
@@ -345,5 +334,7 @@ def setup(app):
         'enable_auto_toc_tree': True,
     }, True)
     app.add_transform(AutoStructify)
-    app.connect('source-read', update_links)
-    app.connect('build-finished', remove_converted_files)
+    #
+    app.connect('source-read', sp.checker.check)
+    # app.connect('source-read', sp.update_links)
+    app.connect('build-finished', sp.remove_generated_files)
