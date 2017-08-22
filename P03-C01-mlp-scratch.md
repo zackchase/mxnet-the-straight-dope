@@ -7,7 +7,7 @@ from __future__ import print_function
 import mxnet as mx
 import numpy as np
 from mxnet import nd, autograd
-ctx = mx.gpu()
+ctx = mx.cpu()
 ```
 
 ## MNIST data (surprise!)
@@ -96,7 +96,7 @@ def softmax(y_linear):
 
 ## The *softmax* cross-entropy loss function
 
-In the previous example, we calculate our model's output and then ran this output through the cross-entropy loss function: 
+In the previous example, we calculate our model's output and then ran this output through the cross-entropy loss function:
 
 ```{.python .input  n=7}
 def cross_entropy(yhat, y):
@@ -111,7 +111,6 @@ $\sum_{i=1}^{n} e^{z_i}$. When we also calculate our numerators as exponential f
 Our salvation is that even though we're computing these exponential functions, we ultimately plan to take their log in the cross-entropy functions. It turns out that by combining these two operators ``softmax`` and ``cross_entropy`` together, we can elude the numerical stability issues that might otherwise plague us during backpropagation. We'll want to keep the conventional softmax function handy in case we every want to evaluate the probabilities output by our model.
 
 But instead of passing softmax probabilities into our loss function - we'll just pass our ``yhat_linear`` and compute the softmax and its log all at once inside the softmax_cross_entropy loss function simultaneously, which does smart things like the log-sum-exp trick ([see on Wikipedia](https://en.wikipedia.org/wiki/LogSumExp)).
-
 
 ```{.python .input  n=8}
 def softmax_cross_entropy(yhat_linear, y):
@@ -173,7 +172,7 @@ def evaluate_accuracy(data_iterator, net):
 ## Execute the training loop
 
 ```{.python .input  n=12}
-epochs = 10
+epochs = 2
 learning_rate = .001
 smoothing_constant = .01
 
@@ -197,18 +196,8 @@ for e in range(epochs):
 
     test_accuracy = evaluate_accuracy(test_data, net)
     train_accuracy = evaluate_accuracy(train_data, net)
-    print("Epoch %s. Loss: %s, Train_acc %s, Test_acc %s" %
+    print("Epoch %d. Loss: %f, Train_acc %f, Test_acc %f" %
           (e, moving_loss, train_accuracy, test_accuracy))
-```
-
-```{.json .output n=12}
-[
- {
-  "name": "stdout",
-  "output_type": "stream",
-  "text": "Epoch 0. Loss: 0.455451145229, Train_acc 0.885817, Test_acc 0.8897\nEpoch 1. Loss: 0.297250172348, Train_acc 0.921383, Test_acc 0.9205\nEpoch 2. Loss: 0.202016335186, Train_acc 0.946467, Test_acc 0.9451\nEpoch 3. Loss: 0.151867129294, Train_acc 0.960667, Test_acc 0.9584\nEpoch 4. Loss: 0.113816030109, Train_acc 0.9688, Test_acc 0.9637\nEpoch 5. Loss: 0.100374131216, Train_acc 0.97185, Test_acc 0.9658\nEpoch 6. Loss: 0.0873043180085, Train_acc 0.9779, Test_acc 0.9713\nEpoch 7. Loss: 0.0730908748383, Train_acc 0.98085, Test_acc 0.972\nEpoch 8. Loss: 0.068088298137, Train_acc 0.984883, Test_acc 0.9735\nEpoch 9. Loss: 0.0573755351742, Train_acc 0.986133, Test_acc 0.9731\n"
- }
-]
 ```
 
 ## Conclusion

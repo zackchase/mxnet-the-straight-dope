@@ -46,9 +46,8 @@ with net.name_scope():
 
 ## Parameter initialization
 
-
 ```{.python .input  n=5}
-net.collect_params().initialize(mx.init.Xavier(magnitude=2.24), ctx=ctx)
+net.initialize(ctx=ctx)
 ```
 
 ## Softmax cross-entropy loss
@@ -80,7 +79,7 @@ def evaluate_accuracy(data_iterator, net):
 ## Training loop
 
 ```{.python .input  n=9}
-epochs = 10
+epochs = 2
 smoothing_constant = .01
 
 for e in range(epochs):
@@ -102,18 +101,8 @@ for e in range(epochs):
 
     test_accuracy = evaluate_accuracy(test_data, net)
     train_accuracy = evaluate_accuracy(train_data, net)
-    print("Epoch %s. Loss: %s, Train_acc %s, Test_acc %s" %
+    print("Epoch %d. Loss: %f, Train_acc %f, Test_acc %f" %
           (e, moving_loss, train_accuracy, test_accuracy))
-```
-
-```{.json .output n=9}
-[
- {
-  "name": "stdout",
-  "output_type": "stream",
-  "text": "Epoch 0. Loss: 0.208460539446, Train_acc 0.948683333333, Test_acc 0.9482\nEpoch 1. Loss: 0.137320037022, Train_acc 0.958966666667, Test_acc 0.9551\nEpoch 2. Loss: 0.0958231976158, Train_acc 0.956716666667, Test_acc 0.9492\nEpoch 3. Loss: 0.0725868264617, Train_acc 0.98395, Test_acc 0.9754\nEpoch 4. Loss: 0.0646171670057, Train_acc 0.9836, Test_acc 0.9735\nEpoch 5. Loss: 0.0469602448996, Train_acc 0.987683333333, Test_acc 0.9766\nEpoch 6. Loss: 0.0403166358583, Train_acc 0.99195, Test_acc 0.9783\nEpoch 7. Loss: 0.034311452392, Train_acc 0.991866666667, Test_acc 0.977\nEpoch 8. Loss: 0.0319601120719, Train_acc 0.994733333333, Test_acc 0.9783\nEpoch 9. Loss: 0.0243036117522, Train_acc 0.991466666667, Test_acc 0.977\n"
- }
-]
 ```
 
 ## Conclusion

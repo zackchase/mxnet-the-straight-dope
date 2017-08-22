@@ -112,8 +112,6 @@ At each layer we average the representations of all of the $2^n$ dropout network
 Because each node has a $.5$ probability of being on during training, 
 its vote is scaled by $.5$ when we use all nodes at prediction time
 
-
-
 ```{.python .input  n=1}
 from __future__ import print_function
 import mxnet as mx
@@ -121,7 +119,7 @@ import numpy as np
 from mxnet import nd, autograd
 import numpy as np
 mx.random.seed(1)
-ctx = mx.gpu()
+ctx = mx.cpu()
 ```
 
 ## The MNIST dataset
@@ -140,8 +138,6 @@ train_data = mx.gluon.data.DataLoader(mx.gluon.data.vision.MNIST(train=True, tra
 test_data = mx.gluon.data.DataLoader(mx.gluon.data.vision.MNIST(train=False, transform=transform),
                                      batch_size, shuffle=False)
 ```
-
-
 
 ```{.python .input  n=3}
 W1 = nd.random_normal(shape=(784,256), ctx=ctx) *.01
@@ -193,51 +189,12 @@ A = nd.arange(20).reshape((5,4))
 dropout(A, 0.0)
 ```
 
-```{.json .output n=7}
-[
- {
-  "data": {
-   "text/plain": "\n[[  0.   1.   2.   3.]\n [  4.   5.   6.   7.]\n [  8.   9.  10.  11.]\n [ 12.  13.  14.  15.]\n [ 16.  17.  18.  19.]]\n<NDArray 5x4 @cpu(0)>"
-  },
-  "execution_count": 7,
-  "metadata": {},
-  "output_type": "execute_result"
- }
-]
-```
-
 ```{.python .input  n=8}
 dropout(A, 0.5)
 ```
 
-```{.json .output n=8}
-[
- {
-  "data": {
-   "text/plain": "\n[[  0.   0.   4.   6.]\n [  8.  10.  12.  14.]\n [  0.  18.  20.  22.]\n [ 24.   0.   0.  30.]\n [ 32.   0.   0.  38.]]\n<NDArray 5x4 @cpu(0)>"
-  },
-  "execution_count": 8,
-  "metadata": {},
-  "output_type": "execute_result"
- }
-]
-```
-
 ```{.python .input  n=9}
 dropout(A, 1.0)
-```
-
-```{.json .output n=9}
-[
- {
-  "data": {
-   "text/plain": "\n[[ 0.  0.  0.  0.]\n [ 0.  0.  0.  0.]\n [ 0.  0.  0.  0.]\n [ 0.  0.  0.  0.]\n [ 0.  0.  0.  0.]]\n<NDArray 5x4 @cpu(0)>"
-  },
-  "execution_count": 9,
-  "metadata": {},
-  "output_type": "execute_result"
- }
-]
 ```
 
 ## Softmax output
@@ -303,7 +260,6 @@ def evaluate_accuracy(data_iterator, net):
     for i, (data, label) in enumerate(data_iterator):
         data = data.as_in_context(ctx).reshape((-1,784))
         label = label.as_in_context(ctx)
-        label_one_hot = nd.one_hot(label, 10)
         output = net(data)
         predictions = nd.argmax(output, axis=1)
         numerator += nd.sum(predictions == label)
@@ -314,8 +270,7 @@ def evaluate_accuracy(data_iterator, net):
 ## Execute the training loop
 
 ```{.python .input  n=15}
-epochs = 10
-moving_loss = 0.
+epochs = 2
 learning_rate = .001
 
 for e in range(epochs):
@@ -342,17 +297,7 @@ for e in range(epochs):
             
     test_accuracy = evaluate_accuracy(test_data, net)
     train_accuracy = evaluate_accuracy(train_data, net)
-    print("Epoch %s. Loss: %s, Train_acc %s, Test_acc %s" % (e, moving_loss, train_accuracy, test_accuracy)) 
-```
-
-```{.json .output n=15}
-[
- {
-  "name": "stdout",
-  "output_type": "stream",
-  "text": "Epoch 0. Loss: 0.737156236043, Train_acc 0.850967, Test_acc 0.8539\nEpoch 1. Loss: 0.394209427167, Train_acc 0.92225, Test_acc 0.923\nEpoch 2. Loss: 0.296510421107, Train_acc 0.946, Test_acc 0.9452\nEpoch 3. Loss: 0.232048722573, Train_acc 0.9563, Test_acc 0.9531\nEpoch 4. Loss: 0.205553142149, Train_acc 0.962967, Test_acc 0.9591\nEpoch 5. Loss: 0.178349442085, Train_acc 0.969233, Test_acc 0.9641\nEpoch 6. Loss: 0.175119599567, Train_acc 0.9735, Test_acc 0.967\nEpoch 7. Loss: 0.157515936016, Train_acc 0.975067, Test_acc 0.9688\nEpoch 8. Loss: 0.14164880119, Train_acc 0.977933, Test_acc 0.9705\nEpoch 9. Loss: 0.129475182254, Train_acc 0.9798, Test_acc 0.9729\n"
- }
-]
+    print("Epoch %d. Loss: %f, Train_acc %f, Test_acc %f" % (e, moving_loss, train_accuracy, test_accuracy)) 
 ```
 
 ## Conclusion
