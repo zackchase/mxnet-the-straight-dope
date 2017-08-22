@@ -18,6 +18,7 @@ import os
 from recommonmark.parser import CommonMarkParser
 from recommonmark.transform import AutoStructify
 
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -90,7 +91,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
+exclude_patterns = ['README.md', '_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -312,16 +313,25 @@ intersphinx_mapping = {
     # 'mxnet': ('http://mxnet.io', None)
 }
 
-# timeout to execute one notebook
-nbsphinx_timeout = 240
+# notebooks will be executed by sphnix_plugin
+nbsphinx_execute = 'never'
 
+curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
+sys.path.insert(0, curr_path)
+import sphinx_plugin as sp
+print('Ignore the generated files: ', sp.ignore_list)
+exclude_patterns += sp.ignore_list
 
-github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
+# github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
     app.add_config_value('recommonmark_config', {
-        'url_resolver': lambda url: github_doc_root + url,
+        # 'url_resolver': lambda url: github_doc_root + url,
         'auto_toc_tree_section': 'Contents',
         'enable_eval_rst': True,
         'enable_auto_toc_tree': True,
     }, True)
     app.add_transform(AutoStructify)
+    app.connect('source-read', sp.update_links)
+    app.connect('build-finished', sp.check_output)
+    app.connect('build-finished', sp.remove_generated_files)
+    app.connect('build-finished', sp.generate_htaccess)
