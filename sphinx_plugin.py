@@ -14,14 +14,15 @@ import time
 def _replace_ext(fname, new_ext):
     """replace the file extension in a filename"""
     parts = fname.split('.')
-    assert len(parts) > 1
+    if len(parts) <= 1:
+        return fname
     parts[-1] = new_ext
     return '.'.join(parts)
 
 class RenameFiles:
     def __init__(self):
         self.renamed_files = []
-        self.header_re = re.compile("([PA][\d]+-C[\d]+-)(.*)")
+        self.header_re = re.compile("([PA][\d\.]+-C[\d\.]+-)(.*)")
 
     def _get_new_fname(self, fname):
         """P01-C01-haha.ipynb -> haha.ipynb"""
@@ -42,6 +43,8 @@ class RenameFiles:
         def _new_url(m):
             assert len(m.groups()) == 1, m
             url = m.groups()[0]
+            if url.startswith('./'):
+                url = url[2:]
             if self._get_new_fname(url) != url:
                 url = _replace_ext(self._get_new_fname(url), 'html')
             return url
@@ -59,7 +62,7 @@ class Markdown2Notebook:
         # the files to be ignored for converting
         self.ignore_list = ignore_list
         # timeout in second to evaluate a notebook
-        self.timeout = 200
+        self.timeout = 400
         # a list of converted files, format is (old_file_name, new_file_name)
         self.converted_files = []
 
@@ -157,7 +160,6 @@ convert.convert()
 ignore_list += [f for f, _ in convert.converted_files]
 
 checker = SanityCheck(ignore_list=ignore_list)
-
 
 def remove_generated_files(app, exception):
     for _, f in renamer.renamed_files + convert.converted_files:
