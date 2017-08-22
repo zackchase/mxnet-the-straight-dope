@@ -44,7 +44,10 @@ def convert_md():
     """
     converted_files = []
     reader = notedown.MarkdownReader()
-    for fname in glob.glob('*.md'):
+    files = glob.glob('*.md')
+    # evaluate the newest file first, so we can catchup error ealier
+    files.sort(key=os.path.getmtime, reverse=True)
+    for fname in files:
         new_fname = _get_new_fname(fname)
         # parse if each markdown file is actually a jupyter notebook
         with open(fname, 'r') as fp:
@@ -66,6 +69,10 @@ def convert_md():
             tic = time.time()
             notedown.run(notebook, timeout)
             print('=== Finished in %f sec'%(time.time()-tic))
+
+        # even that we will check it later, but do it ealier so we can see the
+        # error message before evaluating all notebooks
+        _check_notebook(notebook)
 
         # write
         new_fname = _replace_ext(new_fname, 'ipynb')
@@ -106,30 +113,32 @@ def update_links(app, docname, source):
             source[i] = re.sub('\<([\w/.-]*)\>`\_',
                                    lambda m: '<'+_new_url(m)+'>`_', j)
 
+def _check_notebook(notebook):
+    # TODO(mli) lint check
+    for cell in notebook.cells:
+         if 'outputs' in cell:
+             src = cell['source']
+             nlines = 0
+             try:
+                 for o in cell['outputs']:
+                     if 'text' in o:
+                         nlines += len(o['text'].split('\n'))
+                     assert 'traceback' not in o, '%s, %s'%(o['ename'], o['evalue'])
+                 assert nlines < max_output_length, 'Too long cell output'
+             except AssertionError:
+                 print('This cell\'s output contains error:\n')
+                 print('-'*40)
+                 print(src)
+                 print('-'*40)
+                 raise
+
 def check_output(app, exception):
     for fname in glob.glob('*.ipynb'):
         print('=== Check '+fname)
 
         with open(fname, 'r') as f:
             nb = nbformat.read(f, as_version=4)
-
-        # TODO(mli) lint check
-        for cell in nb.cells:
-             if 'outputs' in cell:
-                 src = cell['source']
-                 nlines = 0
-                 try:
-                     for o in cell['outputs']:
-                         if 'text' in o:
-                             nlines += len(o['text'].split('\n'))
-                         assert 'traceback' not in o, '%s, %s'%(o['ename'], o['evalue'])
-                     assert nlines < max_output_length, 'Too long cell output'
-                 except AssertionError:
-                     print('This cell\'s output contains error:\n')
-                     print('-'*40)
-                     print(src)
-                     print('-'*40)
-                     raise
+            _check_notebook(nb)
 
 converted_files = convert_md()
 renamed_files = rename_ipynb()
