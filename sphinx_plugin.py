@@ -16,7 +16,7 @@ timeout = 400
 # limit the number of lines in a cell output
 max_output_length = 1000
 # the files will be ingored for execution
-ignore_execution = ['P01', 'P02']
+ignore_execution = ['P0', 'P1']
 
 def _replace_ext(fname, new_ext):
     """replace the file extension in a filename"""
@@ -134,9 +134,18 @@ def check_output(app, exception):
 converted_files = convert_md()
 renamed_files = rename_ipynb()
 ignore_list = [f for f,_ in converted_files + renamed_files]
-print(ignore_list)
 
 def remove_generated_files(app, exception):
     for _, f in renamed_files + converted_files:
         print('=== Remove %s' % (f))
         os.remove(f)
+
+
+def generate_htaccess(app, exception):
+    print('=== Generate .htaccess file')
+    with open(app.builder.outdir + '/.htaccess', 'w') as f:
+        f.write('ErrorDocument 404 http://gluon-test.mxnet.io/404.html\n')
+        for old, new in renamed_files + converted_files:
+            f.write('Redirect /%s /%s\n'%(
+                _replace_ext(old, 'html'), _replace_ext(new, 'html')
+            ))

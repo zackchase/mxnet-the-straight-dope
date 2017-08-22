@@ -334,3 +334,4 @@ def setup(app):
     app.connect('source-read', sp.update_links)
     app.connect('build-finished', sp.check_output)
     app.connect('build-finished', sp.remove_generated_files)
+    app.connect('build-finished', sp.generate_htaccess)

@@ -16,9 +16,9 @@ To clone or contribute, visit `Deep Learning - The Straight Dope
 Dependencies
 ============
 
-To run these notebooks, a recent version of MXNet is required. The easiest way is to install the nightly build MXNet through ``pip``. E.g.::
+To run these notebooks, a recent version of MXNet is required. The easiest way is to install MXNet through ``pip``. E.g.::
 
-    $ pip install mxnet --pre --user
+    $ pip install mxnet
 
 More detailed instructions are available `here <A02-C01-install.md>`_
 
@@ -61,6 +61,52 @@ More detailed instructions are available `here <A02-C01-install.md>`_
    plumbing
    custom-layer
    serialization
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Convolutional neural networks
+   :numbered:
+
+   cnn-scratch
+   cnn-gluon
+   deep-cnns-alexnet
+   very-deep-nets-vgg
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Recurrent neural networks
+   :numbered:
+
+   simple-rnn
+   lstm-scratch
+   gru-scratch
+   rnns-gluon
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Computer vision
+   :numbered:
+
+   object-detection
+   fine-tuning
+   tree-lstm
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Generative adversarial networks
+   :numbered:
+
+   gan-intro
+
+.. toctree::
+   :maxdepth: 1
+   :caption: High-performance and distributed training
+   :numbered:
+
+   multiple-gpus-scratch
+   multiple-gpus-gluon
+   training-with-multi-machines
+   hybridize
 
 .. toctree::
    :maxdepth: 1
