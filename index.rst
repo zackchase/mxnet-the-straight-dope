@@ -33,3 +33,11 @@ More detailed instructions are available `here <A02-C01-install.md>`_
    linear-algebra
    probability
    autograd
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Developer documents
+   :numbered:
+
+   install
+   contribute

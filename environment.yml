@@ -10,4 +10,5 @@ dependencies:
 - pip:
   - nbsphinx
   - recommonmark
+  - https://github.com/mli/notedown/tarball/master
   - mxnet-cu80>=0.10.1b20170719

@@ -319,11 +319,8 @@ nbsphinx_timeout = 240
 curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
 sys.path.insert(0, curr_path)
 import sphinx_plugin as sp
-ignores = [f for f, _ in sp.convert.converted_files] + [
-    f for f, _ in sp.rename.renamed_files
-]
-print('Ignore the generated files: ', ignores)
-exclude_patterns += ignores
+print('Ignore the generated files: ', sp.ignore_list)
+exclude_patterns += sp.ignore_list
 
 # github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
@@ -334,7 +331,6 @@ def setup(app):
         'enable_auto_toc_tree': True,
     }, True)
     app.add_transform(AutoStructify)
-    #
-    app.connect('source-read', sp.checker.check)
-    # app.connect('source-read', sp.update_links)
+    app.connect('source-read', sp.renamer.update_links)
+    app.connect('build-finished', sp.checker.check)
     app.connect('build-finished', sp.remove_generated_files)
