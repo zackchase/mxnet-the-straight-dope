@@ -143,7 +143,11 @@ xcount = nd.ones(shape=(10, 784))
 
 # Aggregate count statistics of how frequently a pixel is on (or off) for
 # zeros and ones.
-for data, label in mnist_train:
+for i, (data, label) in enumerate(mnist_train):
+    # Only use the first 1000 examples to reduce the computation time. 
+    # But more examples can improve the later inference accuracy.
+    if i > 1000: 
+        break 
     y = int(label)
     x = data.reshape((784,))
     ycount[y] += 1
@@ -176,7 +180,7 @@ Now we can compute the likelihoods of an image, given the model. This is statist
 
 $$l_y := \sum_i \log p(x_i|y) = \sum_i x_i \log p(x_i = 1|y) + (1-x_i) \log \left(1-p(x_i=1|y)\right)$$
 
-To avoid recomputing logarithms all the time, we precompute them for all pixels. 
+To avoid recomputing logarithms all the time, we precompute them for all pixels.
 
 ```{.python .input}
 log_xcount = nd.log(xcount)
@@ -220,7 +224,7 @@ As we can see, this classifier is both incompetent and overly confident of its i
 
 ## Sampling
 
-Random numbers are just one form of random variables, and since computers are particularly good with numbers, pretty much everything else in code ultimately gets converted to numbers anyway. One of the basic tools needed to generate random numbers is to sample from a distribution. Let's start with what happens when we use a random number generator. 
+Random numbers are just one form of random variables, and since computers are particularly good with numbers, pretty much everything else in code ultimately gets converted to numbers anyway. One of the basic tools needed to generate random numbers is to sample from a distribution. Let's start with what happens when we use a random number generator.
 
 ```{.python .input}
 import random
@@ -237,7 +241,7 @@ for i in range(10):
     print(random.randint(1, 100))
 ```
 
-What if we wanted to check that ``randint`` is actually really uniform. Intuitively the best strategy would be to run it, say 1 million times, count how many times it generates each one of the values and to ensure that the result is uniform. 
+What if we wanted to check that ``randint`` is actually really uniform. Intuitively the best strategy would be to run it, say 1 million times, count how many times it generates each one of the values and to ensure that the result is uniform.
 
 ```{.python .input}
 import math
@@ -309,7 +313,7 @@ $\sigma^2 = \mathbb{E}_{x \sim p(x)}[x^2] - \mathbb{E}^2_{x \sim p(x)}[x]$.
 
 The above allows us to change both mean and variance of random variables. Quite obviously for some random variable $x$ with mean $\mu$, the random variable $x + c$ has mean $\mu + c$. Moreover, $\gamma x$ has the variance $\gamma^2 \sigma^2$. Applying this to the normal distribution we see that one with mean $\mu$ and variance $\sigma^2$ has the form $p(x) = \frac{1}{\sqrt{2 \sigma^2 \pi}} \exp\left(-\frac{1}{2 \sigma^2} (x-\mu)^2\right)$. Note the scaling factor $\frac{1}{\sigma}$ - it arises from the fact that if we stretch the distribution by $\sigma$, we need to lower it by $\frac{1}{\sigma}$ to retain the same probability mass (i.e. the weight under the distribution always needs to integrate out to 1). 
 
-Now we are ready to state one of the most fundamental theorems in statistics, the [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem). It states that for sufficiently well-behaved random variables, in particular random variables with well-defined mean and variance. To get some idea, let's repeat the experiment described in the beginning, but now using random variables with integer values of $\{0, 1, 2\}$. 
+Now we are ready to state one of the most fundamental theorems in statistics, the [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem). It states that for sufficiently well-behaved random variables, in particular random variables with well-defined mean and variance. To get some idea, let's repeat the experiment described in the beginning, but now using random variables with integer values of $\{0, 1, 2\}$.
 
 ```{.python .input}
 # generate 10 random sequences of 10,000 random normal variables N(0,1)
@@ -348,21 +352,3 @@ Many more useful distributions exist. We recommend consulting a statistics book 
 * **Beta, Dirichlet, Gamma, and Wishart Distributions** They are what statisticians call *conjugate* to the Binomial, Multinomial, Poisson and Gaussian respectively. Without going into detail, these distributions are often used as priors for coefficients of the latter set of distributions, e.g. a Beta distribution as a prior for modeling the probability for binomial outcomes.  
 
 For whinges or inquiries, [open an issue on  GitHub.](https://github.com/zackchase/mxnet-the-straight-dope)
-
-```{.python .input  n=1}
-print(1)
-```
-
-```{.json .output n=1}
-[
- {
-  "name": "stdout",
-  "output_type": "stream",
-  "text": "1\n"
- }
-]
-```
-
-```{.python .input}
-
-```
