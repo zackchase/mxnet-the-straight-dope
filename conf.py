@@ -313,8 +313,8 @@ intersphinx_mapping = {
     # 'mxnet': ('http://mxnet.io', None)
 }
 
-# timeout to execute one notebook
-nbsphinx_timeout = 240
+# notebooks will be executed by sphnix_plugin
+nbsphinx_execute = 'never'
 
 curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
 sys.path.insert(0, curr_path)
@@ -331,6 +331,6 @@ def setup(app):
         'enable_auto_toc_tree': True,
     }, True)
     app.add_transform(AutoStructify)
-    app.connect('source-read', sp.renamer.update_links)
-    app.connect('build-finished', sp.checker.check)
+    app.connect('source-read', sp.update_links)
+    app.connect('build-finished', sp.check_output)
     app.connect('build-finished', sp.remove_generated_files)

@@ -3,8 +3,6 @@
 It's impossible to get anything done if we can't manipulate data. This has two parts - loading data and processing data once it's inside the computer. This notebook is about the latter. So let's start by introducing NDArrays, MXNet's primary tool for storing and transforming data. If you've worked with NumPy before, you'll notice that NDArrays are by design similar to NumPy's multi-dimensional array. However, they confer a few key advantages. First, NDArrays support asynchronous computation on CPU, GPU, and distributed cloud architectures. Second, they provide support for automatic differentiation. These properties make NDArray an ideal library for machine learning, both for researchers and engineers launching production systems.
 
 
-Refer to [prob](P01-C03-linear-algebra.md)
-
 ## Getting started
 
 In this chapter, we'll get you going with the basic functionality. Don't worry if you don't understand any of the basic math, like element-wise operations or normal distributions. In the next two chapters we'll take another pass at NDArray, teaching you both the math you'll need and how to realize it in code.
@@ -120,5 +118,3 @@ x += y
 x
 print('id(x):', id(x))
 ```
-
-Refer to [prob](P01-C03-linear-algebra.md)

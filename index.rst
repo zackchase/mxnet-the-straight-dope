@@ -51,6 +51,19 @@ More detailed instructions are available `here <A02-C01-install.md>`_
 
 .. toctree::
    :maxdepth: 1
+   :caption: Deep neural networks
+   :numbered:
+
+   mlp-scratch
+   mlp-gluon
+   mlp-dropout-scratch
+   mlp-dropout-gluon
+   plumbing
+   custom-layer
+   serialization
+
+.. toctree::
+   :maxdepth: 1
    :caption: Developer documents
    :numbered:
 
