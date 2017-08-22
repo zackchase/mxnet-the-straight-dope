@@ -12,11 +12,11 @@ import os
 import time
 
 # timeout in second to evaluate a notebook
-timeout = 400
+timeout = 120
 # limit the number of lines in a cell output
-max_output_length = 1000
+max_output_length = 500
 # the files will be ingored for execution
-ignore_execution = ['P0', 'P1']
+ignore_execution = ['P04', 'P05', 'P06']
 
 def _replace_ext(fname, new_ext):
     """replace the file extension in a filename"""
