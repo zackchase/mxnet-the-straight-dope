@@ -119,6 +119,7 @@ The authors (& others) are inreasingly giving talks that are based on the conten
 * ***Roadmap*** Variational autoencoders
 
 ### Part 13: Optimization
+* [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
 * ***Roadmap*** SGD
 * ***Roadmap*** Momentum
 * ***Roadmap*** AdaGrad
