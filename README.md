@@ -120,7 +120,7 @@ The authors (& others) are inreasingly giving talks that are based on the conten
 
 ### Part 13: Optimization
 * [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
-* ***Roadmap*** SGD
+* [2 - Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C02-gd-and-sgd.ipynb)
 * ***Roadmap*** Momentum
 * ***Roadmap*** AdaGrad
 * ***Roadmap*** RMSProp
