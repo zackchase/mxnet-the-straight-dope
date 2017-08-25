@@ -70,8 +70,7 @@ this books.
 * [4 - Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
 
 ### Part 3.5: ``gluon`` Plumbing
-* [1 - Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-
-dope/blob/master/P03.5-C01-plumbing.ipynb)
+* [1 - Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
 * [2 - Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * [3 - Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
 * Advanced Data IO
@@ -79,8 +78,7 @@ dope/blob/master/P03.5-C01-plumbing.ipynb)
 your neural networks
 
 ### Part 4: Convolutional neural networks (CNNs) 
-* [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-
-dope/blob/master/P04-C01-cnn-scratch.ipynb)
+* [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
 * [4 - Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
@@ -99,8 +97,7 @@ Normalization (from with ``gluon``)
 ### Part 6: Computer vision (CV) 
 * ***Roadmap*** Network of networks (inception & co)
 * ***Roadmap*** Residual networks
-* [Object detection](https://github.com/zackchase/mxnet-the-straight-
-dope/blob/master/P06-C03-object-detection.ipynb)
+* [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
 * ***Roadmap*** Fully-convolutional networks
 * ***Roadmap*** Siamese (conjoined?) networks
 * ***Roadmap*** Embeddings (pairwise and triplet losses)
@@ -164,8 +161,7 @@ dope/blob/master/P06-C03-object-detection.ipynb)
 ### Part 14: Optimization, Distributed and high-performance learning
 * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
 * [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
-* [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-
-dope/blob/master/P14-C05-hybridize.ipynb)
+* [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
 * ***Roadmap*** Training with Multiple Machines
 * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
