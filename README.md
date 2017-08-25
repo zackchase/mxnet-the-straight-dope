@@ -54,8 +54,7 @@ this books.
 * [4 - Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
 * [5 - Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
 
-### Part 2: Introduction to Supervised
-Learning
+### Part 2: Introduction to Supervised Learning
 * [1 - Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-linear-regression-scratch.ipynb)
 * [2 - Linear Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-linear-regression-gluon.ipynb)
 * [2.5 - Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02.5-perceptron.ipynb)
@@ -140,16 +139,14 @@ dope/blob/master/P06-C03-object-detection.ipynb)
 * ***Roadmap*** Image transduction GANs (Pix2Pix)
 * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
-### Part 11: Deep reinforcement
-learning (DRL)
+### Part 11: Deep reinforcement learning (DRL)
 * ***Roadmap*** Introduction to reinforcement learning
 * ***Roadmap*** Deep contextual bandits
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Part
-12: Variational methods and uncertainty
+### Part 12: Variational methods and uncertainty
 * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
@@ -164,8 +161,7 @@ learning (DRL)
 * ***Roadmap*** AdaDelta
 * ***Roadmap*** SGLD / SGHNT
 
-### Part 14: Optimization, Distributed and high-
-performance learning
+### Part 14: Optimization, Distributed and high-performance learning
 * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
 * [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
 * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-
@@ -177,8 +173,7 @@ dope/blob/master/P14-C05-hybridize.ipynb)
 * ***Custom Operators***
 * ...
 
-### Part 16: Audio
-Processing
+### Part 16: Audio Processing
 * ***Roadmap*** Intro to automatic speech recognition
 * ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
 * ***Roadmap*** Combining static and sequential data
