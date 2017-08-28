@@ -82,9 +82,8 @@ your neural networks
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
 * [4 - Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
-* ***Roadmap*** Batch Normalization (from scratch)
-* ***Roadmap*** Batch
-Normalization (from with ``gluon``)
+* [5 - Batch Normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C05-cnn-batch-norm-scratch.ipynb)
+* [6 - Batch Normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C06-cnn-batch-norm-gluon.ipynb)
 
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
