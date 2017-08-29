@@ -1,16 +1,48 @@
 # Deep Learning - The Straight Dope
 
 ## Abstract
-This repo contains an incremental sequence of notebooks designed to teach deep learning, MXNet, and the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter notebooks to present prose, graphics, equations, and code together in one place. If we're successful, the result will be a resource that could be simultaneously a book, course material, a prop for live tutorials, and a resource for plagiarising (with our blessing) useful code. To our knowledge there's no source out there that teaches either (1) the full breadth of concepts in modern deep learning or (2) interleaves an engaging textbook with runnable code. We'll find out by the end of this venture whether or not that void exists for a good reason.
+This repo contains an
+incremental sequence of notebooks designed to teach deep learning, MXNet, and
+the ``gluon`` interface. Our goal is to leverage the strengths of Jupyter
+notebooks to present prose, graphics, equations, and code together in one place.
+If we're successful, the result will be a resource that could be simultaneously
+a book, course material, a prop for live tutorials, and a resource for
+plagiarising (with our blessing) useful code. To our knowledge there's no source
+out there that teaches either (1) the full breadth of concepts in modern deep
+learning or (2) interleaves an engaging textbook with runnable code. We'll find
+out by the end of this venture whether or not that void exists for a good
+reason.
 
-Another unique aspect of this book is its authorship process. We are developing this resource fully in the public view and are making it available for free in its entirety. While the book has a few primary authors to set the tone and shape the content, we welcome contributions from the community and hope to coauthor chapters and entire sections with experts and community members. Already we've received contributions spanning typo corrections through full working examples.  
+Another unique aspect of this book is its authorship process. We are
+developing this resource fully in the public view and are making it available
+for free in its entirety. While the book has a few primary authors to set the
+tone and shape the content, we welcome contributions from the community and hope
+to coauthor chapters and entire sections with experts and community members.
+Already we've received contributions spanning typo corrections through full
+working examples.  
 
 ## Implementation with Apache MXNet
-Throughout this book, we rely upon MXNet to teach core concepts, advanced topics, and a full complement of applications. MXNet is widely used in production environments owing to its strong reputation for speed. Now with ``gluon``, MXNet's new imperative interface (alpha), doing research in MXNet is easy. 
+Throughout this book,
+we rely upon MXNet to teach core concepts, advanced topics, and a full
+complement of applications. MXNet is widely used in production environments
+owing to its strong reputation for speed. Now with ``gluon``, MXNet's new
+imperative interface (alpha), doing research in MXNet is easy. 
 
 ## Dependencies
+To run these notebooks, you'll want to build MXNet from source. Fortunately,
+this is easy (especially on Linux) if you follow [these
+instructions](http://mxnet.io/get_started/install.html). You'll also want to
+[install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use
+Python 3 (because it's 2017). 
 
-To run these notebooks, you'll want to build MXNet from source. Fortunately, this is easy (especially on Linux) if you follow [these instructions](http://mxnet.io/get_started/install.html). You'll also want to [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use Python 3 (because it's 2017). 
+## Slides
+
+The authors (& others) are
+inreasingly giving talks that are based on the content in this books. Some of
+these slide-decks (like the 6-hour KDD 2017) are gigantic so we're collecting
+them separately in [this repo](https://github.com/zackchase/mxnet-slides).
+Contribute there if you'd like to share tutorials or course material based on
+this books.
 
 ## Table of contents 
 
@@ -42,15 +74,17 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * [2 - Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
 * [3 - Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
 * Advanced Data IO
-* Debugging your neural networks
+* Debugging
+your neural networks
 
 ### Part 4: Convolutional neural networks (CNNs) 
 * [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
 * [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
 * [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
-* [4 - Very deep networks and repeating blocks (VGG network)](./P04-C04-very-deep-nets-vgg.ipynb)
+* [4 - Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
 * ***Roadmap*** Batch Normalization (from scratch)
-* ***Roadmap*** Batch Normalization (from with ``gluon``)
+* ***Roadmap*** Batch
+Normalization (from with ``gluon``)
 
 ### Part 5: Recurrent neural networks (RNNs)
 * [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
@@ -60,7 +94,7 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Dropout for recurrent nets
 * ***Roadmap*** Zoneout regularization
 
-### Part 6: Computer vision (CV)
+### Part 6: Computer vision (CV) 
 * ***Roadmap*** Network of networks (inception & co)
 * ***Roadmap*** Residual networks
 * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
@@ -115,7 +149,8 @@ To run these notebooks, you'll want to build MXNet from source. Fortunately, thi
 * ***Roadmap*** Variational autoencoders
 
 ### Part 13: Optimization
-* ***Roadmap*** SGD
+* [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
+* [2 - Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C02-gd-and-sgd.ipynb)
 * ***Roadmap*** Momentum
 * ***Roadmap*** AdaGrad
 * ***Roadmap*** RMSProp
@@ -181,8 +216,8 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 
 
 ## Inspiration 
-
-In creating these tutorials, I have drawn inspiration from some the resources that allow me to learn machine learning and how to program with Theano and PyTorch:
+In creating these tutorials, we've have drawn inspiration from some the resources that allowed us
+to learn deep / machine learning with other libraries in the past. These include:
 
 * [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
@@ -190,4 +225,4 @@ In creating these tutorials, I have drawn inspiration from some the resources th
 * [Chris Bishop's *Pattern Recognition and Machine Learning*](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738)
 
 ## Contribute
-* Already, in the short time this project has been off the ground, we've gotten some helpful PRs from the community with pedagogical suggestions, typo corrections, and other useful fixes. If you're inclined, please contribute! 
+* Already, in the short time this project has been off the ground, we've gotten some helpful PRs from the community with pedagogical suggestions, typo corrections, and other useful fixes. If you're inclined, please contribute!

@@ -6,7 +6,8 @@ dependencies:
 - jupyter
 - sphinx
 - sphinx_rtd_theme
+- matplotlib
 - pip:
   - nbsphinx
   - recommonmark
-  - mxnet-cu80>=0.10.1b20170719
+  - mxnet-cu80>=0.11.0rc2
