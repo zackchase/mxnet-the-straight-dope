@@ -324,4 +324,5 @@ def setup(app):
         'enable_eval_rst': True,
         'enable_auto_toc_tree': True,
     }, True)
+    app.add_javascript('google_analytics.js')
     app.add_transform(AutoStructify)
