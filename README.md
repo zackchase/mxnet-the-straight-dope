@@ -44,6 +44,10 @@ them separately in [this repo](https://github.com/zackchase/mxnet-slides).
 Contribute there if you'd like to share tutorials or course material based on
 this books.
 
+## More Examples
+
+For more code examples of using Gluon, please see [Gluon examples](https://github.com/apache/incubator-mxnet/tree/master/example/gluon)
+
 ## Table of contents 
 
 ### Part 1: Crashcourse 
