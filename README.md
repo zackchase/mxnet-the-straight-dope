@@ -47,7 +47,7 @@ this books.
 ## Table of contents 
 
 ### Part 1: Deep Learning Fundamentals 
-1. Crashcourse 
+* Chapter 1: Crashcourse 
    * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C00-preface.ipynb)
    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.ipynb)
    * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
