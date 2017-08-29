@@ -47,13 +47,13 @@ this books.
 ## Table of contents 
 
 ### Part 1: Deep Learning Fundamentals 
-* **Chapter 1:** Crashcourse 
-    * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C00-preface.ipynb)
-    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.ipynb)
-    * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb) 
-    * [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
-    * [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
-    * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
+* **Chapter 1:** Crashcourse ..
+...[Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C00-preface.ipynb)..
+...[Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.ipynb)..
+...[Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb)..
+...[Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)..
+...[Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)..
+...[Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
 
 * **Chapter 2:** Introduction to Supervised Learning
     * [Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-linear-regression-scratch.ipynb)
