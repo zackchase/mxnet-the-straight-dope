@@ -101,93 +101,99 @@ your neural networks
     * ***Roadmap*** RMSProp
     * ***Roadmap*** Adam 
     * ***Roadmap*** AdaDelta
-   * ***Roadmap*** SGLD / SGHNT
+    * ***Roadmap*** SGLD / SGHNT
 
 * **Chapter 7:** Optimization, Distributed and high-performance learning
-   * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
-* [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
-* [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
-* ***Roadmap*** Training with Multiple Machines
-* ***Roadmap*** Combining imperative deep learning with symbolic graphs
+    * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
+    * [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
+    * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
+    * ***Roadmap*** Training with Multiple Machines
+    * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 ### Part 2: Applications
 * **Chapter 8:** Computer vision (CV) 
-* ***Roadmap*** Network of networks (inception & co)
-* ***Roadmap*** Residual networks
-* [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
-* ***Roadmap*** Fully-convolutional networks
-* ***Roadmap*** Siamese (conjoined?) networks
-* ***Roadmap*** Embeddings (pairwise and triplet losses)
-* ***Roadmap*** Inceptionism / visualizing feature detectors
-* ***Roadmap*** Style transfer
-* [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
+    * ***Roadmap*** Network of networks (inception & co)
+    * ***Roadmap*** Residual networks
+    * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
+    * ***Roadmap*** Fully-convolutional networks
+    * ***Roadmap*** Siamese (conjoined?) networks
+    * ***Roadmap*** Embeddings (pairwise and triplet losses)
+    * ***Roadmap*** Inceptionism / visualizing feature detectors
+    * ***Roadmap*** Style transfer
+    * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
 
 * **Chapter 9:** Natural language processing (NLP)
-* ***Roadmap*** Word embeddings (Word2Vec)
-* ***Roadmap*** Sentence embeddings (SkipThought)
-* ***Roadmap*** Sentiment analysis
-* ***Roadmap*** Sequence-to-sequence learning (machine translation)
-* ***Roadmap*** Sequence transduction with attention (machine translation)
-* ***Roadmap*** Named entity recognition 
-* ***Roadmap*** Image captioning
-* [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
+    * ***Roadmap*** Word embeddings (Word2Vec)
+    * ***Roadmap*** Sentence embeddings (SkipThought)
+    * ***Roadmap*** Sentiment analysis
+    * ***Roadmap*** Sequence-to-sequence learning (machine translation)
+    * ***Roadmap*** Sequence transduction with attention (machine translation)
+    * ***Roadmap*** Named entity recognition 
+    * ***Roadmap*** Image captioning
+    * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
  
 * **Chapter 10:** Audio Processing
-* ***Roadmap*** Intro to automatic speech recognition
-* ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
-* ***Roadmap*** Combining static and sequential data
+    * ***Roadmap*** Intro to automatic speech recognition
+    * ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
+    * ***Roadmap*** Combining static and sequential data
 
-* **Chapter 2:** Recommender systems
-* ***Roadmap*** Latent factor models
-* ***Roadmap*** Deep latent factor models
-* ***Roadmap*** Bilinear models
-* ***Roadmap*** Learning from implicit feedback
+* **Chapter 11:** Recommender systems
+    * ***Roadmap*** Latent factor models
+    * ***Roadmap*** Deep latent factor models
+    * ***Roadmap*** Bilinear models
+    * ***Roadmap*** Learning from implicit feedback
 
-* **Chapter 2:** Time series
-* ***Roadmap*** Forecasting
-* ***Roadmap*** Modeling missing data
-* ***Roadmap*** Combining static and sequential data
+* **Chapter 12:** Time series
+    * ***Roadmap*** Forecasting
+    * ***Roadmap*** Modeling missing data
+    * ***Roadmap*** Combining static and sequential data
 
 ### Part 3: Advanced Methods
+* **Chapter 13:** Unsupervised Learning
+   * ***Roadmap*** Introduction to autoencoders
+   * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
+   * ***Roadmap*** Denoising autoencoders
+   * ***Roadmap*** Variational autoencoders
+   * ***Roadmap*** Clustering
+   
+* **Chapter 14:** Generative adversarial networks (GANs)
+    *[Introduction to GANs](./P10-C01-gan-intro.ipynb)
+    * ***Roadmap*** DCGAN
+    * ***Roadmap*** Wasserstein-GANs
+    * ***Roadmap*** Energy-based GANS
+    * ***Roadmap*** Conditional GANs
+    * ***Roadmap*** Image transduction GANs (Pix2Pix)
+    * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
-* **Chapter 2:** Generative adversarial networks (GANs)
-* 1 - [Introduction to GANs](./P10-C01-gan-intro.ipynb)
-* ***Roadmap*** DCGAN
-* ***Roadmap*** Wasserstein-GANs
-* ***Roadmap*** Energy-based GANS
-* ***Roadmap*** Conditional GANs
-* ***Roadmap*** Image transduction GANs (Pix2Pix)
-* ***Roadmap*** Learning from Synthetic and Unsupervised Images 
+* **Chapter 15:** Adversarial learning
+    * ***Roadmap*** Two Sample Tests
+    * ***Roadmap*** Finding adversarial examples
+    * ***Roadmap*** Adversarial training
 
-* **Chapter 2:** Tensor Methods
-* ***Roadmap*** Introduction to tensor algebra
-* ***Roadmap*** Tensor decomposition
-* ***Roadmap*** Tensorized neural networks
+* **Chapter 16:** Tensor Methods
+    * ***Roadmap*** Introduction to tensor algebra
+    * ***Roadmap*** Tensor decomposition
+    * ***Roadmap*** Tensorized neural networks
 
-* **Chapter 2:** Adversarial learning
-* ***Roadmap*** Two Sample Tests
-* ***Roadmap*** Finding adversarial examples
-* ***Roadmap*** Adversarial training
+* **Chapter 17:** Deep reinforcement learning (DRL)
+    * ***Roadmap*** Introduction to reinforcement learning
+    * ***Roadmap*** Deep contextual bandits
+    * ***Roadmap*** Deep Q-networks
+    * ***Roadmap*** Policy gradient
+    * ***Roadmap*** Actor-critic gradient
 
-* **Chapter 2:** Deep reinforcement learning (DRL)
-* ***Roadmap*** Introduction to reinforcement learning
-* ***Roadmap*** Deep contextual bandits
-* ***Roadmap*** Deep Q-networks
-* ***Roadmap*** Policy gradient
-* ***Roadmap*** Actor-critic gradient
+* **Chapter 18:** Variational methods and uncertainty
+    * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
+    * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+    * ***Roadmap*** Variational autoencoders
 
-* **Chapter 2:** Variational methods and uncertainty
-* ***Roadmap*** Dropout-based uncertainty estimation (BALD)
-* ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
-* ***Roadmap*** Variational autoencoders
-
-
-### Appendix 1: Cheatsheets
-* ***Roadmap*** ``gluon`` 
-* ***Roadmap*** PyTorch to MXNet
-* ***Roadmap*** Tensorflow to MXNet
-* ***Roadmap*** Keras to MXNet
-* ***Roadmap*** Math to MXNet
+### Appendices
+* Appendix 1: Cheatsheets
+    * ***Roadmap*** ``gluon`` 
+    * ***Roadmap*** PyTorch to MXNet
+    * ***Roadmap*** Tensorflow to MXNet
+    * ***Roadmap*** Keras to MXNet
+    * ***Roadmap*** Math to MXNet
 
 
 ## Choose your own adventure
