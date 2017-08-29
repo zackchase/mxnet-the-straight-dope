@@ -64,11 +64,11 @@ this books.
     * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization-scratch.ipynb)
     * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
 
-* **Chapter 2:** Deep neural networks (DNNs) 
-    * [1 - Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
-    * [2 - Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-    * [3 - Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C03-mlp-dropout-scratch.ipynb)
-    * [4 - Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
+* **Chapter 3:** Deep neural networks (DNNs) 
+    * [Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
+    * [Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
+    * [Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C03-mlp-dropout-scratch.ipynb)
+    * [Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
     * [Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
     * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
     * [Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
@@ -76,23 +76,42 @@ this books.
     * Debugging
 your neural networks
 
-### Part 4: Convolutional neural networks (CNNs) 
-* [1 - Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
-* [2 - Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
-* [3 - Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
-* [4 - Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
-* [5 - Batch Normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C05-cnn-batch-norm-scratch.ipynb)
-* [6 - Batch Normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C06-cnn-batch-norm-gluon.ipynb)
+* **Chapter 4:** Convolutional neural networks (CNNs) 
+     * [Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
+     * [Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
+     * [Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
+     * [Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
+     * [Batch Normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C05-cnn-batch-norm-scratch.ipynb)
+     * [Batch Normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C06-cnn-batch-norm-gluon.ipynb)
 
-### Part 5: Recurrent neural networks (RNNs)
-* [1 - Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
-* [2 - LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
-* [3 - GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
-* [4 - RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
-* ***Roadmap*** Dropout for recurrent nets
-* ***Roadmap*** Zoneout regularization
+* **Chapter 5:** Recurrent neural networks (RNNs)
+    * [Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
+    * [LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
+    * [GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
+    * [RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
+    * ***Roadmap*** Dropout for recurrent nets
+    * ***Roadmap*** Zoneout regularization
 
-### Part 6: Computer vision (CV) 
+
+* **Chapter 6:** Optimization
+    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
+    * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C02-gd-and-sgd.ipynb)
+    * ***Roadmap*** Momentum
+    * ***Roadmap*** AdaGrad
+    * ***Roadmap*** RMSProp
+    * ***Roadmap*** Adam 
+    * ***Roadmap*** AdaDelta
+   * ***Roadmap*** SGLD / SGHNT
+
+* **Chapter 7:** Optimization, Distributed and high-performance learning
+   * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
+* [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
+* [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
+* ***Roadmap*** Training with Multiple Machines
+* ***Roadmap*** Combining imperative deep learning with symbolic graphs
+
+### Part 2: Applications
+* **Chapter 8:** Computer vision (CV) 
 * ***Roadmap*** Network of networks (inception & co)
 * ***Roadmap*** Residual networks
 * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
@@ -103,7 +122,7 @@ your neural networks
 * ***Roadmap*** Style transfer
 * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
 
-### Part 7: Natural language processing (NLP)
+* **Chapter 9:** Natural language processing (NLP)
 * ***Roadmap*** Word embeddings (Word2Vec)
 * ***Roadmap*** Sentence embeddings (SkipThought)
 * ***Roadmap*** Sentiment analysis
@@ -113,19 +132,25 @@ your neural networks
 * ***Roadmap*** Image captioning
 * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
  
-### Part 8: Unsupervised Learning
-* ***Roadmap*** Introduction to autoencoders
-* ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
-* ***Roadmap*** Denoising autoencoders
-* ***Roadmap*** Variational autoencoders
-* ***Roadmap*** Clustering
+* **Chapter 10:** Audio Processing
+* ***Roadmap*** Intro to automatic speech recognition
+* ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
+* ***Roadmap*** Combining static and sequential data
 
-### Part 9: Adversarial learning
-* ***Roadmap*** Two Sample Tests
-* ***Roadmap*** Finding adversarial examples
-* ***Roadmap*** Adversarial training
+* **Chapter 2:** Recommender systems
+* ***Roadmap*** Latent factor models
+* ***Roadmap*** Deep latent factor models
+* ***Roadmap*** Bilinear models
+* ***Roadmap*** Learning from implicit feedback
 
-### Part 10: Generative adversarial networks (GANs)
+* **Chapter 2:** Time series
+* ***Roadmap*** Forecasting
+* ***Roadmap*** Modeling missing data
+* ***Roadmap*** Combining static and sequential data
+
+### Part 3: Advanced Methods
+
+* **Chapter 2:** Generative adversarial networks (GANs)
 * 1 - [Introduction to GANs](./P10-C01-gan-intro.ipynb)
 * ***Roadmap*** DCGAN
 * ***Roadmap*** Wasserstein-GANs
@@ -134,59 +159,28 @@ your neural networks
 * ***Roadmap*** Image transduction GANs (Pix2Pix)
 * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
-### Part 11: Deep reinforcement learning (DRL)
+* **Chapter 2:** Tensor Methods
+* ***Roadmap*** Introduction to tensor algebra
+* ***Roadmap*** Tensor decomposition
+* ***Roadmap*** Tensorized neural networks
+
+* **Chapter 2:** Adversarial learning
+* ***Roadmap*** Two Sample Tests
+* ***Roadmap*** Finding adversarial examples
+* ***Roadmap*** Adversarial training
+
+* **Chapter 2:** Deep reinforcement learning (DRL)
 * ***Roadmap*** Introduction to reinforcement learning
 * ***Roadmap*** Deep contextual bandits
 * ***Roadmap*** Deep Q-networks
 * ***Roadmap*** Policy gradient
 * ***Roadmap*** Actor-critic gradient
 
-### Part 12: Variational methods and uncertainty
+* **Chapter 2:** Variational methods and uncertainty
 * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
 * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
 * ***Roadmap*** Variational autoencoders
 
-### Part 13: Optimization
-* [1 - Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
-* [2 - Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C02-gd-and-sgd.ipynb)
-* ***Roadmap*** Momentum
-* ***Roadmap*** AdaGrad
-* ***Roadmap*** RMSProp
-* ***Roadmap*** Adam 
-* ***Roadmap*** AdaDelta
-* ***Roadmap*** SGLD / SGHNT
-
-### Part 14: Optimization, Distributed and high-performance learning
-* ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
-* [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
-* [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
-* ***Roadmap*** Training with Multiple Machines
-* ***Roadmap*** Combining imperative deep learning with symbolic graphs
-
-### Part 15: Hacking MXNet
-* ***Custom Operators***
-* ...
-
-### Part 16: Audio Processing
-* ***Roadmap*** Intro to automatic speech recognition
-* ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
-* ***Roadmap*** Combining static and sequential data
-
-### Part 17: Recommender systems
-* ***Roadmap*** Latent factor models
-* ***Roadmap*** Deep latent factor models
-* ***Roadmap*** Bilinear models
-* ***Roadmap*** Learning from implicit feedback
-
-### Part 18: Time series
-* ***Roadmap*** Forecasting
-* ***Roadmap*** Modeling missing data
-* ***Roadmap*** Combining static and sequential data
-
-### Part 19 Tensor Methods
-* ***Roadmap*** Introduction to tensor algebra
-* ***Roadmap*** Tensor decomposition
-* ***Roadmap*** Tensorized neural networks
 
 ### Appendix 1: Cheatsheets
 * ***Roadmap*** ``gluon`` 
