@@ -108,7 +108,7 @@ this books.
     * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/hybridize.ipynb)
     * [Training with multiple GPUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-scratch.ipynb) 
     * [Training with multiple GPUs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-gluon.ipynb)
-    * [Training with multiple machines](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/training-with-multi-machines.ipynb)
+    * [Training with multiple machines](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/training-with-multiple-machines.ipynb)
     * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
     * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
