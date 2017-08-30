@@ -100,10 +100,10 @@ Part 1: Deep Learning Fundamentals
    :maxdepth: 1
    :caption: High-performance and distributed training
 
-   hybridize
-   multiple-gpus-scratch
-   multiple-gpus-gluon
-   training-with-multi-machines
+   chapter07_distributed-learning/hybridize
+   chapter07_distributed-learning/multiple-gpus-scratch
+   chapter07_distributed-learning/multiple-gpus-gluon
+   chapter07_distributed-learning/training-with-multi-machines
    
 
 Part 2: Applications
@@ -116,14 +116,6 @@ Part 2: Applications
 
    chapter08_computer-vision/object-detection
    chapter08_computer-vision/fine-tuning
-   
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :caption: Computer vision
-
-   chapter08_computer-vision/object-detection
-   chapter08_computer-vision/fine-tuning   
    
 .. toctree::
    :glob:
