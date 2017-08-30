@@ -103,7 +103,7 @@ Part 1: Deep Learning Fundamentals
    chapter07_distributed-learning/hybridize
    chapter07_distributed-learning/multiple-gpus-scratch
    chapter07_distributed-learning/multiple-gpus-gluon
-   chapter07_distributed-learning/training-with-multi-machines
+   chapter07_distributed-learning/training-with-multiple-machines
    
 
 Part 2: Applications
