@@ -28,12 +28,13 @@ Part 1: Deep Learning Fundamentals
    :glob:
    :maxdepth: 1
    :caption: Crashcourse
-   chapter01_crashcourse/preface.ipynb
-   chapter01_crashcourse/introduction.ipynb
-   chapter01_crashcourse/ndarray.ipynb
-   chapter01_crashcourse/linear-algebra.ipynb
-   chapter01_crashcourse/probability.ipynb
-   chapter01_crashcourse/autograd.ipynb
+   
+   chapter01_crashcourse/preface
+   chapter01_crashcourse/introduction
+   chapter01_crashcourse/ndarray
+   chapter01_crashcourse/linear-algebra
+   chapter01_crashcourse/probability
+   chapter01_crashcourse/autograd
 
 
 .. toctree::
@@ -41,68 +42,68 @@ Part 1: Deep Learning Fundamentals
    :maxdepth: 1
    :caption: Introduction to supervised learning
 
-   chapter02_supervised-learning/linear-regression-scratch.ipynb
-   chapter02_supervised-learning/linear-regression-gluon.ipynb
-   chapter02_supervised-learning/perceptron.ipynb
-   chapter02_supervised-learning/softmax-regression-scratch.ipynb
-   chapter02_supervised-learning/softmax-regression-gluon.ipynb
-   chapter02_supervised-learning/regularization-scratch.ipynb
-   chapter02_supervised-learning/regularization-gluon.ipynb
-   chapter02_supervised-learning/loss.ipynb
-   chapter02_supervised-learning/environment.ipynb
+   chapter02_supervised-learning/linear-regression-scratch
+   chapter02_supervised-learning/linear-regression-gluon
+   chapter02_supervised-learning/perceptron
+   chapter02_supervised-learning/softmax-regression-scratch
+   chapter02_supervised-learning/softmax-regression-gluon
+   chapter02_supervised-learning/regularization-scratch
+   chapter02_supervised-learning/regularization-gluon
+   chapter02_supervised-learning/loss
+   chapter02_supervised-learning/environment
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Deep neural networks
 
-   chapter03_deep-neural-networks/mlp-scratch.ipynb
-   chapter03_deep-neural-networks/mlp-gluon.ipynb
-   chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb
-   chapter03_deep-neural-networks/mlp-dropout-gluon.ipynb
-   chapter03_deep-neural-networks/plumbing.ipynb
-   chapter03_deep-neural-networks/custom-layer.ipynb
-   chapter03_deep-neural-networks/serialization.ipynb
+   chapter03_deep-neural-networks/mlp-scratch
+   chapter03_deep-neural-networks/mlp-gluon
+   chapter03_deep-neural-networks/mlp-dropout-scratch
+   chapter03_deep-neural-networks/mlp-dropout-gluon
+   chapter03_deep-neural-networks/plumbing
+   chapter03_deep-neural-networks/custom-layer
+   chapter03_deep-neural-networks/serialization
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Convolutional neural networks
 
-   chapter04_convolutional-neural-networks/cnn-scratch.ipynb
-   chapter04_convolutional-neural-networks/cnn-gluon.ipynb
-   chapter04_convolutional-neural-networks/deep-cnns-alexnet.ipynb
-   chapter04_convolutional-neural-networks/very-deep-nets-vgg.ipynb
-   chapter04_convolutional-neural-networks/cnn-batch-norm-scratch.ipynb
-   chapter04_convolutional-neural-networks/cnn-batch-norm-gluon.ipynb
+   chapter04_convolutional-neural-networks/cnn-scratch
+   chapter04_convolutional-neural-networks/cnn-gluon
+   chapter04_convolutional-neural-networks/deep-cnns-alexnet
+   chapter04_convolutional-neural-networks/very-deep-nets-vgg
+   chapter04_convolutional-neural-networks/cnn-batch-norm-scratch
+   chapter04_convolutional-neural-networks/cnn-batch-norm-gluon
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Recurrent neural networks
 
-   chapter05_recurrent-neural-networks/simple-rnn.ipynb
-   chapter05_recurrent-neural-networks/lstm-scratch.ipynb
-   chapter05_recurrent-neural-networks/gru-scratch.ipynb
-   chapter05_recurrent-neural-networks/rnns-gluon.ipynb
+   chapter05_recurrent-neural-networks/simple-rnn
+   chapter05_recurrent-neural-networks/lstm-scratch
+   chapter05_recurrent-neural-networks/gru-scratch
+   chapter05_recurrent-neural-networks/rnns-gluon
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Optimization
 
-   chapter06_optimization/optimization-intro.ipynb
-   chapter06_optimization/gd-sgd.ipynb
+   chapter06_optimization/optimization-intro
+   chapter06_optimization/gd-sgd
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: High-performance and distributed training
 
-   hybridize.ipynb
-   multiple-gpus-scratch.ipynb
-   multiple-gpus-gluon.ipynb
-   training-with-multi-machines.ipynb
+   hybridize
+   multiple-gpus-scratch
+   multiple-gpus-gluon
+   training-with-multi-machines
    
 
 Part 2: Applications
@@ -113,23 +114,23 @@ Part 2: Applications
    :maxdepth: 1
    :caption: Computer vision
 
-   chapter08_computer-vision/object-detection.ipynb
-   chapter08_computer-vision/fine-tuning.ipynb
+   chapter08_computer-vision/object-detection
+   chapter08_computer-vision/fine-tuning
    
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Computer vision
 
-   chapter08_computer-vision/object-detection.ipynb
-   chapter08_computer-vision/fine-tuning.ipynb   
+   chapter08_computer-vision/object-detection
+   chapter08_computer-vision/fine-tuning   
    
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Natural language processing
 
-   chapter09-natural-language-processing/tree-lstm.ipynb
+   chapter09-natural-language-processing/tree-lstm
    
 
 Part 3: Advanced Topics
@@ -140,8 +141,8 @@ Part 3: Advanced Topics
    :maxdepth: 1
    :caption: Generative adversarial networks
 
-   chapter14_generative-adversarial-networks/gan-intro.ipynb
-   chapter14_generative-adversarial-networks/dcgan.ipynb
+   chapter14_generative-adversarial-networks/gan-intro
+   chapter14_generative-adversarial-networks/dcgan
 
 .. toctree::
    :glob:
