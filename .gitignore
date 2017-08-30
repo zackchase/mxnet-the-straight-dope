@@ -104,3 +104,7 @@ ENV/
 .mypy_cache/
 _build
 **/.DS_Store
+
+# mxnet
+*.rec
+*.params
