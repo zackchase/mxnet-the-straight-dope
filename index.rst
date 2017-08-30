@@ -20,62 +20,121 @@ To run these notebooks, a recent version of MXNet is required. The easiest way i
     
 More detailed instructions are available `here <docs/C01-install.html>`_
 
+
+Part 1: Deep Learning Fundamentals
+==================================
+
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Crashcourse
+   
+   chapter01_crashcourse/preface
+   chapter01_crashcourse/introduction
+   chapter01_crashcourse/ndarray
+   chapter01_crashcourse/linear-algebra
+   chapter01_crashcourse/probability
+   chapter01_crashcourse/autograd
 
-   P01-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Introduction to supervised learning
 
-   P02-*
+   chapter02_supervised-learning/linear-regression-scratch
+   chapter02_supervised-learning/linear-regression-gluon
+   chapter02_supervised-learning/perceptron
+   chapter02_supervised-learning/softmax-regression-scratch
+   chapter02_supervised-learning/softmax-regression-gluon
+   chapter02_supervised-learning/regularization-scratch
+   chapter02_supervised-learning/regularization-gluon
+   chapter02_supervised-learning/loss
+   chapter02_supervised-learning/environment
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Deep neural networks
 
-   P03-*
+   chapter03_deep-neural-networks/mlp-scratch
+   chapter03_deep-neural-networks/mlp-gluon
+   chapter03_deep-neural-networks/mlp-dropout-scratch
+   chapter03_deep-neural-networks/mlp-dropout-gluon
+   chapter03_deep-neural-networks/plumbing
+   chapter03_deep-neural-networks/custom-layer
+   chapter03_deep-neural-networks/serialization
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Convolutional neural networks
 
-   P04-*
+   chapter04_convolutional-neural-networks/cnn-scratch
+   chapter04_convolutional-neural-networks/cnn-gluon
+   chapter04_convolutional-neural-networks/deep-cnns-alexnet
+   chapter04_convolutional-neural-networks/very-deep-nets-vgg
+   chapter04_convolutional-neural-networks/cnn-batch-norm-scratch
+   chapter04_convolutional-neural-networks/cnn-batch-norm-gluon
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Recurrent neural networks
 
-   P05-*
+   chapter05_recurrent-neural-networks/simple-rnn
+   chapter05_recurrent-neural-networks/lstm-scratch
+   chapter05_recurrent-neural-networks/gru-scratch
+   chapter05_recurrent-neural-networks/rnns-gluon
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Computer vision
+   :caption: Optimization
 
-   P06-*
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :caption: Generative adversarial networks
-
-   P10-*
+   chapter06_optimization/optimization-intro
+   chapter06_optimization/gd-sgd
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: High-performance and distributed training
 
-   P14-*
+   chapter07_distributed-learning/hybridize
+   chapter07_distributed-learning/multiple-gpus-scratch
+   chapter07_distributed-learning/multiple-gpus-gluon
+   chapter07_distributed-learning/training-with-multi-machines
+   
 
+Part 2: Applications
+====================
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Computer vision
+
+   chapter08_computer-vision/object-detection
+   chapter08_computer-vision/fine-tuning
+   
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Natural language processing
+
+   chapter09-natural-language-processing/tree-lstm
+   
+
+Part 3: Advanced Topics
+=======================
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Generative adversarial networks
+
+   chapter14_generative-adversarial-networks/gan-intro
+   chapter14_generative-adversarial-networks/dcgan
 
 .. toctree::
    :glob:
