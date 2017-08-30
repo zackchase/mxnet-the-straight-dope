@@ -20,62 +20,128 @@ To run these notebooks, a recent version of MXNet is required. The easiest way i
     
 More detailed instructions are available `here <docs/C01-install.html>`_
 
+
+Part 1: Deep Learning Fundamentals
+==================================
+
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Crashcourse
+   chapter01_crashcourse/preface.ipynb
+   chapter01_crashcourse/introduction.ipynb
+   chapter01_crashcourse/ndarray.ipynb
+   chapter01_crashcourse/linear-algebra.ipynb
+   chapter01_crashcourse/probability.ipynb
+   chapter01_crashcourse/autograd.ipynb
 
-   P01-*
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Introduction to supervised learning
 
-   P02-*
+   chapter02_supervised-learning/linear-regression-scratch.ipynb
+   chapter02_supervised-learning/linear-regression-gluon.ipynb
+   chapter02_supervised-learning/perceptron.ipynb
+   chapter02_supervised-learning/softmax-regression-scratch.ipynb
+   chapter02_supervised-learning/softmax-regression-gluon.ipynb
+   chapter02_supervised-learning/regularization-scratch.ipynb
+   chapter02_supervised-learning/regularization-gluon.ipynb
+   chapter02_supervised-learning/loss.ipynb
+   chapter02_supervised-learning/environment.ipynb
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Deep neural networks
 
-   P03-*
+   chapter03_deep-neural-networks/mlp-scratch.ipynb
+   chapter03_deep-neural-networks/mlp-gluon.ipynb
+   chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb
+   chapter03_deep-neural-networks/mlp-dropout-gluon.ipynb
+   chapter03_deep-neural-networks/plumbing.ipynb
+   chapter03_deep-neural-networks/custom-layer.ipynb
+   chapter03_deep-neural-networks/serialization.ipynb
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Convolutional neural networks
 
-   P04-*
+   chapter04_convolutional-neural-networks/cnn-scratch.ipynb
+   chapter04_convolutional-neural-networks/cnn-gluon.ipynb
+   chapter04_convolutional-neural-networks/deep-cnns-alexnet.ipynb
+   chapter04_convolutional-neural-networks/very-deep-nets-vgg.ipynb
+   chapter04_convolutional-neural-networks/cnn-batch-norm-scratch.ipynb
+   chapter04_convolutional-neural-networks/cnn-batch-norm-gluon.ipynb
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Recurrent neural networks
 
-   P05-*
+   chapter05_recurrent-neural-networks/simple-rnn.ipynb
+   chapter05_recurrent-neural-networks/lstm-scratch.ipynb
+   chapter05_recurrent-neural-networks/gru-scratch.ipynb
+   chapter05_recurrent-neural-networks/rnns-gluon.ipynb
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Computer vision
+   :caption: Optimization
 
-   P06-*
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :caption: Generative adversarial networks
-
-   P10-*
+   chapter06_optimization/optimization-intro.ipynb
+   chapter06_optimization/gd-sgd.ipynb
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: High-performance and distributed training
 
-   P14-*
+   hybridize.ipynb
+   multiple-gpus-scratch.ipynb
+   multiple-gpus-gluon.ipynb
+   training-with-multi-machines.ipynb
+   
 
+Part 2: Applications
+====================
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Computer vision
+
+   chapter08_computer-vision/object-detection.ipynb
+   chapter08_computer-vision/fine-tuning.ipynb
+   
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Computer vision
+
+   chapter08_computer-vision/object-detection.ipynb
+   chapter08_computer-vision/fine-tuning.ipynb   
+   
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Natural language processing
+
+   chapter09-natural-language-processing/tree-lstm.ipynb
+   
+
+Part 3: Advanced Topics
+=======================
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Generative adversarial networks
+
+   chapter14_generative-adversarial-networks/gan-intro.ipynb
+   chapter14_generative-adversarial-networks/dcgan.ipynb
 
 .. toctree::
    :glob:
