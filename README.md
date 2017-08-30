@@ -132,7 +132,7 @@ this books.
     * ***Roadmap*** Sequence transduction with attention (machine translation)
     * ***Roadmap*** Named entity recognition 
     * ***Roadmap*** Image captioning
-    * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09-natural-language-processing/tree-lstm.ipynb)
+    * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09_natural-language-processing/tree-lstm.ipynb)
  
 * **Chapter 10:** Audio Processing
     * ***Roadmap*** Intro to automatic speech recognition

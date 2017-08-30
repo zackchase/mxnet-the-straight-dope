@@ -122,7 +122,7 @@ Part 2: Applications
    :maxdepth: 1
    :caption: Natural language processing
 
-   chapter09-natural-language-processing/tree-lstm
+   chapter09_natural-language-processing/tree-lstm
    
 
 Part 3: Advanced Topics
