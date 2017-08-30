@@ -48,54 +48,55 @@ this books.
 
 ### Part 1: Deep Learning Fundamentals 
 * **Chapter 1:** Crashcourse
-    * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C00-preface.ipynb)
-    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C01-introduction.ipynb)
-    * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C02-ndarray.ipynb)
-    * [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C03-linear-algebra.ipynb)
-    * [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C04-probability.ipynb)
-    * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P01-C05-autograd.ipynb)
+    * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/preface.ipynb)
+    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/introduction.ipynb)
+    * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/ndarray.ipynb)
+    * [Linear Algebra](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/linear-algebra.ipynb)
+    * [Probability and Statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/probability.ipynb)
+    * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/autograd.ipynb)
 
 * **Chapter 2:** Introduction to Supervised Learning
-    * [Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C01-linear-regression-scratch.ipynb)
-    * [Linear Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02-linear-regression-gluon.ipynb)
-    * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C02.5-perceptron.ipynb)
-    * [Multiclass Logistic Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C03-softmax-regression-scratch.ipynb)
-    * [Multiclass Logistic Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C04-softmax-regression-gluon.ipynb)
-    * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P02-C05-regularization-scratch.ipynb)
-    * ***Roadmap*** L1 and L2 Regularization (in ``gluon``)
+    * [Linear Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-scratch.ipynb)
+    * [Linear Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-gluon.ipynb)
+    * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
+    * [Multiclass Logistic Regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-scratch.ipynb)
+    * [Multiclass Logistic Regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-gluon.ipynb)
+    * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-scratch.ipynb)
+     * [Overfitting and regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-gluon.ipynb)
+     * [Loss functions](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/loss.ipynb)
+     * [Learning environments](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/environment.ipynb)
 
 * **Chapter 3:** Deep neural networks (DNNs) 
-    * [Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C01-mlp-scratch.ipynb)
-    * [Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C02-mlp-gluon.ipynb)
-    * [Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C03-mlp-dropout-scratch.ipynb)
-    * [Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03-C04-mlp-dropout-gluon.ipynb)
-    * [Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C01-plumbing.ipynb)
-    * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C02-custom-layer.ipynb)
-    * [Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P03.5-C03-serialization.ipynb)
+    * [Multilayer Perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-scratch.ipynb)
+    * [Multilayer Perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-gluon.ipynb)
+    * [Dropout Regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb)
+    * [Dropout Regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-gluon.ipynb)
+    * [Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/plumbing.ipynb)
+    * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/custom-layer.ipynb)
+    * [Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/serialization.ipynb)
     * Advanced Data IO
-    * Debugging
-your neural networks
+    * Debugging your neural networks
 
 * **Chapter 4:** Convolutional neural networks (CNNs) 
-     * [Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C01-cnn-scratch.ipynb)
-     * [Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C02-cnn-gluon.ipynb)
-     * [Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C03-deep-cnns-alexnet.ipynb)
-     * [Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C04-very-deep-nets-vgg.ipynb)
-     * [Batch Normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C05-cnn-batch-norm-scratch.ipynb)
-     * [Batch Normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P04-C06-cnn-batch-norm-gluon.ipynb)
+     * [Convolutional Neural Network *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-scratch.ipynb)
+     * [Convolutional Neural Network *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-gluon.ipynb)
+     * [Introduction to Deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/deep-cnns-alexnet.ipynb)
+     * [Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/very-deep-nets-vgg.ipynb)
+     * [Batch Normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-scratch.ipynb)
+     * [Batch Normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-gluon.ipynb)
 
 * **Chapter 5:** Recurrent neural networks (RNNs)
-    * [Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C01-simple-rnn.ipynb)
-    * [LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C02-lstm-scratch.ipynb)
-    * [GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C03-gru-scratch.ipynb)
-    * [RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P05-C04-rnns-gluon.ipynb)
+    * [Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter05_recurrent-neural-networks/simple-rnn.ipynb)
+    * [LSTMS RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter05_recurrent-neural-networks/lstm-scratch.ipynb)
+    * [GRUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter05_recurrent-neural-networks/gru-scratch.ipynb)
+    * [RNNs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter05_recurrent-neural-networks/rnns-gluon.ipynb)
     * ***Roadmap*** Dropout for recurrent nets
     * ***Roadmap*** Zoneout regularization
 
 
 * **Chapter 6:** Optimization
-    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C01-intro.ipynb)
-    * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P13-C02-gd-and-sgd.ipynb)
+    * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/optimization-intro.ipynb)
+    * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd.ipynb)
     * ***Roadmap*** Momentum
     * ***Roadmap*** AdaGrad
     * ***Roadmap*** RMSProp
@@ -104,10 +105,11 @@ your neural networks
     * ***Roadmap*** SGLD / SGHNT
 
 * **Chapter 7:** Optimization, Distributed and high-performance learning
+    * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/hybridize.ipynb)
+    * [Training with Multiple GPUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-scratch.ipynb) 
+    * [Training with Multiple GPUs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/chapter07_distributed-learning/multiple-gpus-gluon.ipynb)
+    * [Training with Multiple Machines]((https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/training-with-multi-machines.ipynb)
     * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
-    * [Training with Multiple GPUs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C02-multiple-gpus-scratch.ipynb) 
-    * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P14-C05-hybridize.ipynb)
-    * ***Roadmap*** Training with Multiple Machines
     * ***Roadmap*** Combining imperative deep learning with symbolic graphs
 
 ### Part 2: Applications
