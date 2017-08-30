@@ -116,13 +116,13 @@ this books.
 * **Chapter 8:** Computer vision (CV) 
     * ***Roadmap*** Network of networks (inception & co)
     * ***Roadmap*** Residual networks
-    * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C03-object-detection.ipynb)
+    * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/object-detection.ipynb)
     * ***Roadmap*** Fully-convolutional networks
     * ***Roadmap*** Siamese (conjoined?) networks
     * ***Roadmap*** Embeddings (pairwise and triplet losses)
     * ***Roadmap*** Inceptionism / visualizing feature detectors
     * ***Roadmap*** Style transfer
-    * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P06-C09-fine-tuning.ipynb)
+    * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/fine-tuning.ipynb)
 
 * **Chapter 9:** Natural language processing (NLP)
     * ***Roadmap*** Word embeddings (Word2Vec)
@@ -132,7 +132,7 @@ this books.
     * ***Roadmap*** Sequence transduction with attention (machine translation)
     * ***Roadmap*** Named entity recognition 
     * ***Roadmap*** Image captioning
-    * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/P07-C08-tree-lstm.ipynb)
+    * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09-natural-language-processing/tree-lstm.ipynb)
  
 * **Chapter 10:** Audio Processing
     * ***Roadmap*** Intro to automatic speech recognition
@@ -159,8 +159,8 @@ this books.
    * ***Roadmap*** Clustering
    
 * **Chapter 14:** Generative adversarial networks (GANs)
-    *[Introduction to GANs](./P10-C01-gan-intro.ipynb)
-    * ***Roadmap*** DCGAN
+    *[Introduction to GANs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/gan-intro.ipynb)
+    * [Deep convolutional GANs (DCGANs)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/dcgan.ipynb)
     * ***Roadmap*** Wasserstein-GANs
     * ***Roadmap*** Energy-based GANS
     * ***Roadmap*** Conditional GANs
