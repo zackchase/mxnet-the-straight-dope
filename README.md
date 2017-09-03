@@ -38,7 +38,7 @@ Python 3 (because it's 2017).
 ## Slides
 
 The authors (& others) are
-inreasingly giving talks that are based on the content in this books. Some of
+increasingly giving talks that are based on the content in this books. Some of
 these slide-decks (like the 6-hour KDD 2017) are gigantic so we're collecting
 them separately in [this repo](https://github.com/zackchase/mxnet-slides).
 Contribute there if you'd like to share tutorials or course material based on
