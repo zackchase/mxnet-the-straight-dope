@@ -97,7 +97,7 @@ this books.
 * **Chapter 6:** Optimization
     * [Introduction to optimization](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/optimization-intro.ipynb)
     * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd.ipynb)
-    * ***Roadmap*** Momentum
+    * [SGD with Momentum](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/sgd-momentum.ipynb)
     * ***Roadmap*** AdaGrad
     * ***Roadmap*** RMSProp
     * ***Roadmap*** Adam 
