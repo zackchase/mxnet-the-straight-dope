@@ -122,6 +122,7 @@ this books.
     * ***Roadmap*** Embeddings (pairwise and triplet losses)
     * ***Roadmap*** Inceptionism / visualizing feature detectors
     * ***Roadmap*** Style transfer
+    * [Visual-question-answer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/visual-question-answer.ipynb)
     * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/fine-tuning.ipynb)
 
 * **Chapter 9:** Natural language processing (NLP)
