@@ -44,6 +44,9 @@ them separately in [this repo](https://github.com/zackchase/mxnet-slides).
 Contribute there if you'd like to share tutorials or course material based on
 this books.
 
+## Translation
+As we write the book, large stable sections are simultaneously being translated into 中文 by coauthors @mli and @astonzhang.
+
 ## Table of contents 
 
 ### Part 1: Deep Learning Fundamentals 
