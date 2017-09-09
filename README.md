@@ -183,7 +183,7 @@ As we write the book, large stable sections are simultaneously being translated 
 * **Chapter 17:** Deep reinforcement learning (DRL)
     * ***Roadmap*** Introduction to reinforcement learning
     * ***Roadmap*** Deep contextual bandits
-    * [Deep Q-networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_Deep-Reinforcement-Learning/DQN.ipynb)
+    * [Deep Q-networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DQN.ipynb)
     * ***Roadmap*** Policy gradient
     * ***Roadmap*** Actor-critic gradient
 
