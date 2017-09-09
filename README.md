@@ -45,7 +45,8 @@ Contribute there if you'd like to share tutorials or course material based on
 this books.
 
 ## Translation
-As we write the book, large stable sections are simultaneously being translated into [中文](http://zh.gluon.ai/).
+As we write the book, large stable sections are simultaneously being translated into 中文, 
+available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http://zh.gluon.ai/).
 
 ## Table of contents 
 
