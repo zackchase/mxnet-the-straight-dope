@@ -38,11 +38,15 @@ Python 3 (because it's 2017).
 ## Slides
 
 The authors (& others) are
-inreasingly giving talks that are based on the content in this books. Some of
+increasingly giving talks that are based on the content in this books. Some of
 these slide-decks (like the 6-hour KDD 2017) are gigantic so we're collecting
 them separately in [this repo](https://github.com/zackchase/mxnet-slides).
 Contribute there if you'd like to share tutorials or course material based on
 this books.
+
+## Translation
+As we write the book, large stable sections are simultaneously being translated into 中文, 
+available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http://zh.gluon.ai/).
 
 ## Table of contents 
 
@@ -69,8 +73,8 @@ this books.
 * **Chapter 3:** Deep neural networks (DNNs) 
     * [Multilayer perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-scratch.ipynb)
     * [Multilayer perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-gluon.ipynb)
-    * [Dropout regularization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb)
-    * [Dropout regularization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-gluon.ipynb)
+    * [Dropout regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb)
+    * [Dropout regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-gluon.ipynb)
     * [Introduction to ``gluon.Block`` and ``gluon.nn.Sequential()``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/plumbing.ipynb)
     * [Writing custom layers with ``gluon.Block``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/custom-layer.ipynb)
     * [Serialization: saving and loading models](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/serialization.ipynb)
@@ -78,12 +82,12 @@ this books.
     * Debugging your neural networks
 
 * **Chapter 4:** Convolutional neural networks (CNNs) 
-     * [Convolutional neural networks *(from scratch!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-scratch.ipynb)
-     * [Convolutional neural networks *(with ``gluon``!)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-gluon.ipynb)
+     * [Convolutional neural networks *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-scratch.ipynb)
+     * [Convolutional neural networks *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-gluon.ipynb)
      * [Introduction to deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/deep-cnns-alexnet.ipynb)
      * [Very deep networks and repeating blocks (VGG network)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/very-deep-nets-vgg.ipynb)
-     * [Batch normalization (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-scratch.ipynb)
-     * [Batch normalization (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-gluon.ipynb)
+     * [Batch normalization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-scratch.ipynb)
+     * [Batch normalization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-batch-norm-gluon.ipynb)
 
 * **Chapter 5:** Recurrent neural networks (RNNs)
     * [Simple RNNs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter05_recurrent-neural-networks/simple-rnn.ipynb)
@@ -97,7 +101,7 @@ this books.
 * **Chapter 6:** Optimization
     * [Introduction to optimization](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/optimization-intro.ipynb)
     * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd.ipynb)
-    * ***Roadmap*** Momentum
+    * [SGD with Momentum](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/sgd-momentum.ipynb)
     * ***Roadmap*** AdaGrad
     * ***Roadmap*** RMSProp
     * ***Roadmap*** Adam 
@@ -122,6 +126,7 @@ this books.
     * ***Roadmap*** Embeddings (pairwise and triplet losses)
     * ***Roadmap*** Inceptionism / visualizing feature detectors
     * ***Roadmap*** Style transfer
+    * [Visual-question-answer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/visual-question-answer.ipynb)
     * [Fine-tuning](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/fine-tuning.ipynb)
 
 * **Chapter 9:** Natural language processing (NLP)
@@ -159,7 +164,7 @@ this books.
    * ***Roadmap*** Clustering
    
 * **Chapter 14:** Generative adversarial networks (GANs)
-    *[Introduction to GANs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/gan-intro.ipynb)
+    * [Introduction to GANs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/gan-intro.ipynb)
     * [Deep convolutional GANs (DCGANs)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/dcgan.ipynb)
     * ***Roadmap*** Wasserstein-GANs
     * ***Roadmap*** Energy-based GANS
@@ -180,7 +185,7 @@ this books.
 * **Chapter 17:** Deep reinforcement learning (DRL)
     * ***Roadmap*** Introduction to reinforcement learning
     * ***Roadmap*** Deep contextual bandits
-    * ***Roadmap*** Deep Q-networks
+    * [Deep Q-networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DQN.ipynb)
     * ***Roadmap*** Policy gradient
     * ***Roadmap*** Actor-critic gradient
 
