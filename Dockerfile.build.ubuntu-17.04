@@ -1,0 +1,15 @@
+FROM ubuntu:17.04
+
+RUN apt-get update &&\
+    apt-get install -y python3-sphinx python3-pip python3-pypandoc python3-notebook
+
+RUN rm -rf /var/lib/apt/lists/*
+
+ADD requirements.txt .
+RUN pip3 install -r requirements.txt
+
+WORKDIR /work
+ADD . mxnet-the-straight-dope
+
+WORKDIR mxnet-the-straight-dope
+#RUN make latexpdf

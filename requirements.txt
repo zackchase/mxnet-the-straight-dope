@@ -1,0 +1,7 @@
+recommonmark
+nbsphinx
+ipython
+pandoc
+jupyter_client
+mxnet
+matplotlib
