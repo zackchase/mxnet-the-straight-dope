@@ -192,7 +192,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 
 * **Chapter 18:** Variational methods and uncertainty
     * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
-    * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+    * [Weight uncertainty (Bayes by Backprop)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
     * ***Roadmap*** Variational autoencoders
 
 ### Appendices
