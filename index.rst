@@ -117,7 +117,7 @@ Part 2: Applications
 
    chapter08_computer-vision/object-detection
    chapter08_computer-vision/fine-tuning
-   
+   chapter08_computer-vision/visual-question-answer 
 .. toctree::
    :glob:
    :maxdepth: 1
