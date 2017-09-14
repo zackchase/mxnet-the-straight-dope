@@ -145,6 +145,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Combining static and sequential data
 
 * **Chapter 11:** Recommender systems
+    * [Introduction to recommender systems](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter11_recommender-systems/intro-recommender-systems.ipynb)
     * ***Roadmap*** Latent factor models
     * ***Roadmap*** Deep latent factor models
     * ***Roadmap*** Bilinear models
