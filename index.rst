@@ -124,7 +124,13 @@ Part 2: Applications
    :caption: Natural language processing
 
    chapter09_natural-language-processing/tree-lstm
-   
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Recommender systems
+
+   chapter11_recommender-systems/intro-recommender-systems   
 
 Part 3: Advanced Topics
 =======================
