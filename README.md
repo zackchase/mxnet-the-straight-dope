@@ -170,7 +170,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Wasserstein-GANs
     * ***Roadmap*** Energy-based GANS
     * ***Roadmap*** Conditional GANs
-    * ***Roadmap*** Image transduction GANs (Pix2Pix)
+    * [Image transduction GANs (Pix2Pix)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/pixel2pixel.ipynb)
     * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
 * **Chapter 15:** Adversarial learning
