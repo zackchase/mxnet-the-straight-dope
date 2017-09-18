@@ -117,14 +117,20 @@ Part 2: Applications
 
    chapter08_computer-vision/object-detection
    chapter08_computer-vision/fine-tuning
-   
+   chapter08_computer-vision/visual-question-answer 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Natural language processing
 
    chapter09_natural-language-processing/tree-lstm
-   
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Recommender systems
+
+   chapter11_recommender-systems/intro-recommender-systems   
 
 Part 3: Advanced Topics
 =======================

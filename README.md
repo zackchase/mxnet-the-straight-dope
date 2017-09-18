@@ -145,6 +145,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Combining static and sequential data
 
 * **Chapter 11:** Recommender systems
+    * [Introduction to recommender systems](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter11_recommender-systems/intro-recommender-systems.ipynb)
     * ***Roadmap*** Latent factor models
     * ***Roadmap*** Deep latent factor models
     * ***Roadmap*** Bilinear models
@@ -169,7 +170,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Wasserstein-GANs
     * ***Roadmap*** Energy-based GANS
     * ***Roadmap*** Conditional GANs
-    * ***Roadmap*** Image transduction GANs (Pix2Pix)
+    * [Image transduction GANs (Pix2Pix)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/pixel2pixel.ipynb)
     * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
 * **Chapter 15:** Adversarial learning
@@ -191,7 +192,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 
 * **Chapter 18:** Variational methods and uncertainty
     * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
-    * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+    * [Weight uncertainty (Bayes by Backprop)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
     * ***Roadmap*** Variational autoencoders
 
 ### Appendices
