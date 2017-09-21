@@ -51,7 +51,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 ## Table of contents 
 
 ### Part 1: Deep Learning Fundamentals 
-* **Chapter 1:** Crashcourse
+* **Chapter 1:** Crash course
     * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/preface.ipynb)
     * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/introduction.ipynb)
     * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/ndarray.ipynb)
@@ -59,7 +59,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Probability and statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/probability.ipynb)
     * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/autograd.ipynb)
 
-* **Chapter 2:** Introduction to Supervised Learning
+* **Chapter 2:** Introduction to supervised learning
     * [Linear regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-scratch.ipynb)
     * [Linear regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-gluon.ipynb)
     * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
@@ -139,7 +139,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Image captioning
     * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09_natural-language-processing/tree-lstm.ipynb)
  
-* **Chapter 10:** Audio Processing
+* **Chapter 10:** Audio processing
     * ***Roadmap*** Intro to automatic speech recognition
     * ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
     * ***Roadmap*** Combining static and sequential data
