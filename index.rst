@@ -27,7 +27,7 @@ Part 1: Deep Learning Fundamentals
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Crashcourse
+   :caption: Crash course
    
    chapter01_crashcourse/preface
    chapter01_crashcourse/introduction
@@ -142,6 +142,15 @@ Part 3: Advanced Topics
 
    chapter14_generative-adversarial-networks/gan-intro
    chapter14_generative-adversarial-networks/dcgan
+   chapter14_generative-adversarial-networks/pixel2pixel
+   
+   
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Variational methods
+
+   chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
 
 .. toctree::
    :glob:
