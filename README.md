@@ -179,7 +179,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Adversarial training
 
 * **Chapter 16:** Tensor Methods
-    * ***Roadmap*** Introduction to tensor algebra
+    * [Introduction to tensor methods](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter16_tensor_methods/tensor_basics.ipynb) 
     * ***Roadmap*** Tensor decomposition
     * ***Roadmap*** Tensorized neural networks
 
