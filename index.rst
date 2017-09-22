@@ -152,6 +152,15 @@ Part 3: Advanced Topics
 
    chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
 
+
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Cheat sheets
+
+   cheatsheets/kaggle-gluon-kfold.ipynb
+
 .. toctree::
    :glob:
    :maxdepth: 1
