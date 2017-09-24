@@ -67,7 +67,6 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Multiclass logistic regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-gluon.ipynb)
     * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-scratch.ipynb)
      * [Overfitting and regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-gluon.ipynb)
-     * [Loss functions](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/loss.ipynb)
      * [Learning environments](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/environment.ipynb)
 
 * **Chapter 3:** Deep neural networks (DNNs) 
