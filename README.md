@@ -51,7 +51,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 ## Table of contents 
 
 ### Part 1: Deep Learning Fundamentals 
-* **Chapter 1:** Crashcourse
+* **Chapter 1:** Crash course
     * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/preface.ipynb)
     * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/introduction.ipynb)
     * [Manipulating data with NDArray](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/ndarray.ipynb)
@@ -59,7 +59,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Probability and statistics](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/probability.ipynb)
     * [Automatic differentiation via ``autograd``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/autograd.ipynb)
 
-* **Chapter 2:** Introduction to Supervised Learning
+* **Chapter 2:** Introduction to supervised learning
     * [Linear regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-scratch.ipynb)
     * [Linear regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-gluon.ipynb)
     * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
@@ -67,7 +67,6 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Multiclass logistic regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-gluon.ipynb)
     * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-scratch.ipynb)
      * [Overfitting and regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-gluon.ipynb)
-     * [Loss functions](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/loss.ipynb)
      * [Learning environments](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/environment.ipynb)
 
 * **Chapter 3:** Deep neural networks (DNNs) 
@@ -113,8 +112,8 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Training with multiple GPUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-scratch.ipynb) 
     * [Training with multiple GPUs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-gluon.ipynb)
     * [Training with multiple machines](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/training-with-multiple-machines.ipynb)
-    * ***Roadmap*** Distributed optimization (Asynchronous SGD, ...)
-    * ***Roadmap*** Combining imperative deep learning with symbolic graphs
+    * ***Roadmap*** Asynchronous SGD
+    * ***Roadmap*** Elastic SGD
 
 ### Part 2: Applications
 * **Chapter 8:** Computer vision (CV) 
@@ -139,12 +138,13 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Image captioning
     * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09_natural-language-processing/tree-lstm.ipynb)
  
-* **Chapter 10:** Audio Processing
+* **Chapter 10:** Audio processing
     * ***Roadmap*** Intro to automatic speech recognition
     * ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
     * ***Roadmap*** Combining static and sequential data
 
 * **Chapter 11:** Recommender systems
+    * [Introduction to recommender systems](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter11_recommender-systems/intro-recommender-systems.ipynb)
     * ***Roadmap*** Latent factor models
     * ***Roadmap*** Deep latent factor models
     * ***Roadmap*** Bilinear models
@@ -169,7 +169,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Wasserstein-GANs
     * ***Roadmap*** Energy-based GANS
     * ***Roadmap*** Conditional GANs
-    * ***Roadmap*** Image transduction GANs (Pix2Pix)
+    * [Image transduction GANs (Pix2Pix)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/pixel2pixel.ipynb)
     * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
 
 * **Chapter 15:** Adversarial learning
@@ -178,7 +178,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Adversarial training
 
 * **Chapter 16:** Tensor Methods
-    * ***Roadmap*** Introduction to tensor algebra
+    * [Introduction to tensor methods](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter16_tensor_methods/tensor_basics.ipynb) 
     * ***Roadmap*** Tensor decomposition
     * ***Roadmap*** Tensorized neural networks
 
@@ -191,7 +191,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 
 * **Chapter 18:** Variational methods and uncertainty
     * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
-    * ***Roadmap*** Weight uncertainty (Bayes-by-backprop)
+    * [Weight uncertainty (Bayes by Backprop)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
     * ***Roadmap*** Variational autoencoders
 
 ### Appendices
@@ -218,7 +218,8 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Aston Zhang ([@astonzhang](https://github.com/astonzhang))
 * Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
-
+* Jean Kossaifi ([@JeanKossaifi](https://github.com/JeanKossaifi))
+* Stephan Rabanser ([@steverab](https://github.com/steverab))
 
 ## Inspiration 
 In creating these tutorials, we've have drawn inspiration from some the resources that allowed us

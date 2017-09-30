@@ -27,7 +27,7 @@ Part 1: Deep Learning Fundamentals
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Crashcourse
+   :caption: Crash course
    
    chapter01_crashcourse/preface
    chapter01_crashcourse/introduction
@@ -49,7 +49,6 @@ Part 1: Deep Learning Fundamentals
    chapter02_supervised-learning/softmax-regression-gluon
    chapter02_supervised-learning/regularization-scratch
    chapter02_supervised-learning/regularization-gluon
-   chapter02_supervised-learning/loss
    chapter02_supervised-learning/environment
 
 .. toctree::
@@ -117,14 +116,20 @@ Part 2: Applications
 
    chapter08_computer-vision/object-detection
    chapter08_computer-vision/fine-tuning
-   
+   chapter08_computer-vision/visual-question-answer 
 .. toctree::
    :glob:
    :maxdepth: 1
    :caption: Natural language processing
 
    chapter09_natural-language-processing/tree-lstm
-   
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Recommender systems
+
+   chapter11_recommender-systems/intro-recommender-systems   
 
 Part 3: Advanced Topics
 =======================
@@ -136,6 +141,24 @@ Part 3: Advanced Topics
 
    chapter14_generative-adversarial-networks/gan-intro
    chapter14_generative-adversarial-networks/dcgan
+   chapter14_generative-adversarial-networks/pixel2pixel
+   
+   
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Variational methods
+
+   chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
+
+
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Cheat sheets
+
+   cheatsheets/kaggle-gluon-kfold.ipynb
 
 .. toctree::
    :glob:
