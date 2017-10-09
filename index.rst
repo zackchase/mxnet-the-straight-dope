@@ -150,7 +150,7 @@ Part 3: Advanced Topics
    :caption: Variational methods
 
    chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
-
+   chapter18_variational-methods-and-uncertainty/bayes-by-backprop-gluon.ipynb
 
 
 .. toctree::
