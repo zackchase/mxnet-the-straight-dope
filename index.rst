@@ -131,6 +131,14 @@ Part 2: Applications
 
    chapter11_recommender-systems/intro-recommender-systems   
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Time series
+
+   chapter12_time-series/lds-scratch   
+   chapter12_time-series/issm-scratch
+
 Part 3: Advanced Topics
 =======================
 
@@ -150,7 +158,7 @@ Part 3: Advanced Topics
    :caption: Variational methods
 
    chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
-
+   chapter18_variational-methods-and-uncertainty/bayes-by-backprop-gluon.ipynb
 
 
 .. toctree::
