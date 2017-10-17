@@ -1,124 +1,42 @@
-# How to contribute
-1. pick a section (fork subsections if necessary)
-2. write a paragraph to describe high-level similarity and differences. For example:
-```
-Placeholder for description, highlights of similarity and differences
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Vestibulum commodo est et diam volutpat molestie.
-```
-3. write a table that looks like the following. fill in the table with code snippets.
-```
-| Function                 | Pytorch                           | MXnet Gluon                              |
-|--------------------------|-----------------------------------|------------------------------------------|
-| Tensor operation         |                                   |                                          |
-| ...                      |                                   |                                          |
-```
-4. keep everything short and concise.
-
 # PyTorch to MXNet
 This cheatsheet serves as a quick reference for PyTorch users.
 
 ## Pytorch Tensor and MXNet NDArray
-Placeholder for description, highlights of similarity and differences
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Vestibulum commodo est et diam volutpat molestie.
+###  Tensor operation
+###  Functional
+###  GPU
+Just like Tensor, MXNet NDArray can be copied to and operated on GPU. This is done by specifying
+context.
 
-| Function                 | Pytorch                           | MXnet Gluon                              |
-|--------------------------|-----------------------------------|------------------------------------------|
-| Tensor operation         |                                   |                                          |
-| ...                      |                                   |                                          |
-### Functional
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### cuda
-| Function  | Pytorch                           | MXNet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-| GPU       | `y = torch.FloatTensor(1).cuda()` | `y = mxnet.nd.ones((1,), ctx=mx.gpu(0))` |
-| ...       |                                   |                                          |
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| Copy to GPU            | `y = torch.FloatTensor(1).cuda()` | `y = mx.nd.ones((1,), ctx=mx.gpu(0))`                                      |
+| Convert to numpy array | `x = y.cpu().numpy()`             | `x = y.asnumpy()`                                                          |
+| Context scope          | Not available                     | `with mx.gpu(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.ones((3,5))`      |
+###  Cross-device
 
-### cross device
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-## Pytorch Variable and Gluon Autograd Scope
-Placeholder for description, highlights of similarity and differences
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Vestibulum commodo est et diam volutpat molestie.
+## Autograd
+### variable wrapper vs autograd scope
+### gluon can supply head grad
+### scope override (pause, train_mode, predict_mode)
+### batch-end synchronization is needed
 
-### no variable wrapper
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### supply head grad
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### scope override
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### batch-end sync
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
 ## Pytorch module and Gluon blocks
-Placeholder for description, highlights of similarity and differences
-- gluon needs name_scope
+### usage of existing blocks look alike
+### for new block definition, gluon needs name_scope
+### HybridBlock can be hybridized, and allows partial-shape info
+### SymbolBlock
 
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### module vs block
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### hybridblock symbolblock
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### Basic layers
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-### RNN
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
 ## Pytorch optimizer vs Gluon Trainer
-Placeholder for description, highlights of similarity and differences
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Vestibulum commodo est et diam volutpat molestie.
-### zero_grad
-- Gluon only needed when `grad_req` is `'add'`
+### for gluon zero_grad is not necessary most of the time
+### for gluon zero_grad only needed when `grad_req` is `'add'`
+### Multi-GPU training
+### Distributed training
 
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-# I/O and deploy
-Placeholder for description, highlights of similarity and differences
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Vestibulum commodo est et diam volutpat molestie.
+## Monitoring
+### MXNet has pre-defined metrics
+### Data visualization
 
-## Data loading
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
-## Serialization
-| Function  | Pytorch                           | MXnet Gluon                              |
-|-----------|-----------------------------------|------------------------------------------|
-|           |                                   |                                          |
-|           |                                   |                                          |
+## I/O and deploy
+### Data loading
+### Serialization
