@@ -92,8 +92,10 @@ Part 1: Deep Learning Fundamentals
    :caption: Optimization
 
    chapter06_optimization/optimization-intro
-   chapter06_optimization/gd-sgd
-   chapter06_optimization/sgd-momentum.ipynb
+   chapter06_optimization/gd-sgd-scratch
+   chapter06_optimization/gd-sgd-gluon
+   chapter06_optimization/momentum-scratch
+   chapter06_optimization/momentum-gluon
 
 .. toctree::
    :glob:
