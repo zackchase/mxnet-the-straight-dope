@@ -3,7 +3,20 @@ This cheatsheet serves as a quick reference for PyTorch users.
 
 ## Pytorch Tensor and MXNet NDArray
 ###  Tensor operation
-###  Functional
+| Function                      | PyTorch                                   | MXNet Gluon                                               |
+|-------------------------------|-------------------------------------------|-----------------------------------------------------------|
+| Device context of a tensor    | `print(x)` will print which device x is on| `x.context`                                               |
+| Data type of a tensor         | `x.type()`                                | `x.dtype`                                                 |
+| Returns the shape of a tensor | `x.size()`                                | `x.shape`                                                 |
+| Number of elements in a tensor| `x.numel()`                               | `x.size`                                                  |
+| Returns this tensor as a NumPy ndarray | `x.numpy()`                      | `x.asnumpy()`                                             |
+| Returns a copy of the tensor after casting to a specified type | `x.type(type)` | `x.astype(dtype)`                                   |
+| Copies the value of one tensor to another | `dst.copy_(src)`              | `src.copyto(dst)`                                         |
+| Returns a copy of the tensor   | `x.clone()`                              | `x.copy()`                                                |
+| Returns a zero tensor with specified shape | `x = torch.zeros(2,3)`       | `x = nd.zeros((2,3))`                                     |
+| Returns a one tensor with specified shape | `x = torch.ones(2,3)`         | `x = nd.ones((2,3)`                                       |
+| Returns a Tensor filled with the scalar value 1, with the same size as input | `y = torch.ones_like(x)
+###  Math Function
 ###  GPU
 Just like Tensor, MXNet NDArray can be copied to and operated on GPU. This is done by specifying
 context.
