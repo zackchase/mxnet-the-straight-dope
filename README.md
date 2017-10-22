@@ -99,13 +99,18 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 
 * **Chapter 6:** Optimization
     * [Introduction to optimization](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/optimization-intro.ipynb)
-    * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd.ipynb)
-    * [SGD with Momentum](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/sgd-momentum.ipynb)
-    * ***Roadmap*** AdaGrad
-    * ***Roadmap*** RMSProp
-    * ***Roadmap*** Adam
-    * ***Roadmap*** AdaDelta
-    * ***Roadmap*** SGLD / SGHNT
+    * [Gradient descent and stochastic gradient descent from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd-scratch.ipynb)
+    * [Gradient descent and stochastic gradient descent with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd-gluon.ipynb)
+    * [Momentum from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/momentum-scratch.ipynb)
+    * [Momentum with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/momentum-gluon.ipynb)
+    * [Adagrad from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adagrad-scratch.ipynb)
+    * [Adagrad with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adagrad-gluon.ipynb)
+    * [RMSprop from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/rmsprop-scratch.ipynb)
+    * [RMSprop with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/rmsprop-gluon.ipynb)
+    * [Adadelta from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adadelta-scratch.ipynb)
+    * [Adadelta with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adadelta-gluon.ipynb)
+    * [Adam from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adam-scratch.ipynb)
+    * [Adam with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adam-gluon.ipynb)
 
 * **Chapter 7:** Distributed & high-performance learning
     * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/hybridize.ipynb)
