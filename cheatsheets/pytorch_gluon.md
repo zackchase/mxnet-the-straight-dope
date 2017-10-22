@@ -12,8 +12,13 @@ context.
 |------------------------|-----------------------------------|----------------------------------------------------------------------------|
 | Copy to GPU            | `y = torch.FloatTensor(1).cuda()` | `y = mx.nd.ones((1,), ctx=mx.gpu(0))`                                      |
 | Convert to numpy array | `x = y.cpu().numpy()`             | `x = y.asnumpy()`                                                          |
-| Context scope          | Not available                     | `with mx.gpu(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.ones((3,5))`      |
+| Context scope          | `with torch.cuda.device(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y= torch.cuda.FloatTensor(1)`                    | `with mx.gpu(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.ones((3,5))`      |
 ###  Cross-device
+Just like Tensor, MXNet NDArray can be copied across multiple GPUs.
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| Copy from GPU 0 to GPU 1           | `x = torch.cuda.FloatTensor(1)`<br/>`y=x.cuda(1)`| `x = mx.nd.ones((1,), ctx=mx.gpu(0))`<br/>`y=x.as_in_context(mx.gpu(1))`                                      |
+| Copy Tensor/NDArray on different GPUs | `y.copy_(x)`             | `x.copyto(y)`                                                          |
 
 ## Autograd
 ### variable wrapper vs autograd scope
