@@ -96,6 +96,14 @@ Part 1: Deep Learning Fundamentals
    chapter06_optimization/gd-sgd-gluon
    chapter06_optimization/momentum-scratch
    chapter06_optimization/momentum-gluon
+   chapter06_optimization/adagrad-scratch
+   chapter06_optimization/adagrad-gluon
+   chapter06_optimization/rmsprop-scratch
+   chapter06_optimization/rmsprop-gluon
+   chapter06_optimization/adadelta-scratch
+   chapter06_optimization/adadelta-gluon
+   chapter06_optimization/adam-scratch
+   chapter06_optimization/adam-gluon
 
 .. toctree::
    :glob:
