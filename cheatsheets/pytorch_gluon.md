@@ -38,7 +38,7 @@ Pause scope is for codes that do not need gradients to be calculated.
 
 | Function               | PyTorch                           | MXNet Gluon                                                                |
 |------------------------|-----------------------------------|----------------------------------------------------------------------------|
-| Scope override   | Not available | `x = mx.nd.ones((1,))`<br/>`with autograd.train_mode():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.Dropout(x)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`with autograd.predict_mode():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`z = mx.nd.Dropout(y)``w = mx.nd.ones((1,))`<br/>`w.attach_grad()`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = x * w`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y.backward()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`with mx.autograd.pause():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`w += w.grad`   |
+| Scope override   | Not available | `x = mx.nd.ones((1,))`<br/>`with autograd.train_mode():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.Dropout(x)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`with autograd.predict_mode():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`z = mx.nd.Dropout(y)`<br/><br/>`w = mx.nd.ones((1,))`<br/>`w.attach_grad()`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = x * w`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y.backward()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`with mx.autograd.pause():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`w += w.grad`   |
 
 ### batch-end synchronization is needed
 
