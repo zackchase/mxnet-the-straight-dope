@@ -20,7 +20,6 @@ We document PyTorch function namesthat are different than MXNet NDArray
 | Draws a sample from bernoulli distribution | `x.bernoulli()`              | Not available                                             |
 | Fills a tensor with number drawn from Cauchy distribution | `x.cauchy_()` | Not available                                             |
 | Splits a tensor in a given dim| `x.chunk(num_of_chunk)`                   | `nd.split(x, num_outputs=num_of_chunk)`                   |
-| Gathers values along an axis specified by dim | `x.gather(dim,  torch.LongTensor([[0,0],[1,0]]))` | Not available                     |
 | Limits the values of a tensor to between min and max | `x.clamp(min, max)`| `nd.clip(x, min, max)`                                    |
 | Returns a copy of the tensor  | `x.clone()`                               | `x.copy()`                                                |
 | Cross product                 | `x.cross(y)`                              | Not available                                             |
@@ -28,6 +27,15 @@ We document PyTorch function namesthat are different than MXNet NDArray
 | Cumulative sum along an axis  | `x.cumsum(1)`                             | Not available                                             |
 | Address of the first element  | `x.data_ptr()`                            | Not available                                             |
 | Creates a diagonal tensor     | `x.diag()`                                | Not available                                             |
+| Computes norm of a tensor     | `x.dist()`                                | `nd.norm(x)` Only calculate L2 norm                       |
+| Computes Gauss error function | `x.erf()`                                 | Not available                                             |
+| Broadcasts/Expands tensor to new shape | `x.expand(3,4)`                  | `x.broadcast_to([3, 4])`                                  |
+| Fills a tensor with samples drawn from exponential distribution | `x.exponential_()` | `nd.random_exponential()`                      |
+| Element-wise mod              | `x.fmod(3)`                               | `nd.module(x, 3)`                                         |
+| Fractional portion of a tensor| `x.frac()`                                | `x - nd.trunc(x)`                                         |
+| Gathers values along an axis specified by dim | `x.gather(dim,  torch.LongTensor([[0,0],[1,0]]))` | Not available                     |
+| Solves least square & least norm | `B.gels(A)`                            | Not available                                             |
+| Draws from geometirc distribution | `x.geometric_(p)`                     | Not available                                             |
 | Device context of a tensor    | `print(x)` will print which device x is on| `x.context`                                               |
 | Data type of a tensor         | `x.type()`                                | `x.dtype`                                                 |
 | Returns the shape of a tensor | `x.size()`                                | `x.shape`                                                 |
