@@ -50,10 +50,40 @@ MXNet uses lazy evaluation to achieve superior performance. The Python thread ju
 
 
 ## Pytorch module and Gluon blocks
-### usage of existing blocks look alike
 ### for new block definition, gluon needs name_scope
+
+name_scope coerces gluon to give each parameter an appropriate name, indicating which model it belongs to.
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| New block definition   | `class Net(torch.nn.Module):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`def __init__(self, D_in, D_out):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`super(Net, self).__init__()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`self.linear = torch.nn.Linear(D_in, D_out)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`def forward(self, x):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return self.linear(x)`       |    `class Net(mx.gluon.Block):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`def __init__(self, D_in, D_out):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`super(Net, self).__init__()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`with self.name_scope():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`self.dense=mx.gluon.nn.Dense(D_out, in_units=D_in)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`def forward(self, x):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return self.dense(x)`      |
+
+### Parameter and Initializer
+
+### usage of existing blocks look alike
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| Usage of existing blocks    |  `y=net(x)`  |  `y=net(x)`   |
+
 ### HybridBlock can be hybridized, and allows partial-shape info
+
+HybridBlock supports forwarding with both Symbol and NDArray. After hybridized, HybridBlock will create a symbolic graph representing the forward computation and cache it. Most of the built-in blocks (Dense, Conv2D, MaxPool2D, BatchNorm, etc.) are HybridBlocks.
+
+Instead of explicitly declaring the number of inputs to a layer, we can simply state the number of outputs. The shape will be inferred on the fly once the network is provided with some input.
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| partial-shape  <br/> hybridized    |  Not Available   |  `net = mx.gluon.nn.HybridSequential()`<br/>`with net.name_scope():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`net.add(mx.gluon.nn.Dense(10))`<br/>`net.hybridize()`   |
+
 ### SymbolBlock
+
+SymbolBlock can construct block from symbol. This is useful for using pre-trained models as feature extractors.
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+|  SymbolBlock    |  Not Available   |  `alexnet = mx.gluon.model_zoo.vision.alexnet(pretrained=True, prefix='model_')`<br/>`out = alexnet(inputs)`<br/>`internals = out.get_internals()`<br/>`outputs = [internals['model_dense0_relu_fwd_output']]`<br/>`feat_model = gluon.SymbolBlock(outputs, inputs, params=alexnet.collect_params())`   |
+
 
 ## Pytorch optimizer vs Gluon Trainer
 ### for gluon zero_grad is not necessary most of the time
