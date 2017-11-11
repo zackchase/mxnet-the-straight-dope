@@ -3,7 +3,7 @@ This cheatsheet serves as a quick reference for PyTorch users.
 
 ## Pytorch Tensor and MXNet NDArray
 ###  Tensor operation
-We document PyTorch function namesthat are different than MXNet NDArray
+We document PyTorch function names that are different than MXNet NDArray
 
 | Function                      | PyTorch                                   | MXNet Gluon                                               |
 |-------------------------------|-------------------------------------------|-----------------------------------------------------------|
@@ -33,14 +33,23 @@ We document PyTorch function namesthat are different than MXNet NDArray
 | Fills a tensor with samples drawn from exponential distribution | `x.exponential_()` | `nd.random_exponential()`                      |
 | Element-wise mod              | `x.fmod(3)`                               | `nd.module(x, 3)`                                         |
 | Fractional portion of a tensor| `x.frac()`                                | `x - nd.trunc(x)`                                         |
-| Gathers values along an axis specified by dim | `x.gather(dim,  torch.LongTensor([[0,0],[1,0]]))` | Not available                     |
+| Gathers values along an axis specified by dim | `torch.gather(x, 1,  torch.LongTensor([[0,0],[1,0]]))` | `nd.gather_nd(x, nd.array([[[0,0],[1,1]],[[0,0],[1,0]]]))`  |
 | Solves least square & least norm | `B.gels(A)`                            | Not available                                             |
 | Draws from geometirc distribution | `x.geometric_(p)`                     | Not available                                             |
 | Device context of a tensor    | `print(x)` will print which device x is on| `x.context`                                               |
+| Repeats tensor                | `x.repeat(4,2)`                           | `x.tile(4,2)`                                             |
 | Data type of a tensor         | `x.type()`                                | `x.dtype`                                                 |
+| Scatter                       | `torch.zeros(2, 4).scatter_(1, torch.LongTensor([[2], [3]]), 1.23)` | `nd.scatter_nd(nd.array([1.23,1.23]), nd.array([[0,1],[2,3]]), (2,4))` |
 | Returns the shape of a tensor | `x.size()`                                | `x.shape`                                                 |
 | Number of elements in a tensor| `x.numel()`                               | `x.size`                                                  |
 | Returns this tensor as a NumPy ndarray | `x.numpy()`                      | `x.asnumpy()`                                             |
+| Eigendecomposition for symmetric matrix | `e, v = a.symeig()`             | `v, e = nd.linalg.syevd(a)`                               |
+| Transpose                     | `x.t()`                                   | `x.T`                                                     |
+| Sample uniformly              | `torch.uniform_()`                        | `nd.sample_uniform()`                                     |
+| Inserts a new dimesion        | `x.unsqueeze()`                           | `nd.expand_dims(x)`                                       |
+| Reshape                       | `x.view(16)`                              | `x.reshape((16,))`                                          |
+| Veiw as a specified tensor    | `x.view_as(y)`                            | `x.reshape_like(y)`                                       |
+
 | Returns a copy of the tensor after casting to a specified type | `x.type(type)` | `x.astype(dtype)`                                   |
 | Copies the value of one tensor to another | `dst.copy_(src)`              | `src.copyto(dst)`                                         |
 | Returns a zero tensor with specified shape | `x = torch.zeros(2,3)`       | `x = nd.zeros((2,3))`                                     |
