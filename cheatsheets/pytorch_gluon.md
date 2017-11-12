@@ -49,7 +49,6 @@ We document PyTorch function names that are different than MXNet NDArray
 | Inserts a new dimesion        | `x.unsqueeze()`                           | `nd.expand_dims(x)`                                       |
 | Reshape                       | `x.view(16)`                              | `x.reshape((16,))`                                          |
 | Veiw as a specified tensor    | `x.view_as(y)`                            | `x.reshape_like(y)`                                       |
-
 | Returns a copy of the tensor after casting to a specified type | `x.type(type)` | `x.astype(dtype)`                                   |
 | Copies the value of one tensor to another | `dst.copy_(src)`              | `src.copyto(dst)`                                         |
 | Returns a zero tensor with specified shape | `x = torch.zeros(2,3)`       | `x = nd.zeros((2,3))`                                     |
