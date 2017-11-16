@@ -44,11 +44,12 @@ Part 1: Deep Learning Fundamentals
 
    chapter02_supervised-learning/linear-regression-scratch
    chapter02_supervised-learning/linear-regression-gluon
-   chapter02_supervised-learning/perceptron
+   chapter02_supervised-learning/logistic-regression-gluon
    chapter02_supervised-learning/softmax-regression-scratch
    chapter02_supervised-learning/softmax-regression-gluon
    chapter02_supervised-learning/regularization-scratch
    chapter02_supervised-learning/regularization-gluon
+   chapter02_supervised-learning/perceptron
    chapter02_supervised-learning/environment
 
 .. toctree::
