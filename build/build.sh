@@ -5,8 +5,8 @@ set -x
 set -e
 
 # prepare the env
-# conda env update -f build/build.yml
-# source activate build_gluon_tutorials
+conda env update -f build/build.yml
+source activate build_gluon_tutorials
 
 make html
 
