@@ -1,13 +1,10 @@
-name: gluon_docs
-channels:
-  - conda-forge
+name: gluon
 dependencies:
-- python>=3.5
+- python
+- libgfortran
 - jupyter
-- sphinx
-- sphinx_rtd_theme
 - matplotlib
+- pandas
 - pip:
-  - nbsphinx
-  - recommonmark
-  - mxnet-cu80>=0.11.0rc2
+  - requests
+  - mxnet>=0.11.1b20171003
