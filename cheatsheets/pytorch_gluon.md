@@ -149,4 +149,28 @@ SymbolBlock can construct block from symbol. This is useful for using pre-traine
 
 ## I/O and deploy
 ### Data loading
+`Dataset` and `DataLoader` are the basic components for loading data.
+
+| Class               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| Dataset holding arrays | `torch.utils.data.TensorDataset(data_tensor, label_tensor)`| `gluon.data.ArrayDataset(data_array, label_array)`                        |
+| Data loader | `torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False, sampler=None, batch_sampler=None, num_workers=0, collate_fn=<function default_collate>, drop_last=False)` | `gluon.data.DataLoader(dataset, batch_size=None, shuffle=False, sampler=None, last_batch='keep', batch_sampler=None, batchify_fn=None, num_workers=0)`|
+| Sequentially applied sampler | `torch.utils.data.sampler.SequentialSampler(data_source)` | `gluon.data.SequentialSampler(length)` |
+| Random order sampler | `torch.utils.data.sampler.RandomSampler(data_source)` | `gluon.data.RandomSampler(length)`|
+
+Some commonly used datasets for computer vision are provided in `mx.gluon.data.vision` package.
+
+| Class               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| MNIST handwritten digits dataset. | `torchvision.datasets.MNIST`| `mx.gluon.data.vision.MNIST` |
+| CIFAR10 Dataset. | `torchvision.datasets.CIFAR10` | `mx.gluon.data.vision.CIFAR10`|
+| CIFAR100 Dataset. | `torchvision.datasets.CIFAR100` | `mx.gluon.data.vision.CIFAR100` |
+| A generic data loader where the images are arranged in folders. | `torchvision.datasets.ImageFolder(root, transform=None, target_transform=None, loader=<function default_loader>)` | `mx.gluon.data.vision.ImageFolderDataset(root, flag, transform=None)`|
+
 ### Serialization
+Serialization and De-Serialization are achieved by calling `save_params` and `load_params`.
+
+| Class               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| Save model parameters | `torch.save(the_model.state_dict(), filename)`| `model.save_params(filename)`|
+| Load parameters | `the_model.load_state_dict(torch.load(PATH))` | `model.load_params(filename, ctx, allow_missing=False, ignore_extra=False)` |
