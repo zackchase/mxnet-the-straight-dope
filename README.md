@@ -62,11 +62,12 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 * **Chapter 2:** Introduction to supervised learning
     * [Linear regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-scratch.ipynb)
     * [Linear regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-gluon.ipynb)
-    * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
+    * [Binary classification with logistic regression *(``gluon`` w bespoke loss function)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/logistic-regression-gluon.ipynb)
     * [Multiclass logistic regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-scratch.ipynb)
     * [Multiclass logistic regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-gluon.ipynb)
     * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-scratch.ipynb)
      * [Overfitting and regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-gluon.ipynb)
+     * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
      * [Learning environments](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/environment.ipynb)
 
 * **Chapter 3:** Deep neural networks (DNNs)
@@ -232,6 +233,7 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Aston Zhang ([@astonzhang](https://github.com/astonzhang))
 * Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
+* Kamyae Azizzadenesheli ([@kazizzad](https://github.com/kazizzad))
 * Jean Kossaifi ([@JeanKossaifi](https://github.com/JeanKossaifi))
 * Stephan Rabanser ([@steverab](https://github.com/steverab))
 

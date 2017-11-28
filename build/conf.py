@@ -18,6 +18,7 @@ import os
 from recommonmark.parser import CommonMarkParser
 from recommonmark.transform import AutoStructify
 
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -62,7 +63,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'The Straight Dope'
 copyright = '2017, Contributors'
-author = "Zachary C. Lipton, Mu Li, Alex Smola and Junyuan Xie"
+author = "MXNet Community"
 
 
 # The version info for the project you're documenting, acts as replacement for
@@ -143,12 +144,12 @@ html_theme = 'sphinx_rtd_theme'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = '_static/gluon_white.png'
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon = None
+html_favicon = '_static/gluon_s2.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -206,12 +207,11 @@ html_static_path = ['_static']
 # Sphinx supports the following languages:
 #   'da', 'de', 'en', 'es', 'fi', 'fr', 'h', 'it', 'ja'
 #   'nl', 'no', 'pt', 'ro', 'r', 'sv', 'tr', 'zh'
-#html_search_language = 'en'
+# html_search_language = 'zh'
 
 # A dictionary with options for the search language support, empty by default.
 # 'ja' uses this config value.
 # 'zh' user can custom change `jieba` dictionary path.
-#html_search_options = {'type': 'default'}
 
 # The name of a javascript file (relative to the configuration directory) that
 # implements a search results scorer. If empty, the default will be used.
@@ -223,11 +223,17 @@ htmlhelp_basename = 'TheStraightDopedoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
+    # 'papersize' : 'a4paper',
+    'utf8extra' : '',
+    'inputenc'  : '',
+    'babel'     : r'''\usepackage[english]{babel}''',
+    'preamble' : r'''
+''',
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
@@ -240,14 +246,15 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'TheStraightDope.tex', 'The Straight Dope Documentation',
+    (master_doc, 'gluon_tutorials.tex', 'Deep Learning - The Straight Dope',
      author, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = '_static/gluon.png'
 
+# latex_engine  = 'xelatex'
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
@@ -262,7 +269,7 @@ latex_documents = [
 #latex_appendices = []
 
 # If false, no module index is generated.
-#latex_domain_indices = True
+latex_domain_indices = False
 
 
 # -- Options for manual page output ---------------------------------------
@@ -312,17 +319,12 @@ intersphinx_mapping = {
     # 'mxnet': ('http://mxnet.io', None)
 }
 
-# timeout to execute one notebook
-nbsphinx_timeout = 240
+# notebooks will be executed by sphnix_plugin
+nbsphinx_execute = 'never'
 
-
-github_doc_root = 'https://github.com/zackchase/mxnet-the-straight-dope/'
 def setup(app):
+    app.add_transform(AutoStructify)
     app.add_config_value('recommonmark_config', {
-        'url_resolver': lambda url: github_doc_root + url,
-        'auto_toc_tree_section': 'Contents',
-        'enable_eval_rst': True,
-        'enable_auto_toc_tree': True,
     }, True)
     app.add_javascript('google_analytics.js')
-    app.add_transform(AutoStructify)
+    app.add_stylesheet('gluon.css')
