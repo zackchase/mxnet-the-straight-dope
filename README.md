@@ -233,7 +233,7 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Aston Zhang ([@astonzhang](https://github.com/astonzhang))
 * Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
-* Kamyae Azizzadenesheli ([@kazizzad](https://github.com/kazizzad))
+* Kamyar Azizzadenesheli ([@kazizzad](https://github.com/kazizzad))
 * Jean Kossaifi ([@JeanKossaifi](https://github.com/JeanKossaifi))
 * Stephan Rabanser ([@steverab](https://github.com/steverab))
 
