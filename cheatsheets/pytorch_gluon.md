@@ -133,7 +133,7 @@ HybridBlock supports forwarding with both Symbol and NDArray. After hybridized, 
 
 Instead of explicitly declaring the number of inputs to a layer, we can simply state the number of outputs. The shape will be inferred on the fly once the network is provided with some input.
 
-| Function               | PyTorch                           | MXNet Gluon              
+| Function               | PyTorch                           | MXNet Gluon                                                                |
 |------------------------|-----------------------------------|----------------------------------------------------------------------------|
 | partial-shape  <br/> hybridized    |  Not Available   |  `net = mx.gluon.nn.HybridSequential()`<br/>`with net.name_scope():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`net.add(mx.gluon.nn.Dense(10))`<br/>`net.hybridize()`   |
 
