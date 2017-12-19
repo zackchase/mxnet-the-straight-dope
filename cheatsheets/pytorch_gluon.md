@@ -112,6 +112,15 @@ name_scope coerces gluon to give each parameter an appropriate name, indicating 
 
 ### Parameter and Initializer
 
+when creating new layers in pytorch, you do not need to specify its parameter initializer, and different layers have different default initializer. When you create new layers in gluon, you can specify its initializer or just leave it none. The parameters will finish initializing after calling `net.initialize(<init method>)` and all parameters will be initialized in `init method` except those layers whose initializer specified.
+ 
+
+| Function       | PyTorch           | MXNet Gluon        |   
+|----------------|-------------------|--------------------|
+| Get all parameters |  `net.parameters()` | `net.collect_params()` | 
+| Initialize network |  Not Available | `net.initialize(mx.init.Xavier())` |
+| Specify layer initializer | `layer = torch.nn.Linear(20, 10)`<br/> `torch.nn.init.normal(layer.weight, 0, 0.01)` | `layer = mx.gluon.nn.Dense(10, weight_initializer=mx.init.Normal(0.01))` |
+
 ### usage of existing blocks look alike
 
 | Function               | PyTorch                           | MXNet Gluon                                                                |
@@ -124,7 +133,7 @@ HybridBlock supports forwarding with both Symbol and NDArray. After hybridized, 
 
 Instead of explicitly declaring the number of inputs to a layer, we can simply state the number of outputs. The shape will be inferred on the fly once the network is provided with some input.
 
-| Function               | PyTorch                           | MXNet Gluon                                                                |
+| Function               | PyTorch                           | MXNet Gluon              
 |------------------------|-----------------------------------|----------------------------------------------------------------------------|
 | partial-shape  <br/> hybridized    |  Not Available   |  `net = mx.gluon.nn.HybridSequential()`<br/>`with net.name_scope():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`net.add(mx.gluon.nn.Dense(10))`<br/>`net.hybridize()`   |
 
