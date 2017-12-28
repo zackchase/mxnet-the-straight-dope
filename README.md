@@ -200,7 +200,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Deep contextual bandits
     * [Deep Q-networks (DQN)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DQN.ipynb)
     * [Double-DQN](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DDQN.ipynb)
-    * ***Roadmap*** Policy gradient
+    * [Policy-Gradient](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/policy-gradient.ipynb)
     * ***Roadmap*** Actor-critic gradient
 
 * **Chapter 18:** Variational methods and uncertainty
