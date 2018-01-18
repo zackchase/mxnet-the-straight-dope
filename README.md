@@ -157,8 +157,8 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Learning from implicit feedback
 
 * **Chapter 12:** Time series
-    * ***Roadmap*** Introduction to Forecasting    
-    * ***Roadmap*** Generalized Linear Models/MLP for Forecasting
+    * [Introduction to Forecasting *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/intro-forecasting-gluon.ipynb)
+    * [Generalized Linear Models/MLP for Forecasting *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/intro-forecasting-2-gluon.ipynb)
     * ***Roadmap*** Factor Models for Forecasting
     * ***Roadmap*** Recurrent Neural Network for Forecasting
     * [Linear Dynamical System (*from scratch*) ](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/lds-scratch.ipynb)
