@@ -148,13 +148,40 @@ SymbolBlock can construct block from symbol. This is useful for using pre-traine
 
 ## Pytorch optimizer vs Gluon Trainer
 ### for gluon zero_grad is not necessary most of the time
-### for gluon zero_grad only needed when `grad_req` is `'add'`
+`zero_grad` in optimizer(Pytorch) or Trainer(Gluon) clears the gradients of all parameters. In gluon, there is no need to clear the gradients every batch if `grad_req = 'write'`(default).
+
+| Function               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| clear the gradients |   `optm = torch.optim.SGD(model.parameters(), lr=0.1)`<br/>`optm.zero_grad()`<br/>`loss_fn(model(input), target).backward()`<br/>`optm.step()`    | `trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': 0.1})`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`loss = loss_fn(net(data), label)`<br/>`loss.backward()`<br/>`trainer.step(batch_size)`      |
+
 ### Multi-GPU training
+
+| Function               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| data parallelism |   `net = torch.nn.DataParallel(model, device_ids=[0, 1, 2])`<br/>`output = net(data)`    | `ctx = [mx.gpu(i) for i in range(3)]`<br/>`data = gluon.utils.split_and_load(data, ctx)`<br/>`label = gluon.utils.split_and_load(label, ctx)`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`losses = [loss(net(X), Y) for X, Y in zip(data, label)]`<br/>`for l in losses:`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`l.backward()`      |
+
 ### Distributed training
+
+| Function               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| distributed data parallelism |   `torch.distributed.init_process_group(...)`<br/>`model = torch.nn.parallel.distributedDataParallel(model, ...)`    | `store = kv.create('dist')`<br/>`trainer = gluon.Trainer(net.collect_params(), ..., kvstore=store)`  |
 
 ## Monitoring
 ### MXNet has pre-defined metrics
+
+Gluon provide several predefined metrics which can online evaluate the performance of a learned model.
+
+| Function               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| metric |  Not available   | `metric = mx.metric.Accuracy()`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`output = net(data)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`L = loss(ouput, label)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`loss(ouput, label).backward()`<br/>`trainer.step(batch_size)`<br/>`metric.update(label, output)`  |
+
 ### Data visualization
+
+tensorboardX(PyTorch) and dmlc-tensorboard(Gluon) can be used to visualize your network and plot quantitative metrics about the execution of your graph.
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| visualization    |  `writer = tensorboardX.SummaryWriter()`<br/>`...`<br/>`for name, param in model.named_parameters():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`grad = param.clone().cpu().data.numpy()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`writer.add_histogram(name, grad, n_iter)`<br/>`...`<br/>`writer.close()` |  `summary_writer = tensorboard.FileWriter('./logs/')`<br/>`...`<br/>`for name, param in net.collect_params():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`grad = param.grad.asnumpy().flatten()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`s = tensorboard.summary.histogram(name, grad)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`summary_writer.add_summary(s)`<br/>`...`<br/>`tensorboard.summary_writer.close()`    |
 
 ## I/O and deploy
 ### Data loading
