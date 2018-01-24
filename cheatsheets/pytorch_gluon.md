@@ -173,7 +173,7 @@ Gluon provide several predefined metrics which can online evaluate the performan
 
 | Function               | Pytorch                           | MXNet Gluon                              |
 |------------------------|-----------------------------------|------------------------------------------|
-| metric |  Not available   | `with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`output = net(data)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`L = loss(ouput, label)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`loss(ouput, label).backward()`<br/>`trainer.step(batch_size)`<br/>`metric.update(label, output)`  |
+| metric |  Not available   | `metric = mx.metric.Accuracy()`<br/>`with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`output = net(data)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`L = loss(ouput, label)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`loss(ouput, label).backward()`<br/>`trainer.step(batch_size)`<br/>`metric.update(label, output)`  |
 
 ### Data visualization
 
