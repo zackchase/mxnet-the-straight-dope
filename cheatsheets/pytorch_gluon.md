@@ -168,7 +168,20 @@ SymbolBlock can construct block from symbol. This is useful for using pre-traine
 
 ## Monitoring
 ### MXNet has pre-defined metrics
+
+Gluon provide several predefined metrics which can online evaluate the performance of a learned model.
+
+| Function               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| metric |  Not available   | `with autograd.record():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`output = net(data)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`L = loss(ouput, label)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`loss(ouput, label).backward()`<br/>`trainer.step(batch_size)`<br/>`metric.update(label, output)`  |
+
 ### Data visualization
+
+tensorboardX(PyTorch) and dmlc-tensorboard(Gluon) can be used to visualize your network and plot quantitative metrics about the execution of your graph.
+
+| Function               | PyTorch                           | MXNet Gluon                                                                |
+|------------------------|-----------------------------------|----------------------------------------------------------------------------|
+| visualization    |  `writer = tensorboardX.SummaryWriter()`<br/>`...`<br/>`for name, param in model.named_parameters():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`grad = param.clone().cpu().data.numpy()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`writer.add_histogram(name, grad, n_iter)`<br/>`...`<br/>`writer.close()` |  `summary_writer = tensorboard.FileWriter('./logs/')`<br/>`...`<br/>`for name, param in net.collect_params():`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`grad = param.grad.asnumpy().flatten()`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`s = tensorboard.summary.histogram(name, grad)`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`summary_writer.add_summary(s)`<br/>`...`<br/>`tensorboard.summary_writer.close()`    |
 
 ## I/O and deploy
 ### Data loading
