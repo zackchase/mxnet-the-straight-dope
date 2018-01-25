@@ -207,6 +207,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
     * [Weight uncertainty (Bayes by Backprop) from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
     * [Weight uncertainty (Bayes by Backprop) with ``gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop-gluon.ipynb)
+    * [Weight uncertainty (Bayes by Backprop) for Recurrent Neural Networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop-rnn.ipynb)
     * ***Roadmap*** Variational autoencoders
 
 ### Appendices
