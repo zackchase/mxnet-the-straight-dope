@@ -173,7 +173,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
    * ***Roadmap*** Introduction to autoencoders
    * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
    * ***Roadmap*** Denoising autoencoders
-   * ***Roadmap*** Variational autoencoders
+   * [Variational autoencoders](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter13_unsupervised-learning/vae-gluon.ipynb)
    * ***Roadmap*** Clustering
 
 * **Chapter 14:** Generative adversarial networks (GANs)
