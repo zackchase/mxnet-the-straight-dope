@@ -117,6 +117,7 @@ Part 1: Deep Learning Fundamentals
    chapter07_distributed-learning/training-with-multiple-machines
    
 
+
 Part 2: Applications
 ====================
 
@@ -152,6 +153,13 @@ Part 2: Applications
 
 Part 3: Advanced Topics
 =======================
+
+.. toctree:: Unsupervised Learning
+   :glob:
+   :maxdepth: 1
+   :caption: High-performance and distributed training
+
+   chapter13_unsupervised-learning/vae-gluon
 
 .. toctree::
    :glob:
