@@ -210,6 +210,9 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * [Weight uncertainty (Bayes by Backprop) for Recurrent Neural Networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop-rnn.ipynb)
     * ***Roadmap*** Variational autoencoders
 
+* **Chapter 19:** Graph Neural Networks
+    * [Deep Learning on Graphs with Message Passing Neural Networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter19_graph-neural-networks/Graph-Neural-Networks.ipynb)
+
 ### Appendices
 * Appendix 1: Cheatsheets
     * ***Roadmap*** ``gluon``
