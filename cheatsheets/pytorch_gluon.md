@@ -204,9 +204,9 @@ Some commonly used datasets for computer vision are provided in `mx.gluon.data.v
 | A generic data loader where the images are arranged in folders. | `torchvision.datasets.ImageFolder(root, transform=None, target_transform=None, loader=<function default_loader>)` | `mx.gluon.data.vision.ImageFolderDataset(root, flag, transform=None)`|
 
 ### Serialization
-Serialization and De-Serialization are achieved by calling `save_params` and `load_params`.
+Serialization and De-Serialization are achieved by calling `save_parameters` and `load_parameters`.
 
 | Class               | Pytorch                           | MXNet Gluon                              |
 |------------------------|-----------------------------------|------------------------------------------|
-| Save model parameters | `torch.save(the_model.state_dict(), filename)`| `model.save_params(filename)`|
-| Load parameters | `the_model.load_state_dict(torch.load(PATH))` | `model.load_params(filename, ctx, allow_missing=False, ignore_extra=False)` |
+| Save model parameters | `torch.save(the_model.state_dict(), filename)`| `model.save_parameters(filename)`|
+| Load parameters | `the_model.load_state_dict(torch.load(PATH))` | `model.load_parameters(filename, ctx, allow_missing=False, ignore_extra=False)` |
