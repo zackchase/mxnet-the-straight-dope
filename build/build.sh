@@ -7,6 +7,7 @@ set -e
 # prepare the env
 conda env update -f build/build.yml -n build_sd_tutorials
 conda activate build_sd_tutorials
+conda list --export
 
 make html
 
