@@ -5,9 +5,9 @@ set -x
 set -e
 
 # prepare the env
-conda env update -f build/build.yml
-conda activate build_gluon_tutorials
-conda list
+conda env update -f build/build.yml -n build_sd_tutorials
+conda activate build_sd_tutorials
+conda list --export
 
 make html
 
