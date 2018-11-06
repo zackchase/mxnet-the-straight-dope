@@ -20,8 +20,8 @@ or 8.0 is installed, then the following commands install a GPU-enabled
 version of MXNet. 
 
 ```bash
-pip install mxnet-cu75 --pre --user  # for CUDA 7.5
 pip install mxnet-cu80 --pre --user  # for CUDA 8.0
+pip install mxnet-cu90 --pre --user  # for CUDA 9.0
 ```
 
 After completing installation, you're ready to obtain and run the source code:

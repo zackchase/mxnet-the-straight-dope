@@ -21,8 +21,8 @@ install the GPU-supported package
 
 .. code-block:: bash
 
-   pip install mxnet-cu75 --pre --user  # for CUDA 7.5
    pip install mxnet-cu80 --pre --user  # for CUDA 8.0
+   pip install mxnet-cu90 --pre --user  # for CUDA 9.0
 
 Now we are ready to obtain the source codes and run them
 
