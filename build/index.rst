@@ -18,7 +18,7 @@ To run these notebooks, a recent version of MXNet is required. The easiest way i
 
     $ pip install mxnet --pre --user
     
-More detailed instructions are available `here <docs/C01-install.html>`_
+More detailed instructions are available `here <https://mxnet.incubator.apache.org/install/index.html>`_
 
 
 Part 1: Deep Learning Fundamentals
