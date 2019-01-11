@@ -1,5 +1,7 @@
 # Deep Learning - The Straight Dope
 
+**Note: [Straight Dope is growing up] ---> Much of this content has been incorporated into the new Dive into Deep Learning Book available at https://d2l.ai/**
+
 ## Abstract
 This repo contains an
 incremental sequence of notebooks designed to teach deep learning, MXNet, and
