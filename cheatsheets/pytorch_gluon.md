@@ -65,6 +65,8 @@ context.
 | Copy to GPU            | `y = torch.FloatTensor(1).cuda()` | `y = mx.nd.ones((1,), ctx=mx.gpu(0))`                                      |
 | Convert to numpy array | `x = y.cpu().numpy()`             | `x = y.asnumpy()`                                                          |
 | Context scope          | `with torch.cuda.device(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y= torch.cuda.FloatTensor(1)`                    | `with mx.gpu(1):`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`y = mx.nd.ones((3,5))`      |
+| Availability of GPU | `torch.cuda.is_available` | `npx.num_gpus()` |
+
 ###  Cross-device
 Just like Tensor, MXNet NDArray can be copied across multiple GPUs.
 
@@ -210,3 +212,10 @@ Serialization and De-Serialization are achieved by calling `save_parameters` and
 |------------------------|-----------------------------------|------------------------------------------|
 | Save model parameters | `torch.save(the_model.state_dict(), filename)`| `model.save_parameters(filename)`|
 | Load parameters | `the_model.load_state_dict(torch.load(PATH))` | `model.load_parameters(filename, ctx, allow_missing=False, ignore_extra=False)` |
+
+### Reproducibility
+To make computations deterministic and to be able to reproduce errors, use `random.seed` just like Numpy.
+
+| Class               | Pytorch                           | MXNet Gluon                              |
+|------------------------|-----------------------------------|------------------------------------------|
+| Seed | `torch.manual_seed(seed)` | `mx.random.seed(seed_state,ctx)` |
