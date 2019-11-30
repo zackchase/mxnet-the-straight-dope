@@ -1,6 +1,7 @@
-# Deep Learning - The Straight Dope
+# Deep Learning - The Straight Dope (*Deprecated* Please see d2l.ai)
+## This content has been moved to Dive into the Deep Learning Book freely available at https://d2l.ai/.
 
-## Note: [Straight Dope is growing up] ---> Much of this content has been incorporated into the new Dive into Deep Learning Book available at https://d2l.ai/
+
 
 ## Abstract
 This repo contains an
