@@ -191,10 +191,13 @@ tensorboardX(PyTorch) and dmlc-tensorboard(Gluon) can be used to visualize your 
 
 | Class               | Pytorch                           | MXNet Gluon                              |
 |------------------------|-----------------------------------|------------------------------------------|
+| Dataset | `from torch.utils.data import Dataset` | `from mxnet.gluon.data import Dataset` |
 | Dataset holding arrays | `torch.utils.data.TensorDataset(data_tensor, label_tensor)`| `gluon.data.ArrayDataset(data_array, label_array)`                        |
 | Data loader | `torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False, sampler=None, batch_sampler=None, num_workers=0, collate_fn=<function default_collate>, drop_last=False)` | `gluon.data.DataLoader(dataset, batch_size=None, shuffle=False, sampler=None, last_batch='keep', batch_sampler=None, batchify_fn=None, num_workers=0)`|
 | Sequentially applied sampler | `torch.utils.data.sampler.SequentialSampler(data_source)` | `gluon.data.SequentialSampler(length)` |
 | Random order sampler | `torch.utils.data.sampler.RandomSampler(data_source)` | `gluon.data.RandomSampler(length)`|
+
+Note : `DataLoader` in **PyTorch** has a parameter `drop_last` [values=`True`|`False`]. `DataLoader` in **MXNet** has an equivalent parameter `last_batch` [values=`keep`|`discard`|`rollover`]
 
 Some commonly used datasets for computer vision are provided in `mx.gluon.data.vision` package.
 
